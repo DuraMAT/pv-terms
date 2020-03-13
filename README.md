@@ -1,2 +1,2 @@
 # pv-terms
-Standard Nomenclature for PV Systems
+Standard variable names for PV modeling
