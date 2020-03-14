@@ -1,0 +1,86 @@
+Category,Parameter,Description
+Abbreviations,dc,direct current
+Abbreviations,ac,alternating current
+Abbreviations,poa,plane of array (irradiance)
+Abbreviations,dni,direct normal irradiance
+Abbreviations,dhi,direct horizontal irradiance
+Abbreviations,ghi,global horizontal irradiance
+Abbreviations,ref,reference
+Abbreviations,aoi,angle of incidence
+Abbreviations,mp,maximum power
+Abbreviations,oc,open circuit
+Abbreviations,sc,short circuit
+Abbreviations,vmp,voltage at maximum power
+Abbreviations,imp,current at maximum power
+Abbreviations,pmp,power at maximum power
+Abbreviations,isc,current at short circuit
+Abbreviations,voc,voltage at open circuit
+Abbreviations,num,number
+Abbreviations,aod,aerosol optical depth
+Abbreviations,noct,nominal operating cell temperature
+Abbreviations,stc,standard test conditions
+pvlib-python,tz,timezone
+pvlib-python,latitude,"latitude, in degrees"
+pvlib-python,longitude,"longitude, in degrees"
+pvlib-python,dni,direct normal irradiance
+pvlib-python,dni_extra,direct normal irradiance at top of atmosphere (extraterrestrial)
+pvlib-python,dhi,diffuse horizontal irradiance
+pvlib-python,ghi,global horizontal irradiance
+pvlib-python,aoi,"angle of incidence between 90deg90deg and 90deg90deg, in degrees"
+pvlib-python,aoi_projection,cos(aoi)
+pvlib-python,airmass,airmass
+pvlib-python,airmass_relative,relative airmass
+pvlib-python,airmass_absolute,absolute airmass
+pvlib-python,poa_ground_diffuse,in plane ground reflected irradiation
+pvlib-python,poa_direct,direct/beam irradiation in plane
+pvlib-python,poa_diffuse,total diffuse irradiation in plane. sum of ground and sky diffuse.
+pvlib-python,poa_global,global irradiation in plane. sum of diffuse and beam projection.
+pvlib-python,poa_sky_diffuse,diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)
+pvlib-python,effective_irradiance,"irradiance reaching the module's cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum"
+pvlib-python,g_poa_effective,broadband plane of array effective irradiance.
+pvlib-python,array_tilt,"tilt angle of the surface, in degrees"
+pvlib-python,array_azimuth,"azimuth angle of the surface, in degrees"
+pvlib-python,solar_elevation,elevation angle of the sun in degrees
+pvlib-python,solar_zenith,zenith angle of the sun in degrees
+pvlib-python,apparent_elevation,refraction-corrected solar elevation angle in degrees
+pvlib-python,apparent_zenith,"refraction-corrected solar zenith angle, in degrees"
+pvlib-python,solar_azimuth,azimuth angle of the sun in degrees East of North
+pvlib-python,temperature_cell,"temperature of the cell, in C"
+pvlib-python,temperature_module,"temperature of the module, in C"
+pvlib-python,temperature_air,temperature of the air
+pvlib-python,dew_point,"dewpoint temperature, in C"
+pvlib-python,relative_humidity,relative humidity
+pvlib-python,specific_humidity,
+pvlib-python,absolute_humidity,
+pvlib-python,vmp,voltage at the maximum power point in Volts
+pvlib-python,imp,current at the maximum power point in Volts
+pvlib-python,pmp,power at the maximum power point in Volts
+pvlib-python,voc,open circuit module voltage
+pvlib-python,isc,short circuit module current
+pvlib-python,"current_x, current_xx",Sandia Array Performance Model IV curve parameters
+pvlib-python,transposition_factor,the gain ratio of the radiation on inclined plane to global horizontal irradiation: 𝑝𝑜𝑎_𝑔𝑙𝑜𝑏𝑎𝑙𝑔ℎ𝑖poa_globalghi
+pvlib-python,power_dc_rated,nameplate DC rating
+pvlib-python,power_dc,dc power
+pvlib-python,power_ac,ac power
+pvlib-python,efficiency_inverter,inverter efficiency
+pvlib-python,efficiency_inverter_ref,reference inverter efficiency
+pvlib-python,efficiency_inverter_nominal,nominal inverter efficiency
+pvlib-python,spectral_mismatch,
+PV system information,modules_per_string,Number of modules in series in each string
+PV system information,num_strings,Number of parallel strings in an array of modules
+PV system information,tracking,"Tracker type, can be 'fixed', 'single-axis' or 'two-axis'"
+PV system information,current_dc_inv_XX,"DC current for inverter XX, where XX is the name of the inverter."
+PV system information,voltage_dc_inv_XX,"DC voltage for inverter XX, where XX is the name of the inverter."
+PV system information,power_dc_inv_XX,"DC power for inverter XX, where XX is the name of the inverter."
+PV system information,irradiance_poa_o_XX,"Plane-of-array irradiance for sensor XX, in W/m^2."
+PV system information,temperature_module_o_XX,"Back of module temperature for sensor XX, in C"
+PV system information,temperature_ambient_o_XX,"Ambient (dry bulb) temperature for sensor XX, in C"
+PV system information,elevation,"elevation of system, in meters"
+PV system information,pressure,"pressure, in pascal"
+PV system information,ground_coverage_ratio,
+PV system information,zenith_apparent,
+PV system information,azimuth_apparent,
+PV system information,surface_tilt,
+PV system information,surface_azimuth,
+PV system information,zenith_solar,
+PV system information,azimuth_solar,
