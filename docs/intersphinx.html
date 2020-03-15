@@ -153,7 +153,23 @@
             
   <div class="section" id="using-the-intersphinx-mapping">
 <h1>Using the Intersphinx mapping<a class="headerlink" href="#using-the-intersphinx-mapping" title="Permalink to this headline">¶</a></h1>
-<p>to-do</p>
+<p>The <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html">intersphinx</a>
+extension makes it easy to create links between sphinx projects.  If you use
+sphinx for your project’s documentation, you can configure your documentation
+to recognize <code class="docutils literal notranslate"><span class="pre">pv-terms</span></code> as a linking target by adding an entry to the
+<code class="docutils literal notranslate"><span class="pre">intersphinx_mapping</span></code> dictionary in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;pv-terms&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;http://hackingmaterials.lbl.gov/pv-terms/&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This lets you write references like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Solar position is slightly dependent on site :ref:`pv-terms:elevation`.
+</pre></div>
+</div>
+<p>that look like this:</p>
+<blockquote>
+<div>Solar position is slightly dependent on site <a class="reference internal" href="index.html#elevation"><span class="std std-ref">elevation</span></a>.</div></blockquote>
 </div>
 
 

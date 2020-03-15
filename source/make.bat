@@ -10,14 +10,13 @@ if "%SPHINXBUILD%" == "" (
 set SOURCEDIR=.
 set BUILDDIR=_build
 
-if "%1" == "" goto help
+set BUILDMODE=%1
 
 if "%1" == "github" (
-    %SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
-    robocopy %BUILDDIR%/html ../docs /E > nul
-    echo.Generated files copied to ../docs
-    goto end
+    set BUILDMODE=html
 )
+
+if "%1" == "" goto help
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
@@ -33,7 +32,14 @@ if errorlevel 9009 (
 )
 
 python build_definitions.py
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+%SPHINXBUILD% -M %BUILDMODE% %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+
+if "%1" == "github" (
+    robocopy %BUILDDIR%/html ../docs /E > nul
+    echo.Generated files copied to ../docs
+	python trim.py ../docs/index.html
+)
+
 goto end
 
 :help

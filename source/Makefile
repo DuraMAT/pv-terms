@@ -15,6 +15,7 @@ help:
 github:
 	@make html
 	@cp -a _build/html/. ../docs
+	python trim.py ../docs/index.html
 
 .PHONY: help Makefile
 
