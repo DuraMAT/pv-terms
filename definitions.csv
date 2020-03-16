@@ -49,7 +49,7 @@ pvlib-python,temperature_cell,"temperature of the cell, in C"
 pvlib-python,temperature_module,"temperature of the module, in C"
 pvlib-python,temperature_air,temperature of the air
 pvlib-python,dew_point,"dewpoint temperature, in C"
-pvlib-python,relative_humidity,relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.
+pvlib-python,relative_humidity,"relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless."
 pvlib-python,specific_humidity,
 pvlib-python,absolute_humidity,
 pvlib-python,vmp,voltage at the maximum power point in Volts
