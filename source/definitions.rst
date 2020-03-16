@@ -1,4 +1,4 @@
-.. generated on 2020-03-15T11:41:13.588913
+.. generated on 2020-03-16T09:12:40.488883
 
 .. csv-table:: Abbreviations
     :header: "Term", "Description"
@@ -217,7 +217,7 @@
     dew_point","dewpoint temperature, in C"
     ".. _relative_humidity:
 
-    relative_humidity","relative humidity"
+    relative_humidity","relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless."
     ".. _specific_humidity:
 
     specific_humidity","nan"
