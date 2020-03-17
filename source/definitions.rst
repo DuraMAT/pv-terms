@@ -1,268 +1,353 @@
-.. generated on 2020-03-15T11:41:13.588913
+.. generated on 2020-03-16T20:19:52.489674
 
-.. csv-table:: Abbreviations
-    :header: "Term", "Description"
+Abbreviations
+-------------
 
-    ".. _dc:
 
-    dc","direct current"
-    ".. _ac:
+  .. _dc:
 
-    ac","alternating current"
-    ".. _poa:
+* **dc**: direct current
 
-    poa","plane of array (irradiance)"
-    ".. _dni:
+  .. _ac:
 
-    dni","direct normal irradiance"
-    ".. _dhi:
+* **ac**: alternating current
 
-    dhi","direct horizontal irradiance"
-    ".. _ghi:
+  .. _poa:
 
-    ghi","global horizontal irradiance"
-    ".. _ref:
+* **poa**: plane of array (irradiance)
 
-    ref","reference"
-    ".. _aoi:
+  .. _dni:
 
-    aoi","angle of incidence"
-    ".. _mp:
+* **dni**: direct normal irradiance
 
-    mp","maximum power"
-    ".. _oc:
+  .. _dhi:
 
-    oc","open circuit"
-    ".. _sc:
+* **dhi**: direct horizontal irradiance
 
-    sc","short circuit"
-    ".. _vmp:
+  .. _ghi:
 
-    vmp","voltage at maximum power"
-    ".. _imp:
+* **ghi**: global horizontal irradiance
 
-    imp","current at maximum power"
-    ".. _pmp:
+  .. _ref:
 
-    pmp","power at maximum power"
-    ".. _isc:
+* **ref**: reference
 
-    isc","current at short circuit"
-    ".. _voc:
+  .. _aoi:
 
-    voc","voltage at open circuit"
-    ".. _num:
+* **aoi**: angle of incidence
 
-    num","number"
-    ".. _aod:
+  .. _mp:
 
-    aod","aerosol optical depth"
-    ".. _noct:
+* **mp**: maximum power
 
-    noct","nominal operating cell temperature"
-    ".. _stc:
+  .. _oc:
 
-    stc","standard test conditions"
+* **oc**: open circuit
 
-.. csv-table:: PV system information
-    :header: "Term", "Description"
+  .. _sc:
 
-    ".. _modules_per_string:
+* **sc**: short circuit
 
-    modules_per_string","Number of modules in series in each string"
-    ".. _num_strings:
+  .. _vmp:
 
-    num_strings","Number of parallel strings in an array of modules"
-    ".. _tracking:
+* **vmp**: voltage at maximum power
 
-    tracking","Tracker type, can be 'fixed', 'single-axis' or 'two-axis'"
-    ".. _current_dc_inv_XX:
+  .. _imp:
 
-    current_dc_inv_XX","DC current for inverter XX, where XX is the name of the inverter."
-    ".. _voltage_dc_inv_XX:
+* **imp**: current at maximum power
 
-    voltage_dc_inv_XX","DC voltage for inverter XX, where XX is the name of the inverter."
-    ".. _power_dc_inv_XX:
+  .. _pmp:
 
-    power_dc_inv_XX","DC power for inverter XX, where XX is the name of the inverter."
-    ".. _irradiance_poa_o_XX:
+* **pmp**: power at maximum power
 
-    irradiance_poa_o_XX","Plane-of-array irradiance for sensor XX, in W/m^2."
-    ".. _temperature_module_o_XX:
+  .. _isc:
 
-    temperature_module_o_XX","Back of module temperature for sensor XX, in C"
-    ".. _temperature_ambient_o_XX:
+* **isc**: current at short circuit
 
-    temperature_ambient_o_XX","Ambient (dry bulb) temperature for sensor XX, in C"
-    ".. _elevation:
+  .. _voc:
 
-    elevation","elevation of system, in meters"
-    ".. _pressure:
+* **voc**: voltage at open circuit
 
-    pressure","pressure, in pascal"
-    ".. _ground_coverage_ratio:
+  .. _num:
 
-    ground_coverage_ratio","nan"
-    ".. _zenith_apparent:
+* **num**: number
 
-    zenith_apparent","nan"
-    ".. _azimuth_apparent:
+  .. _aod:
 
-    azimuth_apparent","nan"
-    ".. _surface_tilt:
+* **aod**: aerosol optical depth
 
-    surface_tilt","nan"
-    ".. _surface_azimuth:
+  .. _noct:
 
-    surface_azimuth","nan"
-    ".. _zenith_solar:
+* **noct**: nominal operating cell temperature
 
-    zenith_solar","nan"
-    ".. _azimuth_solar:
+  .. _stc:
 
-    azimuth_solar","nan"
+* **stc**: standard test conditions
 
-.. csv-table:: pvlib-python
-    :header: "Term", "Description"
+PV system information
+---------------------
 
-    ".. _tz:
 
-    tz","timezone"
-    ".. _latitude:
+  .. _modules_per_string:
 
-    latitude","latitude, in degrees"
-    ".. _longitude:
+* **modules_per_string**: Number of modules in series in each string
 
-    longitude","longitude, in degrees"
-    ".. _dni:
+  .. _num_strings:
 
-    dni","direct normal irradiance"
-    ".. _dni_extra:
+* **num_strings**: Number of parallel strings in an array of modules
 
-    dni_extra","direct normal irradiance at top of atmosphere (extraterrestrial)"
-    ".. _dhi:
+  .. _tracking:
 
-    dhi","diffuse horizontal irradiance"
-    ".. _ghi:
+* **tracking**: Tracker type, can be 'fixed', 'single-axis' or 'two-axis'
 
-    ghi","global horizontal irradiance"
-    ".. _aoi:
+  .. _current_dc_inv_XX:
 
-    aoi","angle of incidence between 90deg90deg and 90deg90deg, in degrees"
-    ".. _aoi_projection:
+* **current_dc_inv_XX**: DC current for inverter XX, where XX is the name of the inverter.
 
-    aoi_projection","cos(aoi)"
-    ".. _airmass:
+  .. _voltage_dc_inv_XX:
 
-    airmass","airmass"
-    ".. _airmass_relative:
+* **voltage_dc_inv_XX**: DC voltage for inverter XX, where XX is the name of the inverter.
 
-    airmass_relative","relative airmass"
-    ".. _airmass_absolute:
+  .. _power_dc_inv_XX:
 
-    airmass_absolute","absolute airmass"
-    ".. _poa_ground_diffuse:
+* **power_dc_inv_XX**: DC power for inverter XX, where XX is the name of the inverter.
 
-    poa_ground_diffuse","in plane ground reflected irradiation"
-    ".. _poa_direct:
+  .. _irradiance_poa_o_XX:
 
-    poa_direct","direct/beam irradiation in plane"
-    ".. _poa_diffuse:
+* **irradiance_poa_o_XX**: Plane-of-array irradiance for sensor XX, in W/m^2.
 
-    poa_diffuse","total diffuse irradiation in plane. sum of ground and sky diffuse."
-    ".. _poa_global:
+  .. _temperature_module_o_XX:
 
-    poa_global","global irradiation in plane. sum of diffuse and beam projection."
-    ".. _poa_sky_diffuse:
+* **temperature_module_o_XX**: Back of module temperature for sensor XX, in C
 
-    poa_sky_diffuse","diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)"
-    ".. _effective_irradiance:
+  .. _temperature_ambient_o_XX:
 
-    effective_irradiance","irradiance reaching the module's cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum"
-    ".. _g_poa_effective:
+* **temperature_ambient_o_XX**: Ambient (dry bulb) temperature for sensor XX, in C
 
-    g_poa_effective","broadband plane of array effective irradiance."
-    ".. _array_tilt:
+  .. _elevation:
 
-    array_tilt","tilt angle of the surface, in degrees"
-    ".. _array_azimuth:
+* **elevation**: elevation of system, in meters
 
-    array_azimuth","azimuth angle of the surface, in degrees"
-    ".. _solar_elevation:
+  .. _pressure:
 
-    solar_elevation","elevation angle of the sun in degrees"
-    ".. _solar_zenith:
+* **pressure**: pressure, in pascal
 
-    solar_zenith","zenith angle of the sun in degrees"
-    ".. _apparent_elevation:
+  .. _ground_coverage_ratio:
 
-    apparent_elevation","refraction-corrected solar elevation angle in degrees"
-    ".. _apparent_zenith:
+* **ground_coverage_ratio**: nan
 
-    apparent_zenith","refraction-corrected solar zenith angle, in degrees"
-    ".. _solar_azimuth:
+  .. _zenith_apparent:
 
-    solar_azimuth","azimuth angle of the sun in degrees East of North"
-    ".. _temperature_cell:
+* **zenith_apparent**: nan
 
-    temperature_cell","temperature of the cell, in C"
-    ".. _temperature_module:
+  .. _azimuth_apparent:
 
-    temperature_module","temperature of the module, in C"
-    ".. _temperature_air:
+* **azimuth_apparent**: nan
 
-    temperature_air","temperature of the air"
-    ".. _dew_point:
+  .. _surface_tilt:
 
-    dew_point","dewpoint temperature, in C"
-    ".. _relative_humidity:
+* **surface_tilt**: nan
 
-    relative_humidity","relative humidity"
-    ".. _specific_humidity:
+  .. _surface_azimuth:
 
-    specific_humidity","nan"
-    ".. _absolute_humidity:
+* **surface_azimuth**: nan
 
-    absolute_humidity","nan"
-    ".. _vmp:
+  .. _zenith_solar:
 
-    vmp","voltage at the maximum power point in Volts"
-    ".. _imp:
+* **zenith_solar**: nan
 
-    imp","current at the maximum power point in Volts"
-    ".. _pmp:
+  .. _azimuth_solar:
 
-    pmp","power at the maximum power point in Volts"
-    ".. _voc:
+* **azimuth_solar**: nan
 
-    voc","open circuit module voltage"
-    ".. _isc:
+pvlib-python
+------------
 
-    isc","short circuit module current"
-    ".. _current_x, current_xx:
 
-    current_x, current_xx","Sandia Array Performance Model IV curve parameters"
-    ".. _transposition_factor:
+  .. _tz:
 
-    transposition_factor","the gain ratio of the radiation on inclined plane to global horizontal irradiation: 𝑝𝑜𝑎_𝑔𝑙𝑜𝑏𝑎𝑙𝑔ℎ𝑖poa_globalghi"
-    ".. _power_dc_rated:
+* **tz**: timezone
 
-    power_dc_rated","nameplate DC rating"
-    ".. _power_dc:
+  .. _latitude:
 
-    power_dc","dc power"
-    ".. _power_ac:
+* **latitude**: latitude, in degrees
 
-    power_ac","ac power"
-    ".. _efficiency_inverter:
+  .. _longitude:
 
-    efficiency_inverter","inverter efficiency"
-    ".. _efficiency_inverter_ref:
+* **longitude**: longitude, in degrees
 
-    efficiency_inverter_ref","reference inverter efficiency"
-    ".. _efficiency_inverter_nominal:
+  .. _dni:
 
-    efficiency_inverter_nominal","nominal inverter efficiency"
-    ".. _spectral_mismatch:
+* **dni**: direct normal irradiance
 
-    spectral_mismatch","nan"
+  .. _dni_extra:
+
+* **dni_extra**: direct normal irradiance at top of atmosphere (extraterrestrial)
+
+  .. _dhi:
+
+* **dhi**: diffuse horizontal irradiance
+
+  .. _ghi:
+
+* **ghi**: global horizontal irradiance
+
+  .. _aoi:
+
+* **aoi**: angle of incidence between 90deg90deg and 90deg90deg, in degrees
+
+  .. _aoi_projection:
+
+* **aoi_projection**: cos(aoi)
+
+  .. _airmass:
+
+* **airmass**: airmass
+
+  .. _airmass_relative:
+
+* **airmass_relative**: relative airmass
+
+  .. _airmass_absolute:
+
+* **airmass_absolute**: absolute airmass
+
+  .. _poa_ground_diffuse:
+
+* **poa_ground_diffuse**: in plane ground reflected irradiation
+
+  .. _poa_direct:
+
+* **poa_direct**: direct/beam irradiation in plane
+
+  .. _poa_diffuse:
+
+* **poa_diffuse**: total diffuse irradiation in plane. sum of ground and sky diffuse.
+
+  .. _poa_global:
+
+* **poa_global**: global irradiation in plane. sum of diffuse and beam projection.
+
+  .. _poa_sky_diffuse:
+
+* **poa_sky_diffuse**: diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)
+
+  .. _effective_irradiance:
+
+* **effective_irradiance**: irradiance reaching the module's cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum
+
+  .. _g_poa_effective:
+
+* **g_poa_effective**: broadband plane of array effective irradiance.
+
+  .. _array_tilt:
+
+* **array_tilt**: tilt angle of the surface, in degrees
+
+  .. _array_azimuth:
+
+* **array_azimuth**: azimuth angle of the surface, in degrees
+
+  .. _solar_elevation:
+
+* **solar_elevation**: elevation angle of the sun in degrees
+
+  .. _solar_zenith:
+
+* **solar_zenith**: zenith angle of the sun in degrees
+
+  .. _apparent_elevation:
+
+* **apparent_elevation**: refraction-corrected solar elevation angle in degrees
+
+  .. _apparent_zenith:
+
+* **apparent_zenith**: refraction-corrected solar zenith angle, in degrees
+
+  .. _solar_azimuth:
+
+* **solar_azimuth**: azimuth angle of the sun in degrees East of North
+
+  .. _temperature_cell:
+
+* **temperature_cell**: temperature of the cell, in C
+
+  .. _temperature_module:
+
+* **temperature_module**: temperature of the module, in C
+
+  .. _temperature_air:
+
+* **temperature_air**: temperature of the air
+
+  .. _dew_point:
+
+* **dew_point**: dewpoint temperature, in C
+
+  .. _relative_humidity:
+
+* **relative_humidity**: relative humidity
+
+  .. _specific_humidity:
+
+* **specific_humidity**: nan
+
+  .. _absolute_humidity:
+
+* **absolute_humidity**: nan
+
+  .. _vmp:
+
+* **vmp**: voltage at the maximum power point in Volts
+
+  .. _imp:
+
+* **imp**: current at the maximum power point in Volts
+
+  .. _pmp:
+
+* **pmp**: power at the maximum power point in Volts
+
+  .. _voc:
+
+* **voc**: open circuit module voltage
+
+  .. _isc:
+
+* **isc**: short circuit module current
+
+  .. _current_x, current_xx:
+
+* **current_x, current_xx**: Sandia Array Performance Model IV curve parameters
+
+  .. _transposition_factor:
+
+* **transposition_factor**: the gain ratio of the radiation on inclined plane to global horizontal irradiation: 𝑝𝑜𝑎_𝑔𝑙𝑜𝑏𝑎𝑙𝑔ℎ𝑖poa_globalghi
+
+  .. _power_dc_rated:
+
+* **power_dc_rated**: nameplate DC rating
+
+  .. _power_dc:
+
+* **power_dc**: dc power
+
+  .. _power_ac:
+
+* **power_ac**: ac power
+
+  .. _efficiency_inverter:
+
+* **efficiency_inverter**: inverter efficiency
+
+  .. _efficiency_inverter_ref:
+
+* **efficiency_inverter_ref**: reference inverter efficiency
+
+  .. _efficiency_inverter_nominal:
+
+* **efficiency_inverter_nominal**: nominal inverter efficiency
+
+  .. _spectral_mismatch:
+
+* **spectral_mismatch**: nan

@@ -61,6 +61,30 @@ def generate_table(terms, definitions, headers, title):
     return "\n".join(lines)
 
 
+def generate_bullet_list(terms, definitions):
+    """
+    Generate a chunk of RST with a list of bullets containing the
+    supplied definitions.  Terms and definitions can include RST formatting
+    like math formulas.  A reference is automatically inserted for each term
+    so that it can be referenced externally via intersphinx.
+
+    Parameters
+    ----------
+    terms : list
+    definitions : list
+
+    Returns
+    -------
+    str
+        The RST glossary text
+    """
+    lines = []
+    for term, definition in zip(terms, definitions):
+        bullet = "\n  .. _{}:\n\n* **{}**: {}".format(term, term, definition)
+        lines.append(bullet)
+    return "\n".join(lines)
+
+
 if __name__ == "__main__":
     df = pd.read_csv("../definitions.csv")
 
@@ -69,11 +93,12 @@ if __name__ == "__main__":
     table_texts = []
 
     for category in grouper.groups:
+        header = category + "\n" + "-" * len(category)
         subset = grouper.get_group(category)
         terms = subset['Parameter']
         definitions = subset['Description']
-        rst = generate_table(terms, definitions, ['Term', 'Description'],
-                             category)
+        rst = generate_bullet_list(terms, definitions)
+        table_texts.append(header)
         table_texts.append(rst)
 
     rst = "\n\n".join(table_texts)
