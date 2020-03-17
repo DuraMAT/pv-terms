@@ -1,4 +1,4 @@
-.. generated on 2020-03-16T09:12:40.488883
+.. generated on 2020-03-16T20:28:24.456244
 
 Abbreviations
 -------------
@@ -148,8 +148,7 @@ PV system information
 
 * **surface_tilt**: nan
 
-    relative_humidity","relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless."
-    ".. _specific_humidity:
+  .. _surface_azimuth:
 
 * **surface_azimuth**: nan
 
@@ -287,7 +286,7 @@ pvlib-python
 
   .. _relative_humidity:
 
-* **relative_humidity**: relative humidity
+* **relative_humidity**: relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.
 
   .. _specific_humidity:
 

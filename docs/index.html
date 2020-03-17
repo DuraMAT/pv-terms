@@ -151,388 +151,112 @@
   <div class="section" id="pv-modeling-glossary">
 <h1>PV Modeling Glossary<a class="headerlink" href="#pv-modeling-glossary" title="Permalink to this headline">¶</a></h1>
 <p>Terms are grouped by category.</p>
-<table border="1" class="docutils" id="id10">
-<caption><span class="caption-text">Abbreviations</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Term</th>
-<th class="head">Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><p class="first last" id="dc">dc</p>
-</td>
-<td>direct current</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="ac">ac</p>
-</td>
-<td>alternating current</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="poa">poa</p>
-</td>
-<td>plane of array (irradiance)</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="dni">dni</p>
-</td>
-<td>direct normal irradiance</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="dhi">dhi</p>
-</td>
-<td>direct horizontal irradiance</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="ghi">ghi</p>
-</td>
-<td>global horizontal irradiance</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="ref">ref</p>
-</td>
-<td>reference</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="aoi">aoi</p>
-</td>
-<td>angle of incidence</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="mp">mp</p>
-</td>
-<td>maximum power</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="oc">oc</p>
-</td>
-<td>open circuit</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="sc">sc</p>
-</td>
-<td>short circuit</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="vmp">vmp</p>
-</td>
-<td>voltage at maximum power</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="imp">imp</p>
-</td>
-<td>current at maximum power</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="pmp">pmp</p>
-</td>
-<td>power at maximum power</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="isc">isc</p>
-</td>
-<td>current at short circuit</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="voc">voc</p>
-</td>
-<td>voltage at open circuit</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="num">num</p>
-</td>
-<td>number</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="aod">aod</p>
-</td>
-<td>aerosol optical depth</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="noct">noct</p>
-</td>
-<td>nominal operating cell temperature</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="stc">stc</p>
-</td>
-<td>standard test conditions</td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="docutils" id="id11">
-<caption><span class="caption-text">PV system information</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Term</th>
-<th class="head">Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><p class="first last" id="modules-per-string">modules_per_string</p>
-</td>
-<td>Number of modules in series in each string</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="num-strings">num_strings</p>
-</td>
-<td>Number of parallel strings in an array of modules</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="tracking">tracking</p>
-</td>
-<td>Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="current-dc-inv-xx">current_dc_inv_XX</p>
-</td>
-<td>DC current for inverter XX, where XX is the name of the inverter.</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="voltage-dc-inv-xx">voltage_dc_inv_XX</p>
-</td>
-<td>DC voltage for inverter XX, where XX is the name of the inverter.</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="power-dc-inv-xx">power_dc_inv_XX</p>
-</td>
-<td>DC power for inverter XX, where XX is the name of the inverter.</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="irradiance-poa-o-xx">irradiance_poa_o_XX</p>
-</td>
-<td>Plane-of-array irradiance for sensor XX, in W/m^2.</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="temperature-module-o-xx">temperature_module_o_XX</p>
-</td>
-<td>Back of module temperature for sensor XX, in C</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="temperature-ambient-o-xx">temperature_ambient_o_XX</p>
-</td>
-<td>Ambient (dry bulb) temperature for sensor XX, in C</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="elevation">elevation</p>
-</td>
-<td>elevation of system, in meters</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="pressure">pressure</p>
-</td>
-<td>pressure, in pascal</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="ground-coverage-ratio">ground_coverage_ratio</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="zenith-apparent">zenith_apparent</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="azimuth-apparent">azimuth_apparent</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="surface-tilt">surface_tilt</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="surface-azimuth">surface_azimuth</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="zenith-solar">zenith_solar</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="azimuth-solar">azimuth_solar</p>
-</td>
-<td>nan</td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="docutils" id="id12">
-<caption><span class="caption-text">pvlib-python</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Term</th>
-<th class="head">Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><p class="first last" id="tz">tz</p>
-</td>
-<td>timezone</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="latitude">latitude</p>
-</td>
-<td>latitude, in degrees</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="longitude">longitude</p>
-</td>
-<td>longitude, in degrees</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="id1">dni</p>
-</td>
-<td>direct normal irradiance</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="dni-extra">dni_extra</p>
-</td>
-<td>direct normal irradiance at top of atmosphere (extraterrestrial)</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="id2">dhi</p>
-</td>
-<td>diffuse horizontal irradiance</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="id3">ghi</p>
-</td>
-<td>global horizontal irradiance</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="id4">aoi</p>
-</td>
-<td>angle of incidence between 90deg90deg and 90deg90deg, in degrees</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="aoi-projection">aoi_projection</p>
-</td>
-<td>cos(aoi)</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="airmass">airmass</p>
-</td>
-<td>airmass</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="airmass-relative">airmass_relative</p>
-</td>
-<td>relative airmass</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="airmass-absolute">airmass_absolute</p>
-</td>
-<td>absolute airmass</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="poa-ground-diffuse">poa_ground_diffuse</p>
-</td>
-<td>in plane ground reflected irradiation</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="poa-direct">poa_direct</p>
-</td>
-<td>direct/beam irradiation in plane</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="poa-diffuse">poa_diffuse</p>
-</td>
-<td>total diffuse irradiation in plane. sum of ground and sky diffuse.</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="poa-global">poa_global</p>
-</td>
-<td>global irradiation in plane. sum of diffuse and beam projection.</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="poa-sky-diffuse">poa_sky_diffuse</p>
-</td>
-<td>diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="effective-irradiance">effective_irradiance</p>
-</td>
-<td>irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="g-poa-effective">g_poa_effective</p>
-</td>
-<td>broadband plane of array effective irradiance.</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="array-tilt">array_tilt</p>
-</td>
-<td>tilt angle of the surface, in degrees</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="array-azimuth">array_azimuth</p>
-</td>
-<td>azimuth angle of the surface, in degrees</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="solar-elevation">solar_elevation</p>
-</td>
-<td>elevation angle of the sun in degrees</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="solar-zenith">solar_zenith</p>
-</td>
-<td>zenith angle of the sun in degrees</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="apparent-elevation">apparent_elevation</p>
-</td>
-<td>refraction-corrected solar elevation angle in degrees</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="apparent-zenith">apparent_zenith</p>
-</td>
-<td>refraction-corrected solar zenith angle, in degrees</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="solar-azimuth">solar_azimuth</p>
-</td>
-<td>azimuth angle of the sun in degrees East of North</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="temperature-cell">temperature_cell</p>
-</td>
-<td>temperature of the cell, in C</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="temperature-module">temperature_module</p>
-</td>
-<td>temperature of the module, in C</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="temperature-air">temperature_air</p>
-</td>
-<td>temperature of the air</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="dew-point">dew_point</p>
-</td>
-<td>dewpoint temperature, in C</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="relative-humidity">relative_humidity</p>
-</td>
-<td>relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="specific-humidity">specific_humidity</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="absolute-humidity">absolute_humidity</p>
-</td>
-<td>nan</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="id5">vmp</p>
-</td>
-<td>voltage at the maximum power point in Volts</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="id6">imp</p>
-</td>
-<td>current at the maximum power point in Volts</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="id7">pmp</p>
-</td>
-<td>power at the maximum power point in Volts</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="id8">voc</p>
-</td>
-<td>open circuit module voltage</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="id9">isc</p>
-</td>
-<td>short circuit module current</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="current-x-current-xx">current_x, current_xx</p>
-</td>
-<td>Sandia Array Performance Model IV curve parameters</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="transposition-factor">transposition_factor</p>
-</td>
-<td>the gain ratio of the radiation on inclined plane to global horizontal irradiation: 𝑝𝑜𝑎_𝑔𝑙𝑜𝑏𝑎𝑙𝑔ℎ𝑖poa_globalghi</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="power-dc-rated">power_dc_rated</p>
-</td>
-<td>nameplate DC rating</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="power-dc">power_dc</p>
-</td>
-<td>dc power</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="power-ac">power_ac</p>
-</td>
-<td>ac power</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="efficiency-inverter">efficiency_inverter</p>
-</td>
-<td>inverter efficiency</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="efficiency-inverter-ref">efficiency_inverter_ref</p>
-</td>
-<td>reference inverter efficiency</td>
-</tr>
-<tr class="row-odd"><td><p class="first last" id="efficiency-inverter-nominal">efficiency_inverter_nominal</p>
-</td>
-<td>nominal inverter efficiency</td>
-</tr>
-<tr class="row-even"><td><p class="first last" id="spectral-mismatch">spectral_mismatch</p>
-</td>
-<td>nan</td>
-</tr>
-</tbody>
-</table>
+<div class="section" id="abbreviations">
+<h2>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="dc">
+<li><strong>dc</strong>: direct current</li>
+<li id="ac"><strong>ac</strong>: alternating current</li>
+<li id="poa"><strong>poa</strong>: plane of array (irradiance)</li>
+<li id="dni"><strong>dni</strong>: direct normal irradiance</li>
+<li id="dhi"><strong>dhi</strong>: direct horizontal irradiance</li>
+<li id="ghi"><strong>ghi</strong>: global horizontal irradiance</li>
+<li id="ref"><strong>ref</strong>: reference</li>
+<li id="aoi"><strong>aoi</strong>: angle of incidence</li>
+<li id="mp"><strong>mp</strong>: maximum power</li>
+<li id="oc"><strong>oc</strong>: open circuit</li>
+<li id="sc"><strong>sc</strong>: short circuit</li>
+<li id="vmp"><strong>vmp</strong>: voltage at maximum power</li>
+<li id="imp"><strong>imp</strong>: current at maximum power</li>
+<li id="pmp"><strong>pmp</strong>: power at maximum power</li>
+<li id="isc"><strong>isc</strong>: current at short circuit</li>
+<li id="voc"><strong>voc</strong>: voltage at open circuit</li>
+<li id="num"><strong>num</strong>: number</li>
+<li id="aod"><strong>aod</strong>: aerosol optical depth</li>
+<li id="noct"><strong>noct</strong>: nominal operating cell temperature</li>
+<li id="stc"><strong>stc</strong>: standard test conditions</li>
+</ul>
+</div>
+<div class="section" id="pv-system-information">
+<h2>PV system information<a class="headerlink" href="#pv-system-information" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="modules-per-string">
+<li><strong>modules_per_string</strong>: Number of modules in series in each string</li>
+<li id="num-strings"><strong>num_strings</strong>: Number of parallel strings in an array of modules</li>
+<li id="tracking"><strong>tracking</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</li>
+<li id="current-dc-inv-xx"><strong>current_dc_inv_XX</strong>: DC current for inverter XX, where XX is the name of the inverter.</li>
+<li id="voltage-dc-inv-xx"><strong>voltage_dc_inv_XX</strong>: DC voltage for inverter XX, where XX is the name of the inverter.</li>
+<li id="power-dc-inv-xx"><strong>power_dc_inv_XX</strong>: DC power for inverter XX, where XX is the name of the inverter.</li>
+<li id="irradiance-poa-o-xx"><strong>irradiance_poa_o_XX</strong>: Plane-of-array irradiance for sensor XX, in W/m^2.</li>
+<li id="temperature-module-o-xx"><strong>temperature_module_o_XX</strong>: Back of module temperature for sensor XX, in C</li>
+<li id="temperature-ambient-o-xx"><strong>temperature_ambient_o_XX</strong>: Ambient (dry bulb) temperature for sensor XX, in C</li>
+<li id="elevation"><strong>elevation</strong>: elevation of system, in meters</li>
+<li id="pressure"><strong>pressure</strong>: pressure, in pascal</li>
+<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong>: nan</li>
+<li id="zenith-apparent"><strong>zenith_apparent</strong>: nan</li>
+<li id="azimuth-apparent"><strong>azimuth_apparent</strong>: nan</li>
+<li id="surface-tilt"><strong>surface_tilt</strong>: nan</li>
+<li id="surface-azimuth"><strong>surface_azimuth</strong>: nan</li>
+<li id="zenith-solar"><strong>zenith_solar</strong>: nan</li>
+<li id="azimuth-solar"><strong>azimuth_solar</strong>: nan</li>
+</ul>
+</div>
+<div class="section" id="pvlib-python">
+<h2>pvlib-python<a class="headerlink" href="#pvlib-python" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="tz">
+<li><strong>tz</strong>: timezone</li>
+<li id="latitude"><strong>latitude</strong>: latitude, in degrees</li>
+<li id="longitude"><strong>longitude</strong>: longitude, in degrees</li>
+<li id="id1"><strong>dni</strong>: direct normal irradiance</li>
+<li id="dni-extra"><strong>dni_extra</strong>: direct normal irradiance at top of atmosphere (extraterrestrial)</li>
+<li id="id2"><strong>dhi</strong>: diffuse horizontal irradiance</li>
+<li id="id3"><strong>ghi</strong>: global horizontal irradiance</li>
+<li id="id4"><strong>aoi</strong>: angle of incidence between 90deg90deg and 90deg90deg, in degrees</li>
+<li id="aoi-projection"><strong>aoi_projection</strong>: cos(aoi)</li>
+<li id="airmass"><strong>airmass</strong>: airmass</li>
+<li id="airmass-relative"><strong>airmass_relative</strong>: relative airmass</li>
+<li id="airmass-absolute"><strong>airmass_absolute</strong>: absolute airmass</li>
+<li id="poa-ground-diffuse"><strong>poa_ground_diffuse</strong>: in plane ground reflected irradiation</li>
+<li id="poa-direct"><strong>poa_direct</strong>: direct/beam irradiation in plane</li>
+<li id="poa-diffuse"><strong>poa_diffuse</strong>: total diffuse irradiation in plane. sum of ground and sky diffuse.</li>
+<li id="poa-global"><strong>poa_global</strong>: global irradiation in plane. sum of diffuse and beam projection.</li>
+<li id="poa-sky-diffuse"><strong>poa_sky_diffuse</strong>: diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</li>
+<li id="effective-irradiance"><strong>effective_irradiance</strong>: irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum</li>
+<li id="g-poa-effective"><strong>g_poa_effective</strong>: broadband plane of array effective irradiance.</li>
+<li id="array-tilt"><strong>array_tilt</strong>: tilt angle of the surface, in degrees</li>
+<li id="array-azimuth"><strong>array_azimuth</strong>: azimuth angle of the surface, in degrees</li>
+<li id="solar-elevation"><strong>solar_elevation</strong>: elevation angle of the sun in degrees</li>
+<li id="solar-zenith"><strong>solar_zenith</strong>: zenith angle of the sun in degrees</li>
+<li id="apparent-elevation"><strong>apparent_elevation</strong>: refraction-corrected solar elevation angle in degrees</li>
+<li id="apparent-zenith"><strong>apparent_zenith</strong>: refraction-corrected solar zenith angle, in degrees</li>
+<li id="solar-azimuth"><strong>solar_azimuth</strong>: azimuth angle of the sun in degrees East of North</li>
+<li id="temperature-cell"><strong>temperature_cell</strong>: temperature of the cell, in C</li>
+<li id="temperature-module"><strong>temperature_module</strong>: temperature of the module, in C</li>
+<li id="temperature-air"><strong>temperature_air</strong>: temperature of the air</li>
+<li id="dew-point"><strong>dew_point</strong>: dewpoint temperature, in C</li>
+<li id="relative-humidity"><strong>relative_humidity</strong>: relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
+<li id="specific-humidity"><strong>specific_humidity</strong>: nan</li>
+<li id="absolute-humidity"><strong>absolute_humidity</strong>: nan</li>
+<li id="id5"><strong>vmp</strong>: voltage at the maximum power point in Volts</li>
+<li id="id6"><strong>imp</strong>: current at the maximum power point in Volts</li>
+<li id="id7"><strong>pmp</strong>: power at the maximum power point in Volts</li>
+<li id="id8"><strong>voc</strong>: open circuit module voltage</li>
+<li id="id9"><strong>isc</strong>: short circuit module current</li>
+<li id="current-x-current-xx"><strong>current_x, current_xx</strong>: Sandia Array Performance Model IV curve parameters</li>
+<li id="transposition-factor"><strong>transposition_factor</strong>: the gain ratio of the radiation on inclined plane to global horizontal irradiation: 𝑝𝑜𝑎_𝑔𝑙𝑜𝑏𝑎𝑙𝑔ℎ𝑖poa_globalghi</li>
+<li id="power-dc-rated"><strong>power_dc_rated</strong>: nameplate DC rating</li>
+<li id="power-dc"><strong>power_dc</strong>: dc power</li>
+<li id="power-ac"><strong>power_ac</strong>: ac power</li>
+<li id="efficiency-inverter"><strong>efficiency_inverter</strong>: inverter efficiency</li>
+<li id="efficiency-inverter-ref"><strong>efficiency_inverter_ref</strong>: reference inverter efficiency</li>
+<li id="efficiency-inverter-nominal"><strong>efficiency_inverter_nominal</strong>: nominal inverter efficiency</li>
+<li id="spectral-mismatch"><strong>spectral_mismatch</strong>: nan</li>
+</ul>
+</div>
 </div>
 <div class="section" id="documentation-contents">
 <h1>Documentation Contents<a class="headerlink" href="#documentation-contents" title="Permalink to this headline">¶</a></h1>
