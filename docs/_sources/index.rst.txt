@@ -91,15 +91,6 @@ Module parameters are primarily used to describe the electrical characteristic o
 .. include:: generated/module-parameters.rst
 
 
-PV Power Plant
---------------
-
-These variables demonstrate a naming scheme to for PV power plant data.
-
-.. include:: generated/pv-power-plant.rst
-
-
-
 Documentation Contents
 ======================
 
