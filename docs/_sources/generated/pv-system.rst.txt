@@ -1,11 +1,11 @@
 
   .. _array_tilt:
 
-* **array_tilt** (*surface_tilt*): tilt angle of the surface, in degrees
+* **array_tilt**: tilt angle of the surface, in degrees [Deprecated/alternates: *surface_tilt*]
 
   .. _array_azimuth:
 
-* **array_azimuth** (*surface_azimuth*): azimuth angle of the surface, in degrees
+* **array_azimuth**: azimuth angle of the surface, in degrees [Deprecated/alternates: *surface_azimuth*]
 
   .. _temperature_cell:
 
@@ -21,31 +21,31 @@
 
   .. _vmp:
 
-* **vmp** (*v_mp*): voltage at the maximum power point in Volts
+* **vmp**: voltage at the maximum power point in Volts [Deprecated/alternates: *v_mp*]
 
   .. _imp:
 
-* **imp** (*i_mp*): current at the maximum power point in Volts
+* **imp**: current at the maximum power point in Volts [Deprecated/alternates: *i_mp*]
 
   .. _pmp:
 
-* **pmp** (*p_mp*): power at the maximum power point in Volts
+* **pmp**: power at the maximum power point in Volts [Deprecated/alternates: *p_mp*]
 
   .. _voc:
 
-* **voc** (*v_oc, voltage_oc*): open circuit module voltage
+* **voc**: open circuit module voltage [Deprecated/alternates: *v_oc, voltage_oc*]
 
   .. _isc:
 
-* **isc** (*i_sc*): short circuit module current
+* **isc**: short circuit module current [Deprecated/alternates: *i_sc*]
 
   .. _current_x:
 
-* **current_x** (*i_x*): Sandia Array Performance Model IV curve parameter
+* **current_x**: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: *i_x*]
 
   .. _current_xx:
 
-* **current_xx** (*i_xx*): Sandia Array Performance Model IV curve parameter
+* **current_xx**: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: *i_xx*]
 
   .. _transposition_factor:
 

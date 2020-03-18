@@ -1,7 +1,7 @@
 
   .. _alpha_isc:
 
-* **alpha_isc** (*alpha_sc*): The temperature coefficient of short-circuit current for a PV module, in A/C
+* **alpha_isc**: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: *alpha_sc*]
 
   .. _beta_voc:
 
@@ -9,7 +9,7 @@
 
   .. _gamma_pmp:
 
-* **gamma_pmp** (*gamma_pdc*): Temperature coefficient of power at maximum power point, in W/C
+* **gamma_pmp**: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: *gamma_pdc*]
 
   .. _gamma_vmp:
 
@@ -25,7 +25,7 @@
 
   .. _photocurrent_ref:
 
-* **photocurrent_ref** (*I_L_ref*): The light-generated current (or photocurrent) at reference conditions, in amperes
+* **photocurrent_ref**: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: *I_L_ref*]
 
   .. _saturation_current:
 
@@ -33,7 +33,7 @@
 
   .. _saturation_current_ref:
 
-* **saturation_current_ref** (*I_o_ref*): The dark or diode reverse saturation current at reference conditions, in amperes
+* **saturation_current_ref**: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: *I_o_ref*]
 
   .. _resistance_series:
 
@@ -41,7 +41,7 @@
 
   .. _resistance_series_ref:
 
-* **resistance_series_ref** (*R_s*): Series resistance at reference conditions, in Ohms
+* **resistance_series_ref**: Series resistance at reference conditions, in Ohms [Deprecated/alternates: *R_s*]
 
   .. _resistance_shunt:
 
@@ -73,7 +73,7 @@
 
   .. _adjust_cec:
 
-* **adjust_cec** (*adjust*): CEC module parameter
+* **adjust_cec**: CEC module parameter [Deprecated/alternates: *adjust*]
 
   .. _area_module:
 
@@ -97,4 +97,4 @@
 
   .. _band_gap_temperature_coeff:
 
-* **band_gap_temperature_coeff** (*dEgdT*): The temperature dependence of the energy bandgap at reference conditions in units of 1/K.
+* **band_gap_temperature_coeff**: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: *dEgdT*]
