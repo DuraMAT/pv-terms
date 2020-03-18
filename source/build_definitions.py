@@ -117,7 +117,7 @@ if __name__ == "__main__":
         subset = grouper.get_group(category)
         terms = subset['Parameter']
         definitions = subset['Description']
-        alternates = subset['Deprecated and Non-standard Alternates']
+        alternates = subset['Deprecated']
         rst = generate_bullet_list(terms, definitions, alternates)
 
         filename = category.lower().replace(" ", "-") + ".rst"
