@@ -153,6 +153,7 @@
 <p>Terms are grouped by category.</p>
 <div class="section" id="abbreviations">
 <h2>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">¶</a></h2>
+<p>These abbreviations are used without expansion in the rest of the variables.</p>
 <blockquote>
 <div></div></blockquote>
 <ul class="simple" id="dc">
@@ -176,85 +177,167 @@
 <li id="aod"><strong>aod</strong>: aerosol optical depth</li>
 <li id="noct"><strong>noct</strong>: nominal operating cell temperature</li>
 <li id="stc"><strong>stc</strong>: standard test conditions</li>
+<li id="inv"><strong>inv</strong>: inverter</li>
+<li id="coeff"><strong>coeff</strong>: coefficient</li>
 </ul>
 </div>
-<div class="section" id="pv-system-information">
-<h2>PV system information<a class="headerlink" href="#pv-system-information" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="optional-suffixes">
+<h2>Optional Suffixes<a class="headerlink" href="#optional-suffixes" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="modules-per-string">
-<li><strong>modules_per_string</strong>: Number of modules in series in each string</li>
-<li id="num-strings"><strong>num_strings</strong>: Number of parallel strings in an array of modules</li>
-<li id="tracking"><strong>tracking</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</li>
-<li id="current-dc-inv-xx"><strong>current_dc_inv_XX</strong>: DC current for inverter XX, where XX is the name of the inverter.</li>
-<li id="voltage-dc-inv-xx"><strong>voltage_dc_inv_XX</strong>: DC voltage for inverter XX, where XX is the name of the inverter.</li>
-<li id="power-dc-inv-xx"><strong>power_dc_inv_XX</strong>: DC power for inverter XX, where XX is the name of the inverter.</li>
-<li id="irradiance-poa-o-xx"><strong>irradiance_poa_o_XX</strong>: Plane-of-array irradiance for sensor XX, in W/m^2.</li>
-<li id="temperature-module-o-xx"><strong>temperature_module_o_XX</strong>: Back of module temperature for sensor XX, in C</li>
-<li id="temperature-ambient-o-xx"><strong>temperature_ambient_o_XX</strong>: Ambient (dry bulb) temperature for sensor XX, in C</li>
-<li id="elevation"><strong>elevation</strong>: elevation of system, in meters</li>
-<li id="pressure"><strong>pressure</strong>: pressure, in pascal</li>
-<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong>: nan</li>
-<li id="zenith-apparent"><strong>zenith_apparent</strong>: nan</li>
-<li id="azimuth-apparent"><strong>azimuth_apparent</strong>: nan</li>
-<li id="surface-tilt"><strong>surface_tilt</strong>: nan</li>
-<li id="surface-azimuth"><strong>surface_azimuth</strong>: nan</li>
-<li id="zenith-solar"><strong>zenith_solar</strong>: nan</li>
-<li id="azimuth-solar"><strong>azimuth_solar</strong>: nan</li>
+<ul class="simple" id="sim">
+<li><strong>*_sim</strong>: Parameter predicted from a model, e.g. voc_sim</li>
+<li id="meas"><strong>*_meas</strong>: Parameter measured from field data, e.g. voc_meas</li>
+<li id="rated"><strong>*_rated</strong>: Parameter on the datasheet or as-built.</li>
 </ul>
 </div>
-<div class="section" id="pvlib-python">
-<h2>pvlib-python<a class="headerlink" href="#pvlib-python" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="location">
+<h2>Location<a class="headerlink" href="#location" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
 <blockquote>
 <div></div></blockquote>
 <ul class="simple" id="tz">
 <li><strong>tz</strong>: timezone</li>
 <li id="latitude"><strong>latitude</strong>: latitude, in degrees</li>
 <li id="longitude"><strong>longitude</strong>: longitude, in degrees</li>
-<li id="id1"><strong>dni</strong>: direct normal irradiance</li>
-<li id="dni-extra"><strong>dni_extra</strong>: direct normal irradiance at top of atmosphere (extraterrestrial)</li>
-<li id="id2"><strong>dhi</strong>: diffuse horizontal irradiance</li>
-<li id="id3"><strong>ghi</strong>: global horizontal irradiance</li>
-<li id="id4"><strong>aoi</strong>: angle of incidence between 90deg90deg and 90deg90deg, in degrees</li>
-<li id="aoi-projection"><strong>aoi_projection</strong>: cos(aoi)</li>
-<li id="airmass"><strong>airmass</strong>: airmass</li>
+<li id="elevation"><strong>elevation</strong>: elevation of system, in meters</li>
+<li id="pressure"><strong>pressure</strong>: pressure, in pascal</li>
+<li id="albedo"><strong>albedo</strong>: Ground reflectance, unitless. Typically 0.1-0.4 for surfaces on Earth (land), may increase over snow, ice, etc. May also be known as the reflection coefficient. Must be &gt;=0 and &lt;=1.</li>
+</ul>
+</div>
+<div class="section" id="atmosphere">
+<h2>Atmosphere<a class="headerlink" href="#atmosphere" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="airmass">
+<li><strong>airmass</strong>: airmass</li>
 <li id="airmass-relative"><strong>airmass_relative</strong>: relative airmass</li>
 <li id="airmass-absolute"><strong>airmass_absolute</strong>: absolute airmass</li>
-<li id="poa-ground-diffuse"><strong>poa_ground_diffuse</strong>: in plane ground reflected irradiation</li>
-<li id="poa-direct"><strong>poa_direct</strong>: direct/beam irradiation in plane</li>
-<li id="poa-diffuse"><strong>poa_diffuse</strong>: total diffuse irradiation in plane. sum of ground and sky diffuse.</li>
-<li id="poa-global"><strong>poa_global</strong>: global irradiation in plane. sum of diffuse and beam projection.</li>
-<li id="poa-sky-diffuse"><strong>poa_sky_diffuse</strong>: diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</li>
-<li id="effective-irradiance"><strong>effective_irradiance</strong>: irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum</li>
-<li id="g-poa-effective"><strong>g_poa_effective</strong>: broadband plane of array effective irradiance.</li>
-<li id="array-tilt"><strong>array_tilt</strong>: tilt angle of the surface, in degrees</li>
-<li id="array-azimuth"><strong>array_azimuth</strong>: azimuth angle of the surface, in degrees</li>
+<li id="dew-point"><strong>dew_point</strong>: dewpoint temperature, in C</li>
+<li id="relative-humidity"><strong>relative_humidity</strong>: Relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
+<li id="specific-humidity"><strong>specific_humidity</strong>:</li>
+<li id="absolute-humidity"><strong>absolute_humidity</strong>:</li>
+<li id="total-precipitable-water"><strong>total_precipitable_water</strong>:</li>
+<li id="wind-speed"><strong>wind_speed</strong>: Wind speed measured at standard 10 meter height, in m/s</li>
+<li id="wind-direction"><strong>wind_direction</strong>:</li>
+</ul>
+</div>
+<div class="section" id="solar-position">
+<h2>Solar Position<a class="headerlink" href="#solar-position" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="id1">
+<li><strong>aoi</strong>: angle of incidence between 90deg90deg and 90deg90deg, in degrees</li>
+<li id="aoi-projection"><strong>aoi_projection</strong>: cos(aoi)</li>
+<li id="apparent-solar-elevation"><strong>apparent_solar_elevation</strong>: refraction-corrected solar elevation angle in degrees</li>
+<li id="apparent-solar-zenith"><strong>apparent_solar_zenith</strong>: refraction-corrected solar zenith angle, in degrees</li>
+<li id="solar-azimuth"><strong>solar_azimuth</strong>: azimuth angle of the sun in degrees East of North</li>
 <li id="solar-elevation"><strong>solar_elevation</strong>: elevation angle of the sun in degrees</li>
 <li id="solar-zenith"><strong>solar_zenith</strong>: zenith angle of the sun in degrees</li>
-<li id="apparent-elevation"><strong>apparent_elevation</strong>: refraction-corrected solar elevation angle in degrees</li>
-<li id="apparent-zenith"><strong>apparent_zenith</strong>: refraction-corrected solar zenith angle, in degrees</li>
-<li id="solar-azimuth"><strong>solar_azimuth</strong>: azimuth angle of the sun in degrees East of North</li>
+<li id="surface-azimuth"><strong>surface_azimuth</strong>: Surface azimuth angles in decimal degrees. The azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270)</li>
+<li id="surface-tilt"><strong>surface_tilt</strong>: Surface tilt angles in decimal degrees. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)</li>
+</ul>
+</div>
+<div class="section" id="irradiance">
+<h2>Irradiance<a class="headerlink" href="#irradiance" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="id2">
+<li><strong>dhi</strong>: diffuse horizontal irradiance</li>
+<li id="id3"><strong>dni</strong>: direct normal irradiance</li>
+<li id="dni-extra"><strong>dni_extra</strong>: direct normal irradiance at top of atmosphere (extraterrestrial)</li>
+<li id="effective-irradiance"><strong>effective_irradiance</strong>: irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum</li>
+<li id="id4"><strong>ghi</strong>: global horizontal irradiance</li>
+<li id="poa-diffuse"><strong>poa_diffuse</strong>: total diffuse irradiation in plane. sum of ground and sky diffuse.</li>
+<li id="poa-direct"><strong>poa_direct</strong>: direct/beam irradiation in plane</li>
+<li id="poa-global"><strong>poa_global</strong>: global irradiation in plane. sum of diffuse and beam projection.</li>
+<li id="poa-ground-diffuse"><strong>poa_ground_diffuse</strong>: in plane ground reflected irradiation</li>
+<li id="poa-sky-diffuse"><strong>poa_sky_diffuse</strong>: diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</li>
+</ul>
+</div>
+<div class="section" id="pv-system">
+<h2>PV System<a class="headerlink" href="#pv-system" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="array-tilt">
+<li><strong>array_tilt</strong> (<em>surface_tilt</em>): tilt angle of the surface, in degrees</li>
+<li id="array-azimuth"><strong>array_azimuth</strong> (<em>surface_azimuth</em>): azimuth angle of the surface, in degrees</li>
 <li id="temperature-cell"><strong>temperature_cell</strong>: temperature of the cell, in C</li>
 <li id="temperature-module"><strong>temperature_module</strong>: temperature of the module, in C</li>
-<li id="temperature-air"><strong>temperature_air</strong>: temperature of the air</li>
-<li id="dew-point"><strong>dew_point</strong>: dewpoint temperature, in C</li>
-<li id="relative-humidity"><strong>relative_humidity</strong>: relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
-<li id="specific-humidity"><strong>specific_humidity</strong>: nan</li>
-<li id="absolute-humidity"><strong>absolute_humidity</strong>: nan</li>
-<li id="id5"><strong>vmp</strong>: voltage at the maximum power point in Volts</li>
-<li id="id6"><strong>imp</strong>: current at the maximum power point in Volts</li>
-<li id="id7"><strong>pmp</strong>: power at the maximum power point in Volts</li>
-<li id="id8"><strong>voc</strong>: open circuit module voltage</li>
-<li id="id9"><strong>isc</strong>: short circuit module current</li>
-<li id="current-x-current-xx"><strong>current_x, current_xx</strong>: Sandia Array Performance Model IV curve parameters</li>
-<li id="transposition-factor"><strong>transposition_factor</strong>: the gain ratio of the radiation on inclined plane to global horizontal irradiation: 𝑝𝑜𝑎_𝑔𝑙𝑜𝑏𝑎𝑙𝑔ℎ𝑖poa_globalghi</li>
-<li id="power-dc-rated"><strong>power_dc_rated</strong>: nameplate DC rating</li>
+<li id="temperature-air"><strong>temperature_air</strong>: ambient dry bulb temperature, in C</li>
+<li id="id5"><strong>vmp</strong> (<em>v_mp</em>): voltage at the maximum power point in Volts</li>
+<li id="id6"><strong>imp</strong> (<em>i_mp</em>): current at the maximum power point in Volts</li>
+<li id="id7"><strong>pmp</strong> (<em>p_mp</em>): power at the maximum power point in Volts</li>
+<li id="id8"><strong>voc</strong> (<em>v_oc, voltage_oc</em>): open circuit module voltage</li>
+<li id="id9"><strong>isc</strong> (<em>i_sc</em>): short circuit module current</li>
+<li id="current-x"><strong>current_x</strong> (<em>i_x</em>): Sandia Array Performance Model IV curve parameter</li>
+<li id="current-xx"><strong>current_xx</strong> (<em>i_xx</em>): Sandia Array Performance Model IV curve parameter</li>
+<li id="transposition-factor"><strong>transposition_factor</strong>: the gain ratio of the radiation on inclined plane to global horizontal irradiation: poa_global/ghi</li>
 <li id="power-dc"><strong>power_dc</strong>: dc power</li>
 <li id="power-ac"><strong>power_ac</strong>: ac power</li>
 <li id="efficiency-inverter"><strong>efficiency_inverter</strong>: inverter efficiency</li>
 <li id="efficiency-inverter-ref"><strong>efficiency_inverter_ref</strong>: reference inverter efficiency</li>
 <li id="efficiency-inverter-nominal"><strong>efficiency_inverter_nominal</strong>: nominal inverter efficiency</li>
-<li id="spectral-mismatch"><strong>spectral_mismatch</strong>: nan</li>
+<li id="spectral-mismatch"><strong>spectral_mismatch</strong>: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum, unitless.</li>
+</ul>
+</div>
+<div class="section" id="module-parameters">
+<h2>Module Parameters<a class="headerlink" href="#module-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="alpha-isc">
+<li><strong>alpha_isc</strong> (<em>alpha_sc</em>): The temperature coefficient of short-circuit current for a PV module, in A/C</li>
+<li id="beta-voc"><strong>beta_voc</strong>: Temperature coefficient of open-circuit voltage in V/C</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> (<em>gamma_pdc</em>): Temperature coefficient of power at maximum power point, in W/C</li>
+<li id="gamma-vmp"><strong>gamma_vmp</strong>: Temperature coefficient of voltage at maximum power point, in V/C</li>
+<li id="gamma-imp"><strong>gamma_imp</strong>: Temperature coefficient of voltage at maximum power point, in A/C</li>
+<li id="photocurrent"><strong>photocurrent</strong>: photocurrent</li>
+<li id="photocurrent-ref"><strong>photocurrent_ref</strong> (<em>I_L_ref</em>): The light-generated current (or photocurrent) at reference conditions, in amperes</li>
+<li id="saturation-current"><strong>saturation_current</strong>: diode saturation current, in amperes</li>
+<li id="saturation-current-ref"><strong>saturation_current_ref</strong> (<em>I_o_ref</em>): The dark or diode reverse saturation current at reference conditions, in amperes</li>
+<li id="resistance-series"><strong>resistance_series</strong>: series resistance, in Ohms</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> (<em>R_s</em>): Series resistance at reference conditions, in Ohms</li>
+<li id="resistance-shunt"><strong>resistance_shunt</strong>: shunt resistance, in Ohms</li>
+<li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong>: shunt resistance at reference conditions, in Ohms.</li>
+<li id="voltage-thermal"><strong>voltage_thermal</strong>: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>
+<li id="nnsvth-ref"><strong>nNsVth_ref</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions, in units of V.</li>
+<li id="nnsvth"><strong>nNsVth</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.</li>
+<li id="num-cells-in-series"><strong>num_cells_in_series</strong>: Number of cells in series in a PV module, unitless</li>
+<li id="diode-factor"><strong>diode_factor</strong>: diode ideality factor, unitless</li>
+<li id="adjust-cec"><strong>adjust_cec</strong> (<em>adjust</em>): CEC module parameter</li>
+<li id="area-module"><strong>area_module</strong>: module area</li>
+<li id="id10"><strong>noct</strong>: Nominal operating cell temperature.</li>
+<li id="band-gap-ref"><strong>band_gap_ref</strong>: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.</li>
+<li id="irradiance-ref"><strong>irradiance_ref</strong>: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.</li>
+<li id="temperature-ref"><strong>temperature_ref</strong>: Reference temperature in C. Typical value is 25 C</li>
+<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> (<em>dEgdT</em>): The temperature dependence of the energy bandgap at reference conditions in units of 1/K.</li>
+</ul>
+</div>
+<div class="section" id="pv-power-plant">
+<h2>PV Power Plant<a class="headerlink" href="#pv-power-plant" title="Permalink to this headline">¶</a></h2>
+<p>Lorem ipsum dolor sit amet</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="modules-per-string">
+<li><strong>modules_per_string</strong>: Number of modules in series in each string</li>
+<li id="parallel-strings"><strong>parallel_strings</strong>: Number of parallel strings in an array of modules</li>
+<li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</li>
+<li id="current-dc-inv-xx"><strong>current_dc_inv_XX</strong>: DC current for inverter XX, where XX is the name of the inverter.</li>
+<li id="voltage-dc-inv-xx"><strong>voltage_dc_inv_XX</strong>: DC voltage for inverter XX, where XX is the name of the inverter.</li>
+<li id="power-dc-inv-xx"><strong>power_dc_inv_XX</strong>: DC power for inverter XX, where XX is the name of the inverter.</li>
+<li id="current-ac-inv-xx"><strong>current_ac_inv_XX</strong>: root-mean-squared AC power for inverter XX, where XX is the name of the inverter, in amps</li>
+<li id="voltage-ac-inv-xx"><strong>voltage_ac_inv_XX</strong>: root-mean-squared AC voltage for inverter XX, where XX is the name of the inverter, in volts</li>
+<li id="power-ac-inv-xx"><strong>power_ac_inv_XX</strong>: root-mean-squared AC voltage for inverter XX, where XX is the name of the inverter, in watts</li>
+<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong>: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
+<li id="poa-xx"><strong>poa_XX</strong>: Plane-of-array irradiance for sensor XX, in W/m^2.</li>
+<li id="temperature-module-xx"><strong>temperature_module_XX</strong>: Back of module temperature for sensor XX, in C</li>
+<li id="temperature-ambient-xx"><strong>temperature_ambient_XX</strong>: Ambient (dry bulb) temperature for sensor XX, in C</li>
 </ul>
 </div>
 </div>

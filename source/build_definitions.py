@@ -1,6 +1,9 @@
-#!/usr/bin/python
+"""
+A preprocessing stage that generates RST lists from the definitions CSV file.
+"""
 
 import pandas as pd
+import os
 import datetime
 
 def generate_glossary(terms, definitions, category):
@@ -61,7 +64,7 @@ def generate_table(terms, definitions, headers, title):
     return "\n".join(lines)
 
 
-def generate_bullet_list(terms, definitions):
+def generate_bullet_list(terms, definitions, alternates):
     """
     Generate a chunk of RST with a list of bullets containing the
     supplied definitions.  Terms and definitions can include RST formatting
@@ -72,6 +75,7 @@ def generate_bullet_list(terms, definitions):
     ----------
     terms : list
     definitions : list
+    alternates : list
 
     Returns
     -------
@@ -79,31 +83,44 @@ def generate_bullet_list(terms, definitions):
         The RST glossary text
     """
     lines = []
-    for term, definition in zip(terms, definitions):
-        bullet = "\n  .. _{}:\n\n* **{}**: {}".format(term, term, definition)
-        lines.append(bullet)
+    for term, definition, alternate in zip(terms, definitions, alternates):
+        # it's a little tricky to get RST labels to not interfere with
+        # bulleted list formatting.  What works is to do it like this:
+
+        #   .. _dc:
+        #
+        # * **dc**: direct current
+        #
+        #   .. _ac:
+        #
+        # * **ac**: alternating current
+
+        alt = " (*{}*)".format(alternate) if alternate else ''
+
+        list_entry = (
+            "\n"
+            "  .. _{}:\n"  # label (invisible)
+            "\n"
+            "* **{}**{}: {}".format(term, term, alt, definition)
+        )
+        lines.append(list_entry)
     return "\n".join(lines)
 
 
 if __name__ == "__main__":
     df = pd.read_csv("../definitions.csv")
+    df = df.fillna('')
 
     grouper = df.groupby('Category')
 
-    table_texts = []
-
     for category in grouper.groups:
-        header = category + "\n" + "-" * len(category)
         subset = grouper.get_group(category)
         terms = subset['Parameter']
         definitions = subset['Description']
-        rst = generate_bullet_list(terms, definitions)
-        table_texts.append(header)
-        table_texts.append(rst)
+        alternates = subset['Deprecated and Non-standard Alternates']
+        rst = generate_bullet_list(terms, definitions, alternates)
 
-    rst = "\n\n".join(table_texts)
-
-    with open("definitions.rst", "w") as f:
-        timestamp = datetime.datetime.now().isoformat()
-        f.write(".. generated on " + timestamp + "\n\n")
-        f.write(rst)
+        filename = category.lower().replace(" ", "-") + ".rst"
+        filename = os.path.join('.', 'generated', filename)
+        with open(filename, "w") as f:
+            f.write(rst)

@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; pv-terms  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pv-terms
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">PV Modeling Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About pv-terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intersphinx.html">Using the Intersphinx mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to pv-terms</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pv-terms</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/module-parameters.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div></div></blockquote>
+<ul class="simple" id="alpha-isc">
+<li><strong>alpha_isc</strong> (<em>alpha_sc</em>): The temperature coefficient of short-circuit current for a PV module, in A/C</li>
+<li id="beta-voc"><strong>beta_voc</strong>: Temperature coefficient of open-circuit voltage in V/C</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> (<em>gamma_pdc</em>): Temperature coefficient of power at maximum power point, in W/C</li>
+<li id="gamma-vmp"><strong>gamma_vmp</strong>: Temperature coefficient of voltage at maximum power point, in V/C</li>
+<li id="gamma-imp"><strong>gamma_imp</strong>: Temperature coefficient of voltage at maximum power point, in A/C</li>
+<li id="photocurrent"><strong>photocurrent</strong>: photocurrent</li>
+<li id="photocurrent-ref"><strong>photocurrent_ref</strong> (<em>I_L_ref</em>): The light-generated current (or photocurrent) at reference conditions, in amperes</li>
+<li id="saturation-current"><strong>saturation_current</strong>: diode saturation current, in amperes</li>
+<li id="saturation-current-ref"><strong>saturation_current_ref</strong> (<em>I_o_ref</em>): The dark or diode reverse saturation current at reference conditions, in amperes</li>
+<li id="resistance-series"><strong>resistance_series</strong>: series resistance, in Ohms</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> (<em>R_s</em>): Series resistance at reference conditions, in Ohms</li>
+<li id="resistance-shunt"><strong>resistance_shunt</strong>: shunt resistance, in Ohms</li>
+<li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong>: shunt resistance at reference conditions, in Ohms.</li>
+<li id="voltage-thermal"><strong>voltage_thermal</strong>: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>
+<li id="nnsvth-ref"><strong>nNsVth_ref</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions, in units of V.</li>
+<li id="nnsvth"><strong>nNsVth</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.</li>
+<li id="num-cells-in-series"><strong>num_cells_in_series</strong>: Number of cells in series in a PV module, unitless</li>
+<li id="diode-factor"><strong>diode_factor</strong>: diode ideality factor, unitless</li>
+<li id="adjust-cec"><strong>adjust_cec</strong> (<em>adjust</em>): CEC module parameter</li>
+<li id="area-module"><strong>area_module</strong>: module area</li>
+<li id="noct"><strong>noct</strong>: Nominal operating cell temperature.</li>
+<li id="band-gap-ref"><strong>band_gap_ref</strong>: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.</li>
+<li id="irradiance-ref"><strong>irradiance_ref</strong>: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.</li>
+<li id="temperature-ref"><strong>temperature_ref</strong>: Reference temperature in C. Typical value is 25 C</li>
+<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> (<em>dEgdT</em>): The temperature dependence of the energy bandgap at reference conditions in units of 1/K.</li>
+</ul>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, pv-terms authors
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
