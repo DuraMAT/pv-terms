@@ -14,7 +14,7 @@ These abbreviations are used without expansion in the rest of the variables.
 Optional Suffixes
 -----------------
 
-Lorem ipsum dolor sit amet
+These optional suffixes can be appended to a variable in order to further clarify which quantity the variable refers to. In the following * refers to another variable. 
 
 .. include:: generated/optional-suffixes.rst
 
@@ -22,7 +22,7 @@ Lorem ipsum dolor sit amet
 Location
 --------
 
-Lorem ipsum dolor sit amet
+These variables are associated with the location of the PV system.
 
 .. include:: generated/location.rst
 
@@ -30,7 +30,7 @@ Lorem ipsum dolor sit amet
 Atmosphere
 ----------
 
-Lorem ipsum dolor sit amet
+Atmosphere variables are related to weather conditions.
 
 .. include:: generated/atmosphere.rst
 
@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet
 Solar Position
 --------------
 
-Lorem ipsum dolor sit amet
+These variables are related to the position of sun and the incidence angles with the PV array.
 
 .. include:: generated/solar-position.rst
 
@@ -46,7 +46,7 @@ Lorem ipsum dolor sit amet
 Irradiance
 ----------
 
-Lorem ipsum dolor sit amet
+These variables denote irradiance in units of W/m^2. 
 
 .. include:: generated/irradiance.rst
 
@@ -54,7 +54,7 @@ Lorem ipsum dolor sit amet
 PV System
 ---------
 
-Lorem ipsum dolor sit amet
+These variables are related to the operating current, voltage and power of PV cells, modules or arrays. 
 
 .. include:: generated/pv-system.rst
 
@@ -62,7 +62,7 @@ Lorem ipsum dolor sit amet
 Module Parameters
 -----------------
 
-Lorem ipsum dolor sit amet
+Module parameters are primarily used to describe the electrical characteristic of a PV module.
 
 .. include:: generated/module-parameters.rst
 
@@ -70,7 +70,7 @@ Lorem ipsum dolor sit amet
 PV Power Plant
 --------------
 
-Lorem ipsum dolor sit amet
+These variables demonstrate a naming scheme to for PV power plant data.
 
 .. include:: generated/pv-power-plant.rst
 
