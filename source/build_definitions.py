@@ -95,13 +95,13 @@ def generate_bullet_list(terms, definitions, alternates):
         #
         # * **ac**: alternating current
 
-        alt = " (*{}*)".format(alternate) if alternate else ''
+        alt = " [Deprecated/alternates: *{}*]".format(alternate) if alternate else ''
 
         list_entry = (
             "\n"
             "  .. _{}:\n"  # label (invisible)
             "\n"
-            "* **{}**{}: {}".format(term, term, alt, definition)
+            "* **{}**: {}{}".format(term, term, definition, alt)
         )
         lines.append(list_entry)
     return "\n".join(lines)
