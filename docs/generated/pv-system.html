@@ -157,20 +157,14 @@
 <li id="temperature-cell"><strong>temperature_cell</strong>: temperature of the cell, in C</li>
 <li id="temperature-module"><strong>temperature_module</strong>: temperature of the module, in C</li>
 <li id="temperature-air"><strong>temperature_air</strong>: ambient dry bulb temperature, in C</li>
-<li id="vmp"><strong>vmp</strong>: voltage at the maximum power point in Volts [Deprecated/alternates: <em>v_mp</em>]</li>
-<li id="imp"><strong>imp</strong>: current at the maximum power point in Volts [Deprecated/alternates: <em>i_mp</em>]</li>
-<li id="pmp"><strong>pmp</strong>: power at the maximum power point in Volts [Deprecated/alternates: <em>p_mp</em>]</li>
-<li id="voc"><strong>voc</strong>: open circuit module voltage [Deprecated/alternates: <em>v_oc, voltage_oc</em>]</li>
-<li id="isc"><strong>isc</strong>: short circuit module current [Deprecated/alternates: <em>i_sc</em>]</li>
-<li id="current-x"><strong>current_x</strong>: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_x</em>]</li>
-<li id="current-xx"><strong>current_xx</strong>: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_xx</em>]</li>
-<li id="transposition-factor"><strong>transposition_factor</strong>: the gain ratio of the radiation on inclined plane to global horizontal irradiation: poa_global/ghi</li>
-<li id="power-dc"><strong>power_dc</strong>: dc power</li>
-<li id="power-ac"><strong>power_ac</strong>: ac power</li>
 <li id="efficiency-inverter"><strong>efficiency_inverter</strong>: inverter efficiency</li>
 <li id="efficiency-inverter-ref"><strong>efficiency_inverter_ref</strong>: reference inverter efficiency</li>
 <li id="efficiency-inverter-nominal"><strong>efficiency_inverter_nominal</strong>: nominal inverter efficiency</li>
 <li id="spectral-mismatch"><strong>spectral_mismatch</strong>: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum, unitless.</li>
+<li id="modules-per-string"><strong>modules_per_string</strong>: Number of modules in series in each string</li>
+<li id="parallel-strings"><strong>parallel_strings</strong>: Number of parallel strings in an array of modules</li>
+<li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</li>
+<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong>: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
 </ul>
 
 

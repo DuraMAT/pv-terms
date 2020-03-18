@@ -1,4 +1,8 @@
 
+  .. _pmp_ref:
+
+* **pmp_ref**: Power at maximum power and reference conditions for a PV cell, module or array, in W.
+
   .. _alpha_isc:
 
 * **alpha_isc**: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: *alpha_sc*]
