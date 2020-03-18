@@ -14,7 +14,7 @@ These abbreviations are used without expansion in the rest of the variables.
 Optional Suffixes
 -----------------
 
-These optional suffixes can be appended to a variable in order to further clarify which quantity the variable refers to. In the following '*' refers to another variable. 
+These optional suffixes can be appended to a variable in order to further clarify which quantity the variable refers to. In the following * refers to another variable. 
 
 .. include:: generated/optional-suffixes.rst
 
