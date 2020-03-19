@@ -1,5 +1,5 @@
 # pv-terms
-Standard variable names for PV modeling.  See http://hackingmaterials.lbl.gov/pv-terms/
+Standard variable names for PV modeling. Formatted documentation available at http://duramat.github.io/pv-terms/
 
 ## Building the documentation
 
