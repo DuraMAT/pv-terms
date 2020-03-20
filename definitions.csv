@@ -76,14 +76,14 @@ Location,elevation,,"elevation of system, in meters",
 Location,pressure,,"pressure, in pascal",
 Location,albedo,,"Ground reflectance, unitless. Typically 0.1-0.4 for surfaces on Earth (land), may increase over snow, ice, etc. May also be known as the reflection coefficient. Must be >=0 and <=1.",
 Module Parameters,pmp_ref,,"Power at maximum power and reference conditions for a PV cell, module or array, in W.",
-Module Parameters,alpha_isc,,"The temperature coefficient of short-circuit current for a PV module, in A/C",alpha_sc
-Module Parameters,beta_voc,,Temperature coefficient of open-circuit voltage in V/C,
-Module Parameters,gamma_pmp,,"Temperature coefficient of power at maximum power point, in W/C",gamma_pdc
+Module Parameters,alpha_isc,A/C,The temperature coefficient of short-circuit current for a PV module.,alpha_sc
+Module Parameters,beta_voc,V/C,Temperature coefficient of open-circuit voltage.,
+Module Parameters,gamma_pmp,W/C,"Temperature coefficient of power at maximum power point, in W/C",gamma_pdc
 Module Parameters,gamma_vmp,,"Temperature coefficient of voltage at maximum power point, in V/C",
 Module Parameters,gamma_imp,,"Temperature coefficient of voltage at maximum power point, in A/C",
 Module Parameters,photocurrent,,photocurrent,
-Module Parameters,photocurrent_ref,,"The light-generated current (or photocurrent) at reference conditions, in amperes",I_L_ref
-Module Parameters,saturation_current,,"diode saturation current, in amperes",
+Module Parameters,photocurrent_ref,,The dark or diode reverse saturation current at reference conditions at reference conditions.,I_L_ref
+Module Parameters,saturation_current,A,The dark or diode reverse saturation current at reference conditions.,
 Module Parameters,saturation_current_ref,,"The dark or diode reverse saturation current at reference conditions, in amperes",I_o_ref
 Module Parameters,resistance_series,,"series resistance, in Ohms",
 Module Parameters,resistance_series_ref,,"Series resistance at reference conditions, in Ohms",R_s
@@ -94,7 +94,7 @@ Module Parameters,nNsVth_ref,,"The product of the usual diode ideality factor (n
 Module Parameters,nNsVth,,"The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.",
 Module Parameters,num_cells_in_series,,"Number of cells in series in a PV module, unitless",
 Module Parameters,diode_factor,,"diode ideality factor, unitless",
-Module Parameters,adjust_cec,,CEC module parameter,adjust
+Module Parameters,adjust_cec,%,"Parameter for the CEC module performance model, adjustment applied to temperature coefficients in %.",adjust
 Module Parameters,area_module,,module area,
 Module Parameters,noct,,Nominal operating cell temperature.,
 Module Parameters,band_gap_ref,,"Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.",
