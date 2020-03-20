@@ -3,6 +3,7 @@ PV Modeling Glossary
 
 This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category.
 
+.. include:: generated/version.rst
 
 Abbreviations
 -------------
