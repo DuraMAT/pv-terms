@@ -78,9 +78,9 @@ Location,albedo,dimensionless,"Ground reflectance, unitless. Typically 0.1-0.4 f
 Module Parameters,pmp_ref,W,Power at maximum power of the array at reference conditions.,
 Module Parameters,alpha_isc,A/C,The temperature coefficient of short-circuit current for a PV module.,alpha_sc
 Module Parameters,beta_voc,V/C,Temperature coefficient of open-circuit voltage.,
-Module Parameters,gamma_pmp,W/C,"Temperature coefficient of power at maximum power point, in W/C",gamma_pdc
-Module Parameters,gamma_vmp,V/C,"Temperature coefficient of voltage at maximum power point, in V/C",
-Module Parameters,gamma_imp,A/C,"Temperature coefficient of voltage at maximum power point, in A/C",
+Module Parameters,gamma_pmp,W/C,Temperature coefficient of power at maximum power point.,gamma_pdc
+Module Parameters,beta_vmp,V/C,Temperature coefficient of voltage at maximum power point.,
+Module Parameters,alpha_imp,A/C,Temperature coefficient of voltage at maximum power point.,
 Module Parameters,photocurrent,A,Photocurrent.,
 Module Parameters,photocurrent_ref,A,Photocurrent at reference conditions.,I_L_ref
 Module Parameters,saturation_current,A,The dark or diode reverse saturation current at reference conditions.,
