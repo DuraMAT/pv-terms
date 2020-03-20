@@ -1,4 +1,6 @@
-﻿Category,Parameter,Description,Deprecated
+﻿Project,Organization,github,Version
+pv-terms,DuraMAT,https://github.com/DuraMAT/pv-terms,0.1.0
+Category,Parameter,Description,Deprecated
 Abbreviations,ac,alternating current,
 Abbreviations,aod,aerosol optical depth,
 Abbreviations,aoi,angle of incidence,

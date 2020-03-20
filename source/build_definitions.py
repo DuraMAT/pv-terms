@@ -108,10 +108,20 @@ def generate_bullet_list(terms, definitions, alternates):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("../definitions.csv")
+    info = pd.read_csv("../definitions.csv",
+        nrows=1)
+    version = info.loc[0,'Version']
+
+
+    df = pd.read_csv("../definitions.csv",
+        skiprows=[0,1])
     df = df.fillna('')
 
     grouper = df.groupby('Category')
+
+    filename = os.path.join('.', 'generated', 'version.rst')
+    with open(filename,"w") as f:
+        f.write('Version: {}'.format(version))
 
     for category in grouper.groups:
         subset = grouper.get_group(category)
