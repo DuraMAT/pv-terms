@@ -1,4 +1,4 @@
-﻿Project,Organization,github,Version,
+Project,Organization,github,Version,
 pv-terms,DuraMAT,https://github.com/DuraMAT/pv-terms,0.0.1,
 Category,Parameter,Dimensions,Description,Deprecated
 Abbreviations,ac,,alternating current,
@@ -129,3 +129,4 @@ Solar Position,solar_elevation,,elevation angle of the sun in degrees,
 Solar Position,solar_zenith,,zenith angle of the sun in degrees,
 Solar Position,surface_azimuth,,"Surface azimuth angles in decimal degrees. The azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270)",
 Solar Position,surface_tilt,,"Surface tilt angles in decimal degrees. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)",
+
