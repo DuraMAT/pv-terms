@@ -150,7 +150,8 @@
             
   <div class="section" id="pv-modeling-glossary">
 <h1>PV Modeling Glossary<a class="headerlink" href="#pv-modeling-glossary" title="Permalink to this headline">¶</a></h1>
-<p>Terms are grouped by category.</p>
+<p>This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category.</p>
+<p>Version: 0.0.1</p>
 <div class="section" id="abbreviations">
 <h2>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">¶</a></h2>
 <p>These abbreviations are used without expansion in the rest of the variables.</p>
@@ -222,9 +223,9 @@
 <li id="airmass-relative"><strong>airmass_relative</strong>: relative airmass</li>
 <li id="airmass-absolute"><strong>airmass_absolute</strong>: absolute airmass</li>
 <li id="dew-point"><strong>dew_point</strong>: dewpoint temperature, in celsius.</li>
-<li id="relative-humidity"><strong>relative_humidity</strong>: Relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
-<li id="specific-humidity"><strong>specific_humidity</strong>:</li>
-<li id="absolute-humidity"><strong>absolute_humidity</strong>:</li>
+<li id="relative-humidity"><strong>relative_humidity</strong>: The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
+<li id="specific-humidity"><strong>specific_humidity</strong>: The ratio of the mass of water vapor to the total mass of moist air.</li>
+<li id="absolute-humidity"><strong>absolute_humidity</strong>: Mass of water vapor per volume of air.</li>
 <li id="total-precipitable-water"><strong>total_precipitable_water</strong>:</li>
 <li id="wind-speed"><strong>wind_speed</strong>: Wind speed measured at standard 10 meter height, in m/s</li>
 <li id="wind-direction"><strong>wind_direction</strong>:</li>
@@ -253,13 +254,13 @@
 <blockquote>
 <div></div></blockquote>
 <ul class="simple" id="id2">
-<li><strong>vmp</strong>: voltage at the maximum power point in Volts [Deprecated/alternates: <em>v_mp</em>]</li>
-<li id="id3"><strong>imp</strong>: current at the maximum power point in Volts [Deprecated/alternates: <em>i_mp</em>]</li>
-<li id="id4"><strong>pmp</strong>: power at the maximum power point in Volts [Deprecated/alternates: <em>p_mp</em>]</li>
-<li id="id5"><strong>voc</strong>: open circuit module voltage [Deprecated/alternates: <em>v_oc, voltage_oc</em>]</li>
-<li id="id6"><strong>isc</strong>: short circuit module current [Deprecated/alternates: <em>i_sc</em>]</li>
-<li id="current-x"><strong>current_x</strong>: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_x</em>]</li>
-<li id="current-xx"><strong>current_xx</strong>: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_xx</em>]</li>
+<li><strong>vmp</strong> [V]: voltage at the maximum power point in Volts [Deprecated/alternates: <em>v_mp</em>]</li>
+<li id="id3"><strong>imp</strong> [A]: current at the maximum power point in Volts [Deprecated/alternates: <em>i_mp</em>]</li>
+<li id="id4"><strong>pmp</strong> [W]: power at the maximum power point in Volts [Deprecated/alternates: <em>p_mp</em>]</li>
+<li id="id5"><strong>voc</strong> [V]: open circuit module voltage [Deprecated/alternates: <em>v_oc, voltage_oc</em>]</li>
+<li id="id6"><strong>isc</strong> [A]: short circuit module current [Deprecated/alternates: <em>i_sc</em>]</li>
+<li id="current-x"><strong>current_x</strong> [A]: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_x</em>]</li>
+<li id="current-xx"><strong>current_xx</strong> [A]: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_xx</em>]</li>
 <li id="power-dc"><strong>power_dc</strong>: dc power</li>
 </ul>
 </div>
@@ -318,8 +319,8 @@
 <blockquote>
 <div></div></blockquote>
 <ul class="simple" id="array-tilt">
-<li><strong>array_tilt</strong>: tilt angle of the surface, in degrees [Deprecated/alternates: <em>surface_tilt</em>]</li>
-<li id="array-azimuth"><strong>array_azimuth</strong>: azimuth angle of the surface, in degrees [Deprecated/alternates: <em>surface_azimuth</em>]</li>
+<li><strong>array_tilt</strong> []: tilt angle of the surface, in degrees [Deprecated/alternates: <em>surface_tilt</em>]</li>
+<li id="array-azimuth"><strong>array_azimuth</strong> []: azimuth angle of the surface, in degrees [Deprecated/alternates: <em>surface_azimuth</em>]</li>
 <li id="temperature-cell"><strong>temperature_cell</strong>: temperature of the cell, in C</li>
 <li id="temperature-module"><strong>temperature_module</strong>: temperature of the module, in C</li>
 <li id="temperature-air"><strong>temperature_air</strong>: ambient dry bulb temperature, in C</li>
@@ -340,17 +341,17 @@
 <div></div></blockquote>
 <ul class="simple" id="pmp-ref">
 <li><strong>pmp_ref</strong>: Power at maximum power and reference conditions for a PV cell, module or array, in W.</li>
-<li id="alpha-isc"><strong>alpha_isc</strong>: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: <em>alpha_sc</em>]</li>
+<li id="alpha-isc"><strong>alpha_isc</strong> []: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: <em>alpha_sc</em>]</li>
 <li id="beta-voc"><strong>beta_voc</strong>: Temperature coefficient of open-circuit voltage in V/C</li>
-<li id="gamma-pmp"><strong>gamma_pmp</strong>: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: <em>gamma_pdc</em>]</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> []: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: <em>gamma_pdc</em>]</li>
 <li id="gamma-vmp"><strong>gamma_vmp</strong>: Temperature coefficient of voltage at maximum power point, in V/C</li>
 <li id="gamma-imp"><strong>gamma_imp</strong>: Temperature coefficient of voltage at maximum power point, in A/C</li>
 <li id="photocurrent"><strong>photocurrent</strong>: photocurrent</li>
-<li id="photocurrent-ref"><strong>photocurrent_ref</strong>: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: <em>I_L_ref</em>]</li>
+<li id="photocurrent-ref"><strong>photocurrent_ref</strong> []: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: <em>I_L_ref</em>]</li>
 <li id="saturation-current"><strong>saturation_current</strong>: diode saturation current, in amperes</li>
-<li id="saturation-current-ref"><strong>saturation_current_ref</strong>: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: <em>I_o_ref</em>]</li>
+<li id="saturation-current-ref"><strong>saturation_current_ref</strong> []: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: <em>I_o_ref</em>]</li>
 <li id="resistance-series"><strong>resistance_series</strong>: series resistance, in Ohms</li>
-<li id="resistance-series-ref"><strong>resistance_series_ref</strong>: Series resistance at reference conditions, in Ohms [Deprecated/alternates: <em>R_s</em>]</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> []: Series resistance at reference conditions, in Ohms [Deprecated/alternates: <em>R_s</em>]</li>
 <li id="resistance-shunt"><strong>resistance_shunt</strong>: shunt resistance, in Ohms</li>
 <li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong>: shunt resistance at reference conditions, in Ohms.</li>
 <li id="voltage-thermal"><strong>voltage_thermal</strong>: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>
@@ -358,13 +359,13 @@
 <li id="nnsvth"><strong>nNsVth</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.</li>
 <li id="num-cells-in-series"><strong>num_cells_in_series</strong>: Number of cells in series in a PV module, unitless</li>
 <li id="diode-factor"><strong>diode_factor</strong>: diode ideality factor, unitless</li>
-<li id="adjust-cec"><strong>adjust_cec</strong>: CEC module parameter [Deprecated/alternates: <em>adjust</em>]</li>
+<li id="adjust-cec"><strong>adjust_cec</strong> []: CEC module parameter [Deprecated/alternates: <em>adjust</em>]</li>
 <li id="area-module"><strong>area_module</strong>: module area</li>
 <li id="id10"><strong>noct</strong>: Nominal operating cell temperature.</li>
 <li id="band-gap-ref"><strong>band_gap_ref</strong>: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.</li>
 <li id="irradiance-ref"><strong>irradiance_ref</strong>: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.</li>
 <li id="temperature-ref"><strong>temperature_ref</strong>: Reference temperature in C. Typical value is 25 C</li>
-<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong>: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
+<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> []: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
 </ul>
 </div>
 </div>

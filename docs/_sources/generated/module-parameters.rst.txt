@@ -5,7 +5,7 @@
 
   .. _alpha_isc:
 
-* **alpha_isc**: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: *alpha_sc*]
+* **alpha_isc** []: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: *alpha_sc*]
 
   .. _beta_voc:
 
@@ -13,7 +13,7 @@
 
   .. _gamma_pmp:
 
-* **gamma_pmp**: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: *gamma_pdc*]
+* **gamma_pmp** []: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: *gamma_pdc*]
 
   .. _gamma_vmp:
 
@@ -29,7 +29,7 @@
 
   .. _photocurrent_ref:
 
-* **photocurrent_ref**: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: *I_L_ref*]
+* **photocurrent_ref** []: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: *I_L_ref*]
 
   .. _saturation_current:
 
@@ -37,7 +37,7 @@
 
   .. _saturation_current_ref:
 
-* **saturation_current_ref**: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: *I_o_ref*]
+* **saturation_current_ref** []: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: *I_o_ref*]
 
   .. _resistance_series:
 
@@ -45,7 +45,7 @@
 
   .. _resistance_series_ref:
 
-* **resistance_series_ref**: Series resistance at reference conditions, in Ohms [Deprecated/alternates: *R_s*]
+* **resistance_series_ref** []: Series resistance at reference conditions, in Ohms [Deprecated/alternates: *R_s*]
 
   .. _resistance_shunt:
 
@@ -77,7 +77,7 @@
 
   .. _adjust_cec:
 
-* **adjust_cec**: CEC module parameter [Deprecated/alternates: *adjust*]
+* **adjust_cec** []: CEC module parameter [Deprecated/alternates: *adjust*]
 
   .. _area_module:
 
@@ -101,4 +101,4 @@
 
   .. _band_gap_temperature_coeff:
 
-* **band_gap_temperature_coeff**: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: *dEgdT*]
+* **band_gap_temperature_coeff** []: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: *dEgdT*]

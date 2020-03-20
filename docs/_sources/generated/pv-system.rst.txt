@@ -1,11 +1,11 @@
 
   .. _array_tilt:
 
-* **array_tilt**: tilt angle of the surface, in degrees [Deprecated/alternates: *surface_tilt*]
+* **array_tilt** []: tilt angle of the surface, in degrees [Deprecated/alternates: *surface_tilt*]
 
   .. _array_azimuth:
 
-* **array_azimuth**: azimuth angle of the surface, in degrees [Deprecated/alternates: *surface_azimuth*]
+* **array_azimuth** []: azimuth angle of the surface, in degrees [Deprecated/alternates: *surface_azimuth*]
 
   .. _temperature_cell:
 

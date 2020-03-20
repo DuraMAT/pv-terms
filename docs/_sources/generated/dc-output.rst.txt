@@ -1,31 +1,31 @@
 
   .. _vmp:
 
-* **vmp**: voltage at the maximum power point in Volts [Deprecated/alternates: *v_mp*]
+* **vmp** [V]: voltage at the maximum power point in Volts [Deprecated/alternates: *v_mp*]
 
   .. _imp:
 
-* **imp**: current at the maximum power point in Volts [Deprecated/alternates: *i_mp*]
+* **imp** [A]: current at the maximum power point in Volts [Deprecated/alternates: *i_mp*]
 
   .. _pmp:
 
-* **pmp**: power at the maximum power point in Volts [Deprecated/alternates: *p_mp*]
+* **pmp** [W]: power at the maximum power point in Volts [Deprecated/alternates: *p_mp*]
 
   .. _voc:
 
-* **voc**: open circuit module voltage [Deprecated/alternates: *v_oc, voltage_oc*]
+* **voc** [V]: open circuit module voltage [Deprecated/alternates: *v_oc, voltage_oc*]
 
   .. _isc:
 
-* **isc**: short circuit module current [Deprecated/alternates: *i_sc*]
+* **isc** [A]: short circuit module current [Deprecated/alternates: *i_sc*]
 
   .. _current_x:
 
-* **current_x**: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: *i_x*]
+* **current_x** [A]: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: *i_x*]
 
   .. _current_xx:
 
-* **current_xx**: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: *i_xx*]
+* **current_xx** [A]: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: *i_xx*]
 
   .. _power_dc:
 
