@@ -95,7 +95,7 @@ def generate_bullet_list(terms, definitions, dimensions, alternates):
         #
         # * **ac**: alternating current
 
-        dim = " [{}]".format(dimension) if alternate else ''
+        dim = " [{}]".format(dimension) if dimension else ''
         alt = " [Deprecated/alternates: *{}*]".format(alternate) if alternate else ''
 
         list_entry = (
@@ -113,6 +113,9 @@ if __name__ == "__main__":
         nrows=1)
     version = info.loc[0,'Version']
 
+    filename = os.path.join('.', 'generated', 'version.rst')
+    with open(filename,"w") as f:
+        f.write('Version: {}'.format(version))
 
     df = pd.read_csv("../definitions.csv",
         skiprows=[0,1])
@@ -120,16 +123,14 @@ if __name__ == "__main__":
 
     grouper = df.groupby('Category')
 
-    filename = os.path.join('.', 'generated', 'version.rst')
-    with open(filename,"w") as f:
-        f.write('Version: {}'.format(version))
-
     for category in grouper.groups:
+
         subset = grouper.get_group(category)
         terms = subset['Parameter']
         definitions = subset['Description']
         alternates = subset['Deprecated']
         dimensions = subset['Dimensions']
+
         rst = generate_bullet_list(terms, definitions, dimensions, alternates)
 
         filename = category.lower().replace(" ", "-") + ".rst"
