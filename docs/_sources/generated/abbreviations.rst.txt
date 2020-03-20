@@ -55,6 +55,10 @@
 
 * **mp**: maximum power
 
+  .. _mpp:
+
+* **mpp**: maximum power point
+
   .. _mppt:
 
 * **mppt**: maximum power point tracking

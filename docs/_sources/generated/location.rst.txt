@@ -5,15 +5,15 @@
 
   .. _latitude:
 
-* **latitude** [degrees]: Latitude.
+* **latitude** [degrees]: Latitude between -90 and 90 degrees. Positive north of the equator.
 
   .. _longitude:
 
-* **longitude** [degrees]: Longitude.
+* **longitude** [degrees]: Longitude between -180 to 180 degrees. Positive east of the meridian. 
 
   .. _elevation:
 
-* **elevation** [m]: Elevation of system.
+* **elevation** [m]: Elevation of system above sea level.
 
   .. _pressure:
 
@@ -21,4 +21,4 @@
 
   .. _albedo:
 
-* **albedo** [dimensionless]: Ground reflectance, unitless. Typically 0.1-0.4 for surfaces on Earth (land), may increase over snow, ice, etc. May also be known as the reflection coefficient. Must be >=0 and <=1.
+* **albedo** [dimensionless]: Ground reflectance between 0 and 1.

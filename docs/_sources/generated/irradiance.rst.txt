@@ -38,7 +38,3 @@
   .. _poa_sky_diffuse:
 
 * **poa_sky_diffuse** [W/m^2]: Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)
-
-  .. _transposition_factor:
-
-* **transposition_factor** [dimensionless]: the gain ratio of the radiation on inclined plane to global horizontal irradiation: poa_global/ghi
