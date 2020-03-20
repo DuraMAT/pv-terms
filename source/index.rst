@@ -1,7 +1,8 @@
 PV Modeling Glossary
 ====================
 
-Terms are grouped by category.
+This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category.
+
 
 Abbreviations
 -------------
