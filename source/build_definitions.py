@@ -64,7 +64,7 @@ def generate_table(terms, definitions, headers, title):
     return "\n".join(lines)
 
 
-def generate_bullet_list(terms, definitions, alternates):
+def generate_bullet_list(terms, definitions, dimensions, alternates):
     """
     Generate a chunk of RST with a list of bullets containing the
     supplied definitions.  Terms and definitions can include RST formatting
@@ -83,7 +83,7 @@ def generate_bullet_list(terms, definitions, alternates):
         The RST glossary text
     """
     lines = []
-    for term, definition, alternate in zip(terms, definitions, alternates):
+    for term, definition, dimension, alternate in zip(terms, definitions, dimensions, alternates):
         # it's a little tricky to get RST labels to not interfere with
         # bulleted list formatting.  What works is to do it like this:
 
@@ -95,13 +95,14 @@ def generate_bullet_list(terms, definitions, alternates):
         #
         # * **ac**: alternating current
 
+        dim = " [{}]".format(dimension) if alternate else ''
         alt = " [Deprecated/alternates: *{}*]".format(alternate) if alternate else ''
 
         list_entry = (
             "\n"
             "  .. _{}:\n"  # label (invisible)
             "\n"
-            "* **{}**: {}{}".format(term, term, definition, alt)
+            "* **{}**{}: {}{}".format(term, term, dim, definition, alt)
         )
         lines.append(list_entry)
     return "\n".join(lines)
@@ -128,7 +129,8 @@ if __name__ == "__main__":
         terms = subset['Parameter']
         definitions = subset['Description']
         alternates = subset['Deprecated']
-        rst = generate_bullet_list(terms, definitions, alternates)
+        dimensions = subset['Dimensions']
+        rst = generate_bullet_list(terms, definitions, dimensions, alternates)
 
         filename = category.lower().replace(" ", "-") + ".rst"
         filename = os.path.join('.', 'generated', filename)
