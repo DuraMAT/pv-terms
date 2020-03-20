@@ -1,0 +1,52 @@
+
+  .. _max_inv_ac_current:
+
+* **max_inv_ac_current**: Maximum inverter AC output current, in amps. 
+
+  .. _max_inv_ac_power:
+
+* **max_inv_ac_power**: Maximum inverter AC output power, in watts.
+
+  .. _max_inv_ac_voltage:
+
+* **max_inv_ac_voltage**: Maximum inverter AC output voltage, in volts.
+
+  .. _max_inv_dc_current:
+
+* **max_inv_dc_current**: Maximum inverter DC input current, in amps.
+
+  .. _max_inv_dc_voltage:
+
+* **max_inv_dc_voltage**: Maximum inverter dc input voltage, in volts.
+
+  .. _max_total_harmonic_distortion:
+
+* **max_total_harmonic_distortion**: Maximum total harmonic distortion of inverter AC output, dimensionless.
+
+  .. _min_inv_ac_voltage:
+
+* **min_inv_ac_voltage**: Minimum inverter AC ouptut voltage, in volts
+
+  .. _min_inv_start_voltage:
+
+* **min_inv_start_voltage**: Minimum inverter input DC voltage to start operation, also called the inverter start voltage, in volts.
+
+  .. _min_mppt_voltage:
+
+* **min_mppt_voltage**: Minimum inverter input DC voltage to engage maximum power point tracking, in volts.
+
+  .. _nominal_inv_ac_voltage:
+
+* **nominal_inv_ac_voltage**: Nominal inverter AC output voltage, in volts.
+
+  .. _num_mppt_circuits:
+
+* **num_mppt_circuits**: Number of MPPT circuits, dimensionless
+
+  .. _min_inv_operating_temperature:
+
+* **min_inv_operating_temperature**: Minimum inverter operating temperature, in celsius.
+
+  .. _max_inv_operating_temperature:
+
+* **max_inv_operating_temperature**: Maximum inverter operating temperature, in celsius.

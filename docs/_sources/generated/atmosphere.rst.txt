@@ -13,19 +13,19 @@
 
   .. _dew_point:
 
-* **dew_point**: dewpoint temperature, in C
+* **dew_point**: dewpoint temperature, in celsius.
 
   .. _relative_humidity:
 
-* **relative_humidity**: Relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.
+* **relative_humidity**: The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.
 
   .. _specific_humidity:
 
-* **specific_humidity**: 
+* **specific_humidity**: The ratio of the mass of water vapor to the total mass of moist air.
 
   .. _absolute_humidity:
 
-* **absolute_humidity**: 
+* **absolute_humidity**: Mass of water vapor per volume of air.
 
   .. _total_precipitable_water:
 

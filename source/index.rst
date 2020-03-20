@@ -1,7 +1,9 @@
 PV Modeling Glossary
 ====================
 
-Terms are grouped by category.
+This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category.
+
+.. include:: generated/version.rst
 
 Abbreviations
 -------------
@@ -43,6 +45,30 @@ These variables are related to the position of sun and the incidence angles with
 .. include:: generated/solar-position.rst
 
 
+DC Output
+---------
+
+These variables are related to the DC side of a PV power plant.
+
+.. include:: generated/dc-output.rst
+
+
+AC Output
+---------
+
+These variables are related to the AC side of a PV power plant.
+
+.. include:: generated/ac-output.rst
+
+
+Inverter
+--------
+
+These parameters are related to the operation of inverters.
+
+.. include:: generated/inverter.rst
+
+
 Irradiance
 ----------
 
@@ -65,15 +91,6 @@ Module Parameters
 Module parameters are primarily used to describe the electrical characteristic of a PV module.
 
 .. include:: generated/module-parameters.rst
-
-
-PV Power Plant
---------------
-
-These variables demonstrate a naming scheme to for PV power plant data.
-
-.. include:: generated/pv-power-plant.rst
-
 
 
 Documentation Contents

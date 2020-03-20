@@ -151,18 +151,19 @@
             
   <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="alpha-isc">
-<li><strong>alpha_isc</strong>: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: <em>alpha_sc</em>]</li>
+<ul class="simple" id="pmp-ref">
+<li><strong>pmp_ref</strong>: Power at maximum power and reference conditions for a PV cell, module or array, in W.</li>
+<li id="alpha-isc"><strong>alpha_isc</strong> []: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: <em>alpha_sc</em>]</li>
 <li id="beta-voc"><strong>beta_voc</strong>: Temperature coefficient of open-circuit voltage in V/C</li>
-<li id="gamma-pmp"><strong>gamma_pmp</strong>: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: <em>gamma_pdc</em>]</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> []: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: <em>gamma_pdc</em>]</li>
 <li id="gamma-vmp"><strong>gamma_vmp</strong>: Temperature coefficient of voltage at maximum power point, in V/C</li>
 <li id="gamma-imp"><strong>gamma_imp</strong>: Temperature coefficient of voltage at maximum power point, in A/C</li>
 <li id="photocurrent"><strong>photocurrent</strong>: photocurrent</li>
-<li id="photocurrent-ref"><strong>photocurrent_ref</strong>: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: <em>I_L_ref</em>]</li>
+<li id="photocurrent-ref"><strong>photocurrent_ref</strong> []: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: <em>I_L_ref</em>]</li>
 <li id="saturation-current"><strong>saturation_current</strong>: diode saturation current, in amperes</li>
-<li id="saturation-current-ref"><strong>saturation_current_ref</strong>: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: <em>I_o_ref</em>]</li>
+<li id="saturation-current-ref"><strong>saturation_current_ref</strong> []: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: <em>I_o_ref</em>]</li>
 <li id="resistance-series"><strong>resistance_series</strong>: series resistance, in Ohms</li>
-<li id="resistance-series-ref"><strong>resistance_series_ref</strong>: Series resistance at reference conditions, in Ohms [Deprecated/alternates: <em>R_s</em>]</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> []: Series resistance at reference conditions, in Ohms [Deprecated/alternates: <em>R_s</em>]</li>
 <li id="resistance-shunt"><strong>resistance_shunt</strong>: shunt resistance, in Ohms</li>
 <li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong>: shunt resistance at reference conditions, in Ohms.</li>
 <li id="voltage-thermal"><strong>voltage_thermal</strong>: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>
@@ -170,13 +171,13 @@
 <li id="nnsvth"><strong>nNsVth</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.</li>
 <li id="num-cells-in-series"><strong>num_cells_in_series</strong>: Number of cells in series in a PV module, unitless</li>
 <li id="diode-factor"><strong>diode_factor</strong>: diode ideality factor, unitless</li>
-<li id="adjust-cec"><strong>adjust_cec</strong>: CEC module parameter [Deprecated/alternates: <em>adjust</em>]</li>
+<li id="adjust-cec"><strong>adjust_cec</strong> []: CEC module parameter [Deprecated/alternates: <em>adjust</em>]</li>
 <li id="area-module"><strong>area_module</strong>: module area</li>
 <li id="noct"><strong>noct</strong>: Nominal operating cell temperature.</li>
 <li id="band-gap-ref"><strong>band_gap_ref</strong>: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.</li>
 <li id="irradiance-ref"><strong>irradiance_ref</strong>: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.</li>
 <li id="temperature-ref"><strong>temperature_ref</strong>: Reference temperature in C. Typical value is 25 C</li>
-<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong>: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
+<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> []: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
 </ul>
 
 

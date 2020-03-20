@@ -150,35 +150,39 @@
             
   <div class="section" id="pv-modeling-glossary">
 <h1>PV Modeling Glossary<a class="headerlink" href="#pv-modeling-glossary" title="Permalink to this headline">¶</a></h1>
-<p>Terms are grouped by category.</p>
+<p>This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category.</p>
+<p>Version: 0.0.1</p>
 <div class="section" id="abbreviations">
 <h2>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">¶</a></h2>
 <p>These abbreviations are used without expansion in the rest of the variables.</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="dc">
-<li><strong>dc</strong>: direct current</li>
-<li id="ac"><strong>ac</strong>: alternating current</li>
-<li id="poa"><strong>poa</strong>: plane of array (irradiance)</li>
-<li id="dni"><strong>dni</strong>: direct normal irradiance</li>
-<li id="dhi"><strong>dhi</strong>: direct horizontal irradiance</li>
-<li id="ghi"><strong>ghi</strong>: global horizontal irradiance</li>
-<li id="ref"><strong>ref</strong>: reference</li>
-<li id="aoi"><strong>aoi</strong>: angle of incidence</li>
-<li id="mp"><strong>mp</strong>: maximum power</li>
-<li id="oc"><strong>oc</strong>: open circuit</li>
-<li id="sc"><strong>sc</strong>: short circuit</li>
-<li id="vmp"><strong>vmp</strong>: voltage at maximum power</li>
-<li id="imp"><strong>imp</strong>: current at maximum power</li>
-<li id="pmp"><strong>pmp</strong>: power at maximum power</li>
-<li id="isc"><strong>isc</strong>: current at short circuit</li>
-<li id="voc"><strong>voc</strong>: voltage at open circuit</li>
-<li id="num"><strong>num</strong>: number</li>
+<ul class="simple" id="ac">
+<li><strong>ac</strong>: alternating current</li>
 <li id="aod"><strong>aod</strong>: aerosol optical depth</li>
-<li id="noct"><strong>noct</strong>: nominal operating cell temperature</li>
-<li id="stc"><strong>stc</strong>: standard test conditions</li>
-<li id="inv"><strong>inv</strong>: inverter</li>
+<li id="aoi"><strong>aoi</strong>: angle of incidence</li>
 <li id="coeff"><strong>coeff</strong>: coefficient</li>
+<li id="dc"><strong>dc</strong>: direct current</li>
+<li id="dhi"><strong>dhi</strong>: direct horizontal irradiance</li>
+<li id="dni"><strong>dni</strong>: direct normal irradiance</li>
+<li id="ghi"><strong>ghi</strong>: global horizontal irradiance</li>
+<li id="imp"><strong>imp</strong>: current at maximum power</li>
+<li id="inv"><strong>inv</strong>: inverter</li>
+<li id="isc"><strong>isc</strong>: current at short circuit</li>
+<li id="max"><strong>max</strong>: maximum</li>
+<li id="min"><strong>min</strong>: minimum</li>
+<li id="mp"><strong>mp</strong>: maximum power</li>
+<li id="mppt"><strong>mppt</strong>: maximum power point tracking</li>
+<li id="noct"><strong>noct</strong>: nominal operating cell temperature</li>
+<li id="num"><strong>num</strong>: number</li>
+<li id="oc"><strong>oc</strong>: open circuit</li>
+<li id="pmp"><strong>pmp</strong>: power at maximum power</li>
+<li id="poa"><strong>poa</strong>: plane of array (irradiance)</li>
+<li id="ref"><strong>ref</strong>: reference</li>
+<li id="sc"><strong>sc</strong>: short circuit</li>
+<li id="stc"><strong>stc</strong>: standard test conditions</li>
+<li id="vmp"><strong>vmp</strong>: voltage at maximum power</li>
+<li id="voc"><strong>voc</strong>: voltage at open circuit</li>
 </ul>
 </div>
 <div class="section" id="optional-suffixes">
@@ -218,10 +222,10 @@
 <li><strong>airmass</strong>: airmass</li>
 <li id="airmass-relative"><strong>airmass_relative</strong>: relative airmass</li>
 <li id="airmass-absolute"><strong>airmass_absolute</strong>: absolute airmass</li>
-<li id="dew-point"><strong>dew_point</strong>: dewpoint temperature, in C</li>
-<li id="relative-humidity"><strong>relative_humidity</strong>: Relative humidity. The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
-<li id="specific-humidity"><strong>specific_humidity</strong>:</li>
-<li id="absolute-humidity"><strong>absolute_humidity</strong>:</li>
+<li id="dew-point"><strong>dew_point</strong>: dewpoint temperature, in celsius.</li>
+<li id="relative-humidity"><strong>relative_humidity</strong>: The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
+<li id="specific-humidity"><strong>specific_humidity</strong>: The ratio of the mass of water vapor to the total mass of moist air.</li>
+<li id="absolute-humidity"><strong>absolute_humidity</strong>: Mass of water vapor per volume of air.</li>
 <li id="total-precipitable-water"><strong>total_precipitable_water</strong>:</li>
 <li id="wind-speed"><strong>wind_speed</strong>: Wind speed measured at standard 10 meter height, in m/s</li>
 <li id="wind-direction"><strong>wind_direction</strong>:</li>
@@ -244,22 +248,69 @@
 <li id="surface-tilt"><strong>surface_tilt</strong>: Surface tilt angles in decimal degrees. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)</li>
 </ul>
 </div>
+<div class="section" id="dc-output">
+<h2>DC Output<a class="headerlink" href="#dc-output" title="Permalink to this headline">¶</a></h2>
+<p>These variables are related to the DC side of a PV power plant.</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="id2">
+<li><strong>vmp</strong> [V]: voltage at the maximum power point in Volts [Deprecated/alternates: <em>v_mp</em>]</li>
+<li id="id3"><strong>imp</strong> [A]: current at the maximum power point in Volts [Deprecated/alternates: <em>i_mp</em>]</li>
+<li id="id4"><strong>pmp</strong> [W]: power at the maximum power point in Volts [Deprecated/alternates: <em>p_mp</em>]</li>
+<li id="id5"><strong>voc</strong> [V]: open circuit module voltage [Deprecated/alternates: <em>v_oc, voltage_oc</em>]</li>
+<li id="id6"><strong>isc</strong> [A]: short circuit module current [Deprecated/alternates: <em>i_sc</em>]</li>
+<li id="current-x"><strong>current_x</strong> [A]: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_x</em>]</li>
+<li id="current-xx"><strong>current_xx</strong> [A]: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_xx</em>]</li>
+<li id="power-dc"><strong>power_dc</strong>: dc power</li>
+</ul>
+</div>
+<div class="section" id="ac-output">
+<h2>AC Output<a class="headerlink" href="#ac-output" title="Permalink to this headline">¶</a></h2>
+<p>These variables are related to the AC side of a PV power plant.</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="power-ac">
+<li><strong>power_ac</strong>: ac power, in watts.</li>
+</ul>
+</div>
+<div class="section" id="inverter">
+<h2>Inverter<a class="headerlink" href="#inverter" title="Permalink to this headline">¶</a></h2>
+<p>These parameters are related to the operation of inverters.</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="max-inv-ac-current">
+<li><strong>max_inv_ac_current</strong>: Maximum inverter AC output current, in amps.</li>
+<li id="max-inv-ac-power"><strong>max_inv_ac_power</strong>: Maximum inverter AC output power, in watts.</li>
+<li id="max-inv-ac-voltage"><strong>max_inv_ac_voltage</strong>: Maximum inverter AC output voltage, in volts.</li>
+<li id="max-inv-dc-current"><strong>max_inv_dc_current</strong>: Maximum inverter DC input current, in amps.</li>
+<li id="max-inv-dc-voltage"><strong>max_inv_dc_voltage</strong>: Maximum inverter dc input voltage, in volts.</li>
+<li id="max-total-harmonic-distortion"><strong>max_total_harmonic_distortion</strong>: Maximum total harmonic distortion of inverter AC output, dimensionless.</li>
+<li id="min-inv-ac-voltage"><strong>min_inv_ac_voltage</strong>: Minimum inverter AC ouptut voltage, in volts</li>
+<li id="min-inv-start-voltage"><strong>min_inv_start_voltage</strong>: Minimum inverter input DC voltage to start operation, also called the inverter start voltage, in volts.</li>
+<li id="min-mppt-voltage"><strong>min_mppt_voltage</strong>: Minimum inverter input DC voltage to engage maximum power point tracking, in volts.</li>
+<li id="nominal-inv-ac-voltage"><strong>nominal_inv_ac_voltage</strong>: Nominal inverter AC output voltage, in volts.</li>
+<li id="num-mppt-circuits"><strong>num_mppt_circuits</strong>: Number of MPPT circuits, dimensionless</li>
+<li id="min-inv-operating-temperature"><strong>min_inv_operating_temperature</strong>: Minimum inverter operating temperature, in celsius.</li>
+<li id="max-inv-operating-temperature"><strong>max_inv_operating_temperature</strong>: Maximum inverter operating temperature, in celsius.</li>
+</ul>
+</div>
 <div class="section" id="irradiance">
 <h2>Irradiance<a class="headerlink" href="#irradiance" title="Permalink to this headline">¶</a></h2>
 <p>These variables denote irradiance in units of W/m^2.</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="id2">
+<ul class="simple" id="id7">
 <li><strong>dhi</strong>: diffuse horizontal irradiance</li>
-<li id="id3"><strong>dni</strong>: direct normal irradiance</li>
+<li id="id8"><strong>dni</strong>: direct normal irradiance</li>
 <li id="dni-extra"><strong>dni_extra</strong>: direct normal irradiance at top of atmosphere (extraterrestrial)</li>
 <li id="effective-irradiance"><strong>effective_irradiance</strong>: irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum</li>
-<li id="id4"><strong>ghi</strong>: global horizontal irradiance</li>
+<li id="id9"><strong>ghi</strong>: global horizontal irradiance</li>
 <li id="poa-diffuse"><strong>poa_diffuse</strong>: total diffuse irradiation in plane. sum of ground and sky diffuse.</li>
 <li id="poa-direct"><strong>poa_direct</strong>: direct/beam irradiation in plane</li>
 <li id="poa-global"><strong>poa_global</strong>: global irradiation in plane. sum of diffuse and beam projection.</li>
 <li id="poa-ground-diffuse"><strong>poa_ground_diffuse</strong>: in plane ground reflected irradiation</li>
 <li id="poa-sky-diffuse"><strong>poa_sky_diffuse</strong>: diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</li>
+<li id="transposition-factor"><strong>transposition_factor</strong>: the gain ratio of the radiation on inclined plane to global horizontal irradiation: poa_global/ghi</li>
 </ul>
 </div>
 <div class="section" id="pv-system">
@@ -268,25 +319,19 @@
 <blockquote>
 <div></div></blockquote>
 <ul class="simple" id="array-tilt">
-<li><strong>array_tilt</strong>: tilt angle of the surface, in degrees [Deprecated/alternates: <em>surface_tilt</em>]</li>
-<li id="array-azimuth"><strong>array_azimuth</strong>: azimuth angle of the surface, in degrees [Deprecated/alternates: <em>surface_azimuth</em>]</li>
+<li><strong>array_tilt</strong> []: tilt angle of the surface, in degrees [Deprecated/alternates: <em>surface_tilt</em>]</li>
+<li id="array-azimuth"><strong>array_azimuth</strong> []: azimuth angle of the surface, in degrees [Deprecated/alternates: <em>surface_azimuth</em>]</li>
 <li id="temperature-cell"><strong>temperature_cell</strong>: temperature of the cell, in C</li>
 <li id="temperature-module"><strong>temperature_module</strong>: temperature of the module, in C</li>
 <li id="temperature-air"><strong>temperature_air</strong>: ambient dry bulb temperature, in C</li>
-<li id="id5"><strong>vmp</strong>: voltage at the maximum power point in Volts [Deprecated/alternates: <em>v_mp</em>]</li>
-<li id="id6"><strong>imp</strong>: current at the maximum power point in Volts [Deprecated/alternates: <em>i_mp</em>]</li>
-<li id="id7"><strong>pmp</strong>: power at the maximum power point in Volts [Deprecated/alternates: <em>p_mp</em>]</li>
-<li id="id8"><strong>voc</strong>: open circuit module voltage [Deprecated/alternates: <em>v_oc, voltage_oc</em>]</li>
-<li id="id9"><strong>isc</strong>: short circuit module current [Deprecated/alternates: <em>i_sc</em>]</li>
-<li id="current-x"><strong>current_x</strong>: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_x</em>]</li>
-<li id="current-xx"><strong>current_xx</strong>: Sandia Array Performance Model IV curve parameter [Deprecated/alternates: <em>i_xx</em>]</li>
-<li id="transposition-factor"><strong>transposition_factor</strong>: the gain ratio of the radiation on inclined plane to global horizontal irradiation: poa_global/ghi</li>
-<li id="power-dc"><strong>power_dc</strong>: dc power</li>
-<li id="power-ac"><strong>power_ac</strong>: ac power</li>
 <li id="efficiency-inverter"><strong>efficiency_inverter</strong>: inverter efficiency</li>
 <li id="efficiency-inverter-ref"><strong>efficiency_inverter_ref</strong>: reference inverter efficiency</li>
 <li id="efficiency-inverter-nominal"><strong>efficiency_inverter_nominal</strong>: nominal inverter efficiency</li>
 <li id="spectral-mismatch"><strong>spectral_mismatch</strong>: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum, unitless.</li>
+<li id="modules-per-string"><strong>modules_per_string</strong>: Number of modules in series in each string</li>
+<li id="parallel-strings"><strong>parallel_strings</strong>: Number of parallel strings in an array of modules</li>
+<li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</li>
+<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong>: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
 </ul>
 </div>
 <div class="section" id="module-parameters">
@@ -294,18 +339,19 @@
 <p>Module parameters are primarily used to describe the electrical characteristic of a PV module.</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="alpha-isc">
-<li><strong>alpha_isc</strong>: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: <em>alpha_sc</em>]</li>
+<ul class="simple" id="pmp-ref">
+<li><strong>pmp_ref</strong>: Power at maximum power and reference conditions for a PV cell, module or array, in W.</li>
+<li id="alpha-isc"><strong>alpha_isc</strong> []: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: <em>alpha_sc</em>]</li>
 <li id="beta-voc"><strong>beta_voc</strong>: Temperature coefficient of open-circuit voltage in V/C</li>
-<li id="gamma-pmp"><strong>gamma_pmp</strong>: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: <em>gamma_pdc</em>]</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> []: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: <em>gamma_pdc</em>]</li>
 <li id="gamma-vmp"><strong>gamma_vmp</strong>: Temperature coefficient of voltage at maximum power point, in V/C</li>
 <li id="gamma-imp"><strong>gamma_imp</strong>: Temperature coefficient of voltage at maximum power point, in A/C</li>
 <li id="photocurrent"><strong>photocurrent</strong>: photocurrent</li>
-<li id="photocurrent-ref"><strong>photocurrent_ref</strong>: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: <em>I_L_ref</em>]</li>
+<li id="photocurrent-ref"><strong>photocurrent_ref</strong> []: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: <em>I_L_ref</em>]</li>
 <li id="saturation-current"><strong>saturation_current</strong>: diode saturation current, in amperes</li>
-<li id="saturation-current-ref"><strong>saturation_current_ref</strong>: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: <em>I_o_ref</em>]</li>
+<li id="saturation-current-ref"><strong>saturation_current_ref</strong> []: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: <em>I_o_ref</em>]</li>
 <li id="resistance-series"><strong>resistance_series</strong>: series resistance, in Ohms</li>
-<li id="resistance-series-ref"><strong>resistance_series_ref</strong>: Series resistance at reference conditions, in Ohms [Deprecated/alternates: <em>R_s</em>]</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> []: Series resistance at reference conditions, in Ohms [Deprecated/alternates: <em>R_s</em>]</li>
 <li id="resistance-shunt"><strong>resistance_shunt</strong>: shunt resistance, in Ohms</li>
 <li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong>: shunt resistance at reference conditions, in Ohms.</li>
 <li id="voltage-thermal"><strong>voltage_thermal</strong>: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>
@@ -313,34 +359,13 @@
 <li id="nnsvth"><strong>nNsVth</strong>: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.</li>
 <li id="num-cells-in-series"><strong>num_cells_in_series</strong>: Number of cells in series in a PV module, unitless</li>
 <li id="diode-factor"><strong>diode_factor</strong>: diode ideality factor, unitless</li>
-<li id="adjust-cec"><strong>adjust_cec</strong>: CEC module parameter [Deprecated/alternates: <em>adjust</em>]</li>
+<li id="adjust-cec"><strong>adjust_cec</strong> []: CEC module parameter [Deprecated/alternates: <em>adjust</em>]</li>
 <li id="area-module"><strong>area_module</strong>: module area</li>
 <li id="id10"><strong>noct</strong>: Nominal operating cell temperature.</li>
 <li id="band-gap-ref"><strong>band_gap_ref</strong>: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.</li>
 <li id="irradiance-ref"><strong>irradiance_ref</strong>: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.</li>
 <li id="temperature-ref"><strong>temperature_ref</strong>: Reference temperature in C. Typical value is 25 C</li>
-<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong>: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
-</ul>
-</div>
-<div class="section" id="pv-power-plant">
-<h2>PV Power Plant<a class="headerlink" href="#pv-power-plant" title="Permalink to this headline">¶</a></h2>
-<p>These variables demonstrate a naming scheme to for PV power plant data.</p>
-<blockquote>
-<div></div></blockquote>
-<ul class="simple" id="modules-per-string">
-<li><strong>modules_per_string</strong>: Number of modules in series in each string</li>
-<li id="parallel-strings"><strong>parallel_strings</strong>: Number of parallel strings in an array of modules</li>
-<li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’</li>
-<li id="current-dc-inv-xx"><strong>current_dc_inv_XX</strong>: DC current for inverter XX, where XX is the name of the inverter.</li>
-<li id="voltage-dc-inv-xx"><strong>voltage_dc_inv_XX</strong>: DC voltage for inverter XX, where XX is the name of the inverter.</li>
-<li id="power-dc-inv-xx"><strong>power_dc_inv_XX</strong>: DC power for inverter XX, where XX is the name of the inverter.</li>
-<li id="current-ac-inv-xx"><strong>current_ac_inv_XX</strong>: root-mean-squared AC power for inverter XX, where XX is the name of the inverter, in amps</li>
-<li id="voltage-ac-inv-xx"><strong>voltage_ac_inv_XX</strong>: root-mean-squared AC voltage for inverter XX, where XX is the name of the inverter, in volts</li>
-<li id="power-ac-inv-xx"><strong>power_ac_inv_XX</strong>: root-mean-squared AC voltage for inverter XX, where XX is the name of the inverter, in watts</li>
-<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong>: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
-<li id="poa-xx"><strong>poa_XX</strong>: Plane-of-array irradiance for sensor XX, in W/m^2.</li>
-<li id="temperature-module-xx"><strong>temperature_module_XX</strong>: Back of module temperature for sensor XX, in C</li>
-<li id="temperature-ambient-xx"><strong>temperature_ambient_XX</strong>: Ambient (dry bulb) temperature for sensor XX, in C</li>
+<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> []: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
 </ul>
 </div>
 </div>
