@@ -5,20 +5,20 @@
 
   .. _latitude:
 
-* **latitude**: latitude, in degrees
+* **latitude** [degrees]: Latitude.
 
   .. _longitude:
 
-* **longitude**: longitude, in degrees
+* **longitude** [degrees]: Longitude.
 
   .. _elevation:
 
-* **elevation**: elevation of system, in meters
+* **elevation** [m]: Elevation of system.
 
   .. _pressure:
 
-* **pressure**: pressure, in pascal
+* **pressure** [Pa]: Atmospheric pressure at ground level.
 
   .. _albedo:
 
-* **albedo**: Ground reflectance, unitless. Typically 0.1-0.4 for surfaces on Earth (land), may increase over snow, ice, etc. May also be known as the reflection coefficient. Must be >=0 and <=1.
+* **albedo** [dimensionless]: Ground reflectance, unitless. Typically 0.1-0.4 for surfaces on Earth (land), may increase over snow, ice, etc. May also be known as the reflection coefficient. Must be >=0 and <=1.

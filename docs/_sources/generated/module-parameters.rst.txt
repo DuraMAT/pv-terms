@@ -1,104 +1,104 @@
 
   .. _pmp_ref:
 
-* **pmp_ref**: Power at maximum power and reference conditions for a PV cell, module or array, in W.
+* **pmp_ref** [W]: Power at maximum power of the array at reference conditions.
 
   .. _alpha_isc:
 
-* **alpha_isc** []: The temperature coefficient of short-circuit current for a PV module, in A/C [Deprecated/alternates: *alpha_sc*]
+* **alpha_isc** [A/C]: The temperature coefficient of short-circuit current for a PV module. [Deprecated/alternates: *alpha_sc*]
 
   .. _beta_voc:
 
-* **beta_voc**: Temperature coefficient of open-circuit voltage in V/C
+* **beta_voc** [V/C]: Temperature coefficient of open-circuit voltage.
 
   .. _gamma_pmp:
 
-* **gamma_pmp** []: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: *gamma_pdc*]
+* **gamma_pmp** [W/C]: Temperature coefficient of power at maximum power point, in W/C [Deprecated/alternates: *gamma_pdc*]
 
   .. _gamma_vmp:
 
-* **gamma_vmp**: Temperature coefficient of voltage at maximum power point, in V/C
+* **gamma_vmp** [V/C]: Temperature coefficient of voltage at maximum power point, in V/C
 
   .. _gamma_imp:
 
-* **gamma_imp**: Temperature coefficient of voltage at maximum power point, in A/C
+* **gamma_imp** [A/C]: Temperature coefficient of voltage at maximum power point, in A/C
 
   .. _photocurrent:
 
-* **photocurrent**: photocurrent
+* **photocurrent** [A]: Photocurrent.
 
   .. _photocurrent_ref:
 
-* **photocurrent_ref** []: The light-generated current (or photocurrent) at reference conditions, in amperes [Deprecated/alternates: *I_L_ref*]
+* **photocurrent_ref** [A]: Photocurrent at reference conditions. [Deprecated/alternates: *I_L_ref*]
 
   .. _saturation_current:
 
-* **saturation_current**: diode saturation current, in amperes
+* **saturation_current** [A]: The dark or diode reverse saturation current at reference conditions.
 
   .. _saturation_current_ref:
 
-* **saturation_current_ref** []: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: *I_o_ref*]
+* **saturation_current_ref** [A]: The dark or diode reverse saturation current at reference conditions, in amperes [Deprecated/alternates: *I_o_ref*]
 
   .. _resistance_series:
 
-* **resistance_series**: series resistance, in Ohms
+* **resistance_series** [Ohm]: Series resistance.
 
   .. _resistance_series_ref:
 
-* **resistance_series_ref** []: Series resistance at reference conditions, in Ohms [Deprecated/alternates: *R_s*]
+* **resistance_series_ref** [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: *R_s*]
 
   .. _resistance_shunt:
 
-* **resistance_shunt**: shunt resistance, in Ohms
+* **resistance_shunt** [Ohm]: Shunt resistance.
 
   .. _resistance_shunt_ref:
 
-* **resistance_shunt_ref**: shunt resistance at reference conditions, in Ohms.
+* **resistance_shunt_ref** [Ohm]: Shunt resistance at reference conditions.
 
   .. _voltage_thermal:
 
-* **voltage_thermal**: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs). 
+* **voltage_thermal** [V]: Thermal voltage per cell in Volts, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs). 
 
   .. _nNsVth_ref:
 
-* **nNsVth_ref**: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions, in units of V.
+* **nNsVth_ref** [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions, in units of V.
 
   .. _nNsVth:
 
-* **nNsVth**: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.
+* **nNsVth** [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage, in units of V.
 
   .. _num_cells_in_series:
 
-* **num_cells_in_series**: Number of cells in series in a PV module, unitless
+* **num_cells_in_series** [dimensionless]: Number of cells in series in a PV module, unitless
 
   .. _diode_factor:
 
-* **diode_factor**: diode ideality factor, unitless
+* **diode_factor** [dimensionless]: diode ideality factor, unitless
 
   .. _adjust_cec:
 
-* **adjust_cec** []: CEC module parameter [Deprecated/alternates: *adjust*]
+* **adjust_cec** [%]: Parameter for the CEC module performance model, adjustment applied to temperature coefficients in %. [Deprecated/alternates: *adjust*]
 
   .. _area_module:
 
-* **area_module**: module area
+* **area_module** [m^2]: module area
 
   .. _noct:
 
-* **noct**: Nominal operating cell temperature.
+* **noct** [C]: Nominal operating cell temperature.
 
   .. _band_gap_ref:
 
-* **band_gap_ref**: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.
+* **band_gap_ref** [eV]: Energy bandgap at reference temperature in units of eV. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.
 
   .. _irradiance_ref:
 
-* **irradiance_ref**: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.
+* **irradiance_ref** [W/m^2]: Reference irradiance in W/m^2. Typical value is 1000 W/m^2.
 
   .. _temperature_ref:
 
-* **temperature_ref**: Reference temperature in C. Typical value is 25 C
+* **temperature_ref** [C]: Reference temperature in C. Typical value is 25 C
 
   .. _band_gap_temperature_coeff:
 
-* **band_gap_temperature_coeff** []: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: *dEgdT*]
+* **band_gap_temperature_coeff** [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: *dEgdT*]

@@ -1,4 +1,4 @@
 
   .. _power_ac:
 
-* **power_ac**: ac power, in watts.
+* **power_ac** [W]: ac power, in watts.
