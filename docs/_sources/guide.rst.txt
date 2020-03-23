@@ -13,7 +13,7 @@ In order to standardize some common naming modifications, we have chosen a commo
 1. **_XX**, where XX is the name of the particular system.
 2. **_cell**, **_module**, **_string**, **_array**, **_inv**.
 3. **_rated**, **_sim**, **_meas**
-4. **_interval**, **_cumulative
+4. **_interval**, **_cumulative**
 
 Some examples:
 
