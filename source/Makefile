@@ -14,7 +14,8 @@ help:
 # custom target for github pages
 github:
 	@make html
-	@cp -a _build/html/. ../docs
+	-rm -r ../docs
+	cp -a "$(BUILDDIR)/html/." ../docs
 	python trim.py ../docs/index.html
 
 .PHONY: help Makefile
@@ -23,4 +24,5 @@ github:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	python build_definitions.py
+	-rm -r "$(BUILDDIR)"
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

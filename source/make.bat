@@ -32,9 +32,11 @@ if errorlevel 9009 (
 )
 
 python build_definitions.py
+rmdir /s /q %BUILDDIR%
 %SPHINXBUILD% -M %BUILDMODE% %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
 
 if "%1" == "github" (
+    rmdir /s /q ..\docs
     robocopy %BUILDDIR%/html ../docs /E > nul
     echo.Generated files copied to ../docs
 	python trim.py ../docs/index.html
