@@ -2,4 +2,4 @@
 Contributing to pv-terms
 ------------------------
 
-to-do
+pv-terms is hosted on github, `visit us <https://github.com/DuraMAT/pv-terms>`_ to make suggestions or contributions.
