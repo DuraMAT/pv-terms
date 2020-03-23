@@ -13,6 +13,8 @@ These abbreviations are used without expansion in the rest of the variables.
 .. include:: generated/abbreviations.rst
 
 
+.. _optional_suffixes:
+
 Optional Suffixes
 -----------------
 
@@ -102,6 +104,7 @@ Documentation Contents
 
    self
    about.rst
+   guide.rst
    intersphinx.rst
    contributing.rst
 

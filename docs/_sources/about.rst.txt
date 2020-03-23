@@ -1,7 +1,7 @@
 About pv-terms
 --------------
 
-The pv-terms project standardizes nomenclature for photovoltaic (PV) system modeling. The industry has used many different conventions for different variables and a uniform standard would be beneficial. 
+The pv-terms project standardizes the nomenclature used for photovoltaic (PV) system modeling. A uniform standard for the PV modeling community enables compatibility within and between software packages and data sources. 
 
 The nomenclature was designed with the following criteria:
 

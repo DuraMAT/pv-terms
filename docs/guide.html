@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; pv-terms  documentation</title>
+  <title>User Guide &mdash; pv-terms  documentation</title>
   
 
   
@@ -25,7 +25,6 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -36,7 +35,9 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using the Intersphinx mapping" href="intersphinx.html" />
+    <link rel="prev" title="About pv-terms" href="about.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -63,7 +64,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -81,10 +82,13 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">PV Modeling Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About pv-terms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="guide.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modifying-variables">Modifying Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="intersphinx.html">Using the Intersphinx mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to pv-terms</a></li>
 </ul>
@@ -132,12 +136,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>User Guide</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/guide.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -149,24 +155,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="modifying-variables">
+<h2>Modifying Variables<a class="headerlink" href="#modifying-variables" title="Permalink to this headline">¶</a></h2>
+<p>Many variables can be directly used without modification. However, there are many cases where the standard set of variables does not cover a particular application. For this reason, we have provided a list of <a class="reference internal" href="index.html#optional-suffixes"><span class="std std-ref">optional suffixes</span></a> that can be appended to a variable name.</p>
+<p>For example, one application might be to compare simulated and measured maximum-power-point power. In this case, the base variable <strong>pmp</strong> can be modified into <strong>pmp_sim</strong> and <strong>pmp_meas</strong>.</p>
+<p>In order to standardize some common naming modifications, we have chosen a common order.</p>
+<ol class="arabic simple">
+<li><strong>_XX</strong>, where XX is the name of the particular system.</li>
+<li><strong>_cell</strong>, <strong>_module</strong>, <strong>_string</strong>, <strong>_array</strong>, <strong>_inv</strong>.</li>
+<li><strong>_rated</strong>, <strong>_sim</strong>, <strong>_meas</strong></li>
+<li><strong>_interval</strong>, <a href="#id1"><span class="problematic" id="id2">**</span></a>_cumulative</li>
+</ol>
+<p>Some examples:</p>
+<ul class="simple">
+<li><strong>temperature_module_12</strong> Module temperature sensor 12.</li>
+<li><strong>current_dc_inv_2132</strong>: dc-side current from inverter 2132.</li>
+<li><strong>temperature_module_meas</strong>, <strong>temperature_module_sim</strong>: measured and simulated module temperature respectively.</li>
+<li><strong>beta_voc_module</strong>, <strong>beta_voc_string</strong>: beta_voc for a module and a string respectively.</li>
+<li><strong>alpha_isc_module_rated</strong>, <strong>alpha_isc_module_meas</strong>: rated and measured module alpha_isc.</li>
+</ul>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="intersphinx.html" class="btn btn-neutral float-right" title="Using the Intersphinx mapping" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="about.html" class="btn btn-neutral float-left" title="About pv-terms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -199,14 +225,7 @@
   
   
     
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>
