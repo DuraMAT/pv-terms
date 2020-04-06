@@ -3,6 +3,8 @@ PV Modeling Glossary
 
 This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category.
 
+The pv-terms project is a work in progress. The team would greatly appreciate feedback and suggestions. To comment, see the issues on the `pv-terms github repo <https://github.com/DuraMAT/pv-terms>`_.
+
 .. include:: generated/version.rst
 
 Abbreviations

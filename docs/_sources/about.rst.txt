@@ -11,3 +11,8 @@ The nomenclature was designed with the following criteria:
 - Use common PV abbreviations, e.g. ac, dc, poa, mp, etc.
 - Organize some variables "taxonomy style" (e.g temperature_cell) and others "human-readable style" (e.g. solar_zenith). It is not necessary to conform all variables to a single style
 - Variables have a defined unit. e.g. W/m^2 for irradiance. 
+
+Contributing
+------------
+
+The pv-terms project is a work in progress. The team would greatly appreciate feedback and suggestions. To comment, see the issues on the `pv-terms github repo <https://github.com/DuraMAT/pv-terms>`_.
