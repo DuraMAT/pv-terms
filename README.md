@@ -1,5 +1,10 @@
 # pv-terms
-Standard variable names for PV modeling. Formatted documentation available at http://duramat.github.io/pv-terms/
+
+The pv-terms project contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems.
+
+The pv-terms project is a work in progress. The team would greatly appreciate feedback and suggestions. To comment, open an issue.
+
+Formatted documentation available at http://duramat.github.io/pv-terms/
 
 ## Building the documentation
 
