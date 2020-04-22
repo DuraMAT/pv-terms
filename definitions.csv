@@ -94,7 +94,7 @@ Irradiance,effective_irradiance,W/m^2,"Irradiance reaching the module's cells, i
 Irradiance,ghi,W/m^2,Global horizontal irradiance.,
 Irradiance,poa_diffuse,W/m^2,Total diffuse irradiation in plane. sum of ground and sky diffuse.,
 Irradiance,poa_direct,W/m^2,Direct/beam irradiation in plane.,
-Irradiance,poa_global,W/m^2,Global irradiation in plane. sum of diffuse and beam projection.,
+Irradiance,poa_global,W/m^2,Global irradiation in plane. sum of diffuse and beam projection.,gti
 Irradiance,poa_ground_diffuse,W/m^2,In plane ground reflected irradiation,
 Irradiance,poa_sky_diffuse,W/m^2,Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation),
 Location,tz,,timezone,
@@ -176,4 +176,3 @@ PV System,array_height,m,Height above ground of the bottom edge of the module fo
 PV System,axis_height,m,Height above ground of the axis of rotation for a single axis tracker. ,
 PV System,axis_azimuth,degrees,"Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).",
 PV System,axis_tilt,degrees,Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.,
-,,,,
