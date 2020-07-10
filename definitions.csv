@@ -161,7 +161,7 @@ PV System,temperature_air,C,ambient dry bulb temperature.,,temperature_module_{s
 Inverter,efficiency_inverter,dimensionless,Inverter efficiency. Real AC power out divided by DC power in.,,,,
 Inverter,efficiency_inverter_eu,dimensionless,Nominal inverter efficiency using European standard.,,,,
 Inverter,efficiency_inverter_cec,dimensionless,Nominal inverter efficiency using CEC standard.,,,,
-Module Parameters,spectral_mismatch,dimensionless,The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.,,,,
+PV System,spectral_mismatch,dimensionless,The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.,,,,
 PV System,modules_per_string,dimensionless,Number of modules in series in each string.,,,,
 PV System,parallel_strings,dimensionless,Number of parallel strings in an array of modules.,,,,
 PV System,tracker_type,,"Tracker type, can be 'fixed', 'single-axis' or 'two-axis'.",,,,
