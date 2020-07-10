@@ -158,7 +158,3 @@
   .. _band_gap_temperature_coeff:
 
 * **band_gap_temperature_coeff** [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K.
-
-  .. _spectral_mismatch:
-
-* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
