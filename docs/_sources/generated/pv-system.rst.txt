@@ -11,22 +11,6 @@
 
 * **temperature_air** [C]: ambient dry bulb temperature.
 
-  .. _efficiency_inverter:
-
-* **efficiency_inverter** [dimensionless]: Inverter efficiency. Real AC power out divided by DC power in.
-
-  .. _efficiency_inverter_eu:
-
-* **efficiency_inverter_eu** [dimensionless]: Nominal inverter efficiency using European standard.
-
-  .. _efficiency_inverter_cec:
-
-* **efficiency_inverter_cec** [dimensionless]: Nominal inverter efficiency using CEC standard.
-
-  .. _spectral_mismatch:
-
-* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
-
   .. _modules_per_string:
 
 * **modules_per_string** [dimensionless]: Number of modules in series in each string.

@@ -11,7 +11,7 @@ to recognize ``pv-terms`` as a linking target by adding an entry to the
 ::
 
     intersphinx_mapping = {
-        'pv-terms': ('https://duramat.github.io/pv-terms/pv-terms/', None),
+        'pv-terms': ('https://duramat.github.io/pv-terms/', None),
     }
 
 This lets you write references like this:

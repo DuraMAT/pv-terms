@@ -1,40 +1,40 @@
 
   .. _dhi:
 
-* **dhi**: diffuse horizontal irradiance
+* **dhi** [W/m^2]: Diffuse horizontal irradiance.
 
   .. _dni:
 
-* **dni**: direct normal irradiance
+* **dni** [W/m^2]: Direct normal irradiance.
 
   .. _dni_extra:
 
-* **dni_extra**: direct normal irradiance at top of atmosphere (extraterrestrial)
+* **dni_extra** [W/m^2]: Direct normal irradiance at top of atmosphere (extraterrestrial).
 
   .. _effective_irradiance:
 
-* **effective_irradiance**: irradiance reaching the module's cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum
+* **effective_irradiance** [W/m^2]: Irradiance reaching the module's cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum.
 
   .. _ghi:
 
-* **ghi**: global horizontal irradiance
+* **ghi** [W/m^2]: Global horizontal irradiance.
 
   .. _poa_diffuse:
 
-* **poa_diffuse**: total diffuse irradiation in plane. sum of ground and sky diffuse.
+* **poa_diffuse** [W/m^2]: Total diffuse irradiation in plane. sum of ground and sky diffuse.
 
   .. _poa_direct:
 
-* **poa_direct**: direct/beam irradiation in plane
+* **poa_direct** [W/m^2]: Direct/beam irradiation in plane.
 
   .. _poa_global:
 
-* **poa_global**: global irradiation in plane. sum of diffuse and beam projection.
+* **poa_global** [W/m^2]: Global irradiation in plane. sum of diffuse and beam projection.
 
   .. _poa_ground_diffuse:
 
-* **poa_ground_diffuse**: in plane ground reflected irradiation
+* **poa_ground_diffuse** [W/m^2]: In plane ground reflected irradiation [Deprecated/alternates: *gti*]
 
   .. _poa_sky_diffuse:
 
-* **poa_sky_diffuse**: diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)
+* **poa_sky_diffuse** [W/m^2]: Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)

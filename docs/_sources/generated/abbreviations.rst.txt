@@ -21,7 +21,7 @@
 
   .. _dhi:
 
-* **dhi**: direct horizontal irradiance
+* **dhi**: diffuse horizontal irradiance
 
   .. _dni:
 

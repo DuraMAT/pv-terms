@@ -33,7 +33,7 @@
 
   .. _poa_ground_diffuse:
 
-* **poa_ground_diffuse** [W/m^2]: In plane ground reflected irradiation
+* **poa_ground_diffuse** [W/m^2]: In plane ground reflected irradiation [Deprecated/alternates: *gti*]
 
   .. _poa_sky_diffuse:
 

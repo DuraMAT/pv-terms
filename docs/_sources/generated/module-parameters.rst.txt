@@ -21,11 +21,11 @@
 
   .. _alpha_isc:
 
-* **alpha_isc** [A/C]: The temperature coefficient of short-circuit current. [Deprecated/alternates: *alpha_sc*]
+* **alpha_isc** [A/C]: The temperature coefficient of short-circuit current.
 
   .. _alpha_isc_ref:
 
-* **alpha_isc_ref** [A/C]: The temperature coefficient of short-circuit current at reference conditions.
+* **alpha_isc_ref** [A/C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: *alpha_sc*]
 
   .. _alpha_isc_normalized:
 
@@ -53,11 +53,11 @@
 
   .. _gamma_pmp:
 
-* **gamma_pmp** [W/C]: Temperature coefficient of power at maximum power point. [Deprecated/alternates: *gamma_pdc*]
+* **gamma_pmp** [W/C]: Temperature coefficient of power at maximum power point.
 
   .. _gamma_pmp_ref:
 
-* **gamma_pmp_ref** [W/C]: Temperature coefficient of power at maximum power point and reference conditions.
+* **gamma_pmp_ref** [W/C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: *gamma_pdc*]
 
   .. _beta_vmp:
 
@@ -81,27 +81,27 @@
 
   .. _photocurrent_ref:
 
-* **photocurrent_ref** [A]: Photocurrent at reference conditions. [Deprecated/alternates: *I_L_ref*]
+* **photocurrent_ref** [A]: Photocurrent at reference conditions.
 
   .. _saturation_current:
 
-* **saturation_current** [A]: The dark or diode reverse saturation current.
+* **saturation_current** [A]: The dark or diode reverse saturation current. [Deprecated/alternates: *I_L_ref*]
 
   .. _saturation_current_ref:
 
-* **saturation_current_ref** [A]: The dark or diode reverse saturation current at reference conditions. [Deprecated/alternates: *I_o_ref*]
+* **saturation_current_ref** [A]: The dark or diode reverse saturation current at reference conditions.
 
   .. _resistance_series:
 
-* **resistance_series** [Ohm]: Series resistance.
+* **resistance_series** [Ohm]: Series resistance. [Deprecated/alternates: *I_o_ref*]
 
   .. _resistance_series_ref:
 
-* **resistance_series_ref** [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: *R_s*]
+* **resistance_series_ref** [Ohm]: Series resistance at reference conditions.
 
   .. _resistance_shunt:
 
-* **resistance_shunt** [Ohm]: Shunt resistance.
+* **resistance_shunt** [Ohm]: Shunt resistance. [Deprecated/alternates: *R_s*]
 
   .. _resistance_shunt_ref:
 
@@ -157,4 +157,8 @@
 
   .. _band_gap_temperature_coeff:
 
-* **band_gap_temperature_coeff** [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: *dEgdT*]
+* **band_gap_temperature_coeff** [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K.
+
+  .. _spectral_mismatch:
+
+* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.

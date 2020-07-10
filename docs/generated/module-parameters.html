@@ -159,27 +159,27 @@
 <li id="isc-ref"><strong>isc_ref</strong> [A]: Short circuit current at reference conditions.</li>
 <li id="voc-ref"><strong>voc_ref</strong> [V]: Open circuit voltage at reference conditions.</li>
 <li id="imp-ref"><strong>imp_ref</strong> [A]: Current at maximum power point at reference conditions.</li>
-<li id="alpha-isc"><strong>alpha_isc</strong> [A/C]: The temperature coefficient of short-circuit current. [Deprecated/alternates: <em>alpha_sc</em>]</li>
-<li id="alpha-isc-ref"><strong>alpha_isc_ref</strong> [A/C]: The temperature coefficient of short-circuit current at reference conditions.</li>
+<li id="alpha-isc"><strong>alpha_isc</strong> [A/C]: The temperature coefficient of short-circuit current.</li>
+<li id="alpha-isc-ref"><strong>alpha_isc_ref</strong> [A/C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: <em>alpha_sc</em>]</li>
 <li id="alpha-isc-normalized"><strong>alpha_isc_normalized</strong> [1/C]: alpha_isc/isc_ref. The temperature coefficient of short-circuit current divided by the short-circuit current at reference conditions.</li>
 <li id="alpha-isc-ref-normalized"><strong>alpha_isc_ref_normalized</strong> [1/C]: alpha_isc_ref/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.</li>
 <li id="beta-voc"><strong>beta_voc</strong> [V/C]: Temperature coefficient of open-circuit voltage.</li>
 <li id="beta-voc-ref"><strong>beta_voc_ref</strong> [V/C]: Temperature coefficient of open-circuit voltage at reference conditions.</li>
 <li id="beta-voc-normalized"><strong>beta_voc_normalized</strong> [1/C]: beta_voc/voc_ref. Temperature coefficient of open-circuit voltage divided by the open-circuit voltage at reference conditions.</li>
 <li id="beta-voc-ref-normalized"><strong>beta_voc_ref_normalized</strong> [1/C]: beta_voc_ref/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.</li>
-<li id="gamma-pmp"><strong>gamma_pmp</strong> [W/C]: Temperature coefficient of power at maximum power point. [Deprecated/alternates: <em>gamma_pdc</em>]</li>
-<li id="gamma-pmp-ref"><strong>gamma_pmp_ref</strong> [W/C]: Temperature coefficient of power at maximum power point and reference conditions.</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> [W/C]: Temperature coefficient of power at maximum power point.</li>
+<li id="gamma-pmp-ref"><strong>gamma_pmp_ref</strong> [W/C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: <em>gamma_pdc</em>]</li>
 <li id="beta-vmp"><strong>beta_vmp</strong> [V/C]: Temperature coefficient of voltage at maximum power point.</li>
 <li id="beta-vmp-ref"><strong>beta_vmp_ref</strong> [V/C]: Temperature coefficient of voltage at maximum power point and reference conditions.</li>
 <li id="alpha-imp"><strong>alpha_imp</strong> [A/C]: Temperature coefficient of current at maximum power point.</li>
 <li id="alpha-imp-ref"><strong>alpha_imp_ref</strong> [A/C]: Temperature coefficient of current at maximum power point and reference conditions.</li>
 <li id="photocurrent"><strong>photocurrent</strong> [A]: Photo-generated current.</li>
-<li id="photocurrent-ref"><strong>photocurrent_ref</strong> [A]: Photocurrent at reference conditions. [Deprecated/alternates: <em>I_L_ref</em>]</li>
-<li id="saturation-current"><strong>saturation_current</strong> [A]: The dark or diode reverse saturation current.</li>
-<li id="saturation-current-ref"><strong>saturation_current_ref</strong> [A]: The dark or diode reverse saturation current at reference conditions. [Deprecated/alternates: <em>I_o_ref</em>]</li>
-<li id="resistance-series"><strong>resistance_series</strong> [Ohm]: Series resistance.</li>
-<li id="resistance-series-ref"><strong>resistance_series_ref</strong> [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: <em>R_s</em>]</li>
-<li id="resistance-shunt"><strong>resistance_shunt</strong> [Ohm]: Shunt resistance.</li>
+<li id="photocurrent-ref"><strong>photocurrent_ref</strong> [A]: Photocurrent at reference conditions.</li>
+<li id="saturation-current"><strong>saturation_current</strong> [A]: The dark or diode reverse saturation current. [Deprecated/alternates: <em>I_L_ref</em>]</li>
+<li id="saturation-current-ref"><strong>saturation_current_ref</strong> [A]: The dark or diode reverse saturation current at reference conditions.</li>
+<li id="resistance-series"><strong>resistance_series</strong> [Ohm]: Series resistance. [Deprecated/alternates: <em>I_o_ref</em>]</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> [Ohm]: Series resistance at reference conditions.</li>
+<li id="resistance-shunt"><strong>resistance_shunt</strong> [Ohm]: Shunt resistance. [Deprecated/alternates: <em>R_s</em>]</li>
 <li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong> [Ohm]: Shunt resistance at reference conditions.</li>
 <li id="voltage-thermal"><strong>voltage_thermal</strong> [V]: Thermal voltage per cell, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>
 <li id="nnsvth-ref"><strong>nNsVth_ref</strong> [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions.</li>
@@ -193,7 +193,8 @@
 <li id="band-gap-ref"><strong>band_gap_ref</strong> [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.</li>
 <li id="irradiance-ref"><strong>irradiance_ref</strong> [W/m^2]: Reference irradiance. Typical value is 1000 W/m^2.</li>
 <li id="temperature-ref"><strong>temperature_ref</strong> [C]: Reference temperature. Typical value is 25 C.</li>
-<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K. [Deprecated/alternates: <em>dEgdT</em>]</li>
+<li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K.</li>
+<li id="spectral-mismatch"><strong>spectral_mismatch</strong> [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.</li>
 </ul>
 
 

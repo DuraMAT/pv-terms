@@ -1,76 +1,56 @@
 
-  .. _array_tilt:
-
-* **array_tilt** (*surface_tilt*): tilt angle of the surface, in degrees
-
-  .. _array_azimuth:
-
-* **array_azimuth** (*surface_azimuth*): azimuth angle of the surface, in degrees
-
   .. _temperature_cell:
 
-* **temperature_cell**: temperature of the cell, in C
+* **temperature_cell** [C]: Temperature of the cell.
 
   .. _temperature_module:
 
-* **temperature_module**: temperature of the module, in C
+* **temperature_module** [C]: temperature of the module.
 
   .. _temperature_air:
 
-* **temperature_air**: ambient dry bulb temperature, in C
+* **temperature_air** [C]: ambient dry bulb temperature.
 
-  .. _vmp:
+  .. _modules_per_string:
 
-* **vmp** (*v_mp*): voltage at the maximum power point in Volts
+* **modules_per_string** [dimensionless]: Number of modules in series in each string.
 
-  .. _imp:
+  .. _parallel_strings:
 
-* **imp** (*i_mp*): current at the maximum power point in Volts
+* **parallel_strings** [dimensionless]: Number of parallel strings in an array of modules.
 
-  .. _pmp:
+  .. _tracker_type:
 
-* **pmp** (*p_mp*): power at the maximum power point in Volts
+* **tracker_type**: Tracker type, can be 'fixed', 'single-axis' or 'two-axis'.
 
-  .. _voc:
+  .. _ground_coverage_ratio:
 
-* **voc** (*v_oc, voltage_oc*): open circuit module voltage
+* **ground_coverage_ratio** [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be <=1.
 
-  .. _isc:
+  .. _aoi:
 
-* **isc** (*i_sc*): short circuit module current
+* **aoi** [degrees]: Angle between direct beam component and surface normal, between 0 and 90.
 
-  .. _current_x:
+  .. _surface_azimuth:
 
-* **current_x** (*i_x*): Sandia Array Performance Model IV curve parameter
+* **surface_azimuth** [degrees]: Surface azimuth angles. The azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270)
 
-  .. _current_xx:
+  .. _surface_tilt:
 
-* **current_xx** (*i_xx*): Sandia Array Performance Model IV curve parameter
+* **surface_tilt** [degrees]: Surface tilt angle. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)
 
-  .. _transposition_factor:
+  .. _array_height:
 
-* **transposition_factor**: the gain ratio of the radiation on inclined plane to global horizontal irradiation: poa_global/ghi
+* **array_height** [m]: Height above ground of the bottom edge of the module for a fixed tilt system.
 
-  .. _power_dc:
+  .. _axis_height:
 
-* **power_dc**: dc power
+* **axis_height** [m]: Height above ground of the axis of rotation for a single axis tracker. 
 
-  .. _power_ac:
+  .. _axis_azimuth:
 
-* **power_ac**: ac power
+* **axis_azimuth** [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).
 
-  .. _efficiency_inverter:
+  .. _axis_tilt:
 
-* **efficiency_inverter**: inverter efficiency
-
-  .. _efficiency_inverter_ref:
-
-* **efficiency_inverter_ref**: reference inverter efficiency
-
-  .. _efficiency_inverter_nominal:
-
-* **efficiency_inverter_nominal**: nominal inverter efficiency
-
-  .. _spectral_mismatch:
-
-* **spectral_mismatch**: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum, unitless.
+* **axis_tilt** [degrees]: Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.
