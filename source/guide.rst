@@ -10,9 +10,9 @@ For example, one application might be to compare simulated and measured maximum-
 
 In order to standardize some common naming modifications, we have chosen a common order.
 
-1. **_XX**, where XX is the name of the particular system.
-2. **_cell**, **_module**, **_string**, **_array**, **_inv**.
-3. **_rated**, **_sim**, **_meas**
+1. **_cell**, **_module**, **_string**, **_array**, **_inv**.
+2. **_rated**, **_sim**, **_meas**
+3. **_XX**, where XX is the name of the particular system.
 4. **_interval**, **_cumulative**
 
 Some examples:
