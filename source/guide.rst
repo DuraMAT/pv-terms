@@ -11,9 +11,11 @@ For example, one application might be to compare simulated and measured maximum-
 In order to standardize some common naming modifications, we have chosen a common order.
 
 1. **_cell**, **_module**, **_string**, **_array**, **_inv**.
-2. **_rated**, **_sim**, **_meas**
-3. **_XX**, where XX is the name of the particular system.
+2. **_XX**, where XX is the name of the particular system.
+3. **_rated**, **_sim**, **_meas**
 4. **_interval**, **_cumulative**
+
+For simplicity, it is not necessary to use all modifications for a particular variable.
 
 Some examples:
 
@@ -22,3 +24,4 @@ Some examples:
 - **temperature_module_meas**, **temperature_module_sim**: measured and simulated module temperature respectively. 
 - **beta_voc_module**, **beta_voc_string**: beta_voc for a module and a string respectively.
 - **alpha_isc_module_rated**, **alpha_isc_module_meas**: rated and measured module alpha_isc.
+- **energy_real_inv_12_sim_interval** real energy for inverter 12 simulated on a specified interval. 
