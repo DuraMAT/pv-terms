@@ -230,7 +230,7 @@
 <li><strong>airmass</strong> [dimensionless]: airmass</li>
 <li id="airmass-relative"><strong>airmass_relative</strong> [dimensionless]: relative airmass</li>
 <li id="airmass-absolute"><strong>airmass_absolute</strong> [dimensionless]: absolute airmass</li>
-<li id="dew-point"><strong>dew_point</strong> [C]: Dewpoint temperature.</li>
+<li id="dew-point"><strong>dew_point</strong> [°C]: Dewpoint temperature.</li>
 <li id="relative-humidity"><strong>relative_humidity</strong> [dimensionless]: The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
 <li id="specific-humidity"><strong>specific_humidity</strong> [dimensionless]: The ratio of the mass of water vapor to the total mass of moist air.</li>
 <li id="absolute-humidity"><strong>absolute_humidity</strong> [kg/m^3]: Mass of water vapor per volume of air.</li>
@@ -266,7 +266,7 @@
 <li id="power-dc"><strong>power_dc</strong> [W]: DC power. [Deprecated/alternates: <em>i_sc</em>]</li>
 <li id="current-dc"><strong>current_dc</strong> [A]: DC current.</li>
 <li id="voltage-dc"><strong>voltage_dc</strong> [V]: DC voltage.</li>
-<li id="energy-dc"><strong>energy_dc</strong> [Joules]: DC energy.</li>
+<li id="energy-dc"><strong>energy_dc</strong> [kWh]: DC energy.</li>
 </ul>
 </div>
 <div class="section" id="ac-output">
@@ -380,7 +380,9 @@
 <li id="beta-voc-normalized"><strong>beta_voc_normalized</strong> [1/C]: beta_voc/voc_ref. Temperature coefficient of open-circuit voltage divided by the open-circuit voltage at reference conditions.</li>
 <li id="beta-voc-ref-normalized"><strong>beta_voc_ref_normalized</strong> [1/C]: beta_voc_ref/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.</li>
 <li id="gamma-pmp"><strong>gamma_pmp</strong> [W/C]: Temperature coefficient of power at maximum power point.</li>
+<li id="gamma-pmp-normalized"><strong>gamma_pmp_normalized</strong> [1/C]: gamma_pmp/pmp_ref. Temperature coefficient of power at maximum power point divided by maximum-power-point power at reference conditions</li>
 <li id="gamma-pmp-ref"><strong>gamma_pmp_ref</strong> [W/C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: <em>gamma_pdc</em>]</li>
+<li id="gamma-pmp-ref-normalized"><strong>gamma_pmp_ref_normalized</strong> [1/C]: gamma_pmp_ref/pmp_ref. Temperature coefficient of power at maximum power point and reference conditions divided by maximum-power-point power at reference conditions</li>
 <li id="beta-vmp"><strong>beta_vmp</strong> [V/C]: Temperature coefficient of voltage at maximum power point.</li>
 <li id="beta-vmp-ref"><strong>beta_vmp_ref</strong> [V/C]: Temperature coefficient of voltage at maximum power point and reference conditions.</li>
 <li id="alpha-imp"><strong>alpha_imp</strong> [A/C]: Temperature coefficient of current at maximum power point.</li>

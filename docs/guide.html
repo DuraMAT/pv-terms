@@ -164,11 +164,13 @@
 <p>For example, one application might be to compare simulated and measured maximum-power-point power. In this case, the base variable <strong>pmp</strong> can be modified into <strong>pmp_sim</strong> and <strong>pmp_meas</strong>.</p>
 <p>In order to standardize some common naming modifications, we have chosen a common order.</p>
 <ol class="arabic simple">
-<li><strong>_XX</strong>, where XX is the name of the particular system.</li>
 <li><strong>_cell</strong>, <strong>_module</strong>, <strong>_string</strong>, <strong>_array</strong>, <strong>_inv</strong>.</li>
+<li><strong>_XX</strong>, where XX is the name of the particular system.</li>
 <li><strong>_rated</strong>, <strong>_sim</strong>, <strong>_meas</strong></li>
 <li><strong>_interval</strong>, <strong>_cumulative</strong></li>
+<li><strong>_UNITS</strong>, where UNITS are the non-standard units of a variable.</li>
 </ol>
+<p>For simplicity, it is not necessary to use all modifications for a particular variable.</p>
 <p>Some examples:</p>
 <ul class="simple">
 <li><strong>temperature_module_12</strong> Module temperature sensor 12.</li>
@@ -176,6 +178,8 @@
 <li><strong>temperature_module_meas</strong>, <strong>temperature_module_sim</strong>: measured and simulated module temperature respectively.</li>
 <li><strong>beta_voc_module</strong>, <strong>beta_voc_string</strong>: beta_voc for a module and a string respectively.</li>
 <li><strong>alpha_isc_module_rated</strong>, <strong>alpha_isc_module_meas</strong>: rated and measured module alpha_isc.</li>
+<li><strong>energy_real_inv_12_sim_interval</strong> real energy for inverter 12 simulated on a specified interval.</li>
+<li><strong>temperature_cell_K</strong> Cell temperature in Kelvin.</li>
 </ul>
 </div>
 </div>
