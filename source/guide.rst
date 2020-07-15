@@ -14,6 +14,7 @@ In order to standardize some common naming modifications, we have chosen a commo
 2. **_XX**, where XX is the name of the particular system.
 3. **_rated**, **_sim**, **_meas**
 4. **_interval**, **_cumulative**
+5. **_UNITS**, where UNITS are the non-standard units of a variable.
 
 For simplicity, it is not necessary to use all modifications for a particular variable.
 
@@ -25,3 +26,4 @@ Some examples:
 - **beta_voc_module**, **beta_voc_string**: beta_voc for a module and a string respectively.
 - **alpha_isc_module_rated**, **alpha_isc_module_meas**: rated and measured module alpha_isc.
 - **energy_real_inv_12_sim_interval** real energy for inverter 12 simulated on a specified interval. 
+- **temperature_cell_K** Cell temperature in Kelvin.
