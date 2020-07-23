@@ -1,15 +1,15 @@
 
   .. _temperature_cell:
 
-* **temperature_cell** [C]: Temperature of the cell.
+* **temperature_cell** [°C]: Temperature of the cell.
 
   .. _temperature_module:
 
-* **temperature_module** [C]: temperature of the module.
+* **temperature_module** [°C]: temperature of the module.
 
   .. _temperature_air:
 
-* **temperature_air** [C]: ambient dry bulb temperature.
+* **temperature_air** [°C]: ambient dry bulb temperature.
 
   .. _spectral_mismatch:
 

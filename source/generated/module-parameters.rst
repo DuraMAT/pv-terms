@@ -21,39 +21,39 @@
 
   .. _alpha_isc:
 
-* **alpha_isc** [A/C]: The temperature coefficient of short-circuit current.
+* **alpha_isc** [A/°C]: The temperature coefficient of short-circuit current.
 
   .. _alpha_isc_ref:
 
-* **alpha_isc_ref** [A/C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: *alpha_sc*]
+* **alpha_isc_ref** [A/°C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: *alpha_sc*]
 
   .. _alpha_isc_normalized:
 
-* **alpha_isc_normalized** [1/C]: alpha_isc/isc_ref. The temperature coefficient of short-circuit current divided by the short-circuit current at reference conditions.
+* **alpha_isc_normalized** [1/°C]: alpha_isc/isc_ref. The temperature coefficient of short-circuit current divided by the short-circuit current at reference conditions.
 
   .. _alpha_isc_ref_normalized:
 
-* **alpha_isc_ref_normalized** [1/C]: alpha_isc_ref/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions. 
+* **alpha_isc_ref_normalized** [1/°C]: alpha_isc_ref/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions. 
 
   .. _beta_voc:
 
-* **beta_voc** [V/C]: Temperature coefficient of open-circuit voltage.
+* **beta_voc** [V/°C]: Temperature coefficient of open-circuit voltage.
 
   .. _beta_voc_ref:
 
-* **beta_voc_ref** [V/C]: Temperature coefficient of open-circuit voltage at reference conditions.
+* **beta_voc_ref** [V/°C]: Temperature coefficient of open-circuit voltage at reference conditions.
 
   .. _beta_voc_normalized:
 
-* **beta_voc_normalized** [1/C]: beta_voc/voc_ref. Temperature coefficient of open-circuit voltage divided by the open-circuit voltage at reference conditions.
+* **beta_voc_normalized** [1/°C]: beta_voc/voc_ref. Temperature coefficient of open-circuit voltage divided by the open-circuit voltage at reference conditions.
 
   .. _beta_voc_ref_normalized:
 
-* **beta_voc_ref_normalized** [1/C]: beta_voc_ref/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.
+* **beta_voc_ref_normalized** [1/°C]: beta_voc_ref/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.
 
   .. _gamma_pmp:
 
-* **gamma_pmp** [W/C]: Temperature coefficient of power at maximum power point.
+* **gamma_pmp** [W/°C]: Temperature coefficient of power at maximum power point.
 
   .. _gamma_pmp_normalized:
 
@@ -61,7 +61,7 @@
 
   .. _gamma_pmp_ref:
 
-* **gamma_pmp_ref** [W/C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: *gamma_pdc*]
+* **gamma_pmp_ref** [W/°C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: *gamma_pdc*]
 
   .. _gamma_pmp_ref_normalized:
 
@@ -69,19 +69,19 @@
 
   .. _beta_vmp:
 
-* **beta_vmp** [V/C]: Temperature coefficient of voltage at maximum power point.
+* **beta_vmp** [V/°C]: Temperature coefficient of voltage at maximum power point.
 
   .. _beta_vmp_ref:
 
-* **beta_vmp_ref** [V/C]: Temperature coefficient of voltage at maximum power point and reference conditions.
+* **beta_vmp_ref** [V/°C]: Temperature coefficient of voltage at maximum power point and reference conditions.
 
   .. _alpha_imp:
 
-* **alpha_imp** [A/C]: Temperature coefficient of current at maximum power point.
+* **alpha_imp** [A/°C]: Temperature coefficient of current at maximum power point.
 
   .. _alpha_imp_ref:
 
-* **alpha_imp_ref** [A/C]: Temperature coefficient of current at maximum power point and reference conditions.
+* **alpha_imp_ref** [A/°C]: Temperature coefficient of current at maximum power point and reference conditions.
 
   .. _photocurrent:
 
@@ -149,7 +149,7 @@
 
   .. _noct:
 
-* **noct** [C]: Nominal operating cell temperature.
+* **noct** [°C]: Nominal operating cell temperature.
 
   .. _band_gap_ref:
 
@@ -161,7 +161,7 @@
 
   .. _temperature_ref:
 
-* **temperature_ref** [C]: Reference temperature. Typical value is 25 C.
+* **temperature_ref** [°C]: Reference temperature. Typical value is 25 °C.
 
   .. _band_gap_temperature_coeff:
 

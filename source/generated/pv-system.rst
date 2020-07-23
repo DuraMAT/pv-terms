@@ -1,15 +1,19 @@
 
   .. _temperature_cell:
 
-* **temperature_cell** [C]: Temperature of the cell.
+* **temperature_cell** [°C]: Temperature of the cell.
 
   .. _temperature_module:
 
-* **temperature_module** [C]: temperature of the module.
+* **temperature_module** [°C]: temperature of the module.
 
   .. _temperature_air:
 
-* **temperature_air** [C]: ambient dry bulb temperature.
+* **temperature_air** [°C]: ambient dry bulb temperature.
+
+  .. _spectral_mismatch:
+
+* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
 
   .. _spectral_mismatch:
 
