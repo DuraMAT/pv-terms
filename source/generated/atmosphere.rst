@@ -13,7 +13,7 @@
 
   .. _dew_point:
 
-* **dew_point** [C]: Dewpoint temperature.
+* **dew_point** [°C]: Dewpoint temperature.
 
   .. _relative_humidity:
 

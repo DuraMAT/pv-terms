@@ -55,9 +55,17 @@
 
 * **gamma_pmp** [W/C]: Temperature coefficient of power at maximum power point.
 
+  .. _gamma_pmp_normalized:
+
+* **gamma_pmp_normalized** [1/C]: gamma_pmp/pmp_ref. Temperature coefficient of power at maximum power point divided by maximum-power-point power at reference conditions
+
   .. _gamma_pmp_ref:
 
 * **gamma_pmp_ref** [W/C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: *gamma_pdc*]
+
+  .. _gamma_pmp_ref_normalized:
+
+* **gamma_pmp_ref_normalized** [1/C]: gamma_pmp_ref/pmp_ref. Temperature coefficient of power at maximum power point and reference conditions divided by maximum-power-point power at reference conditions
 
   .. _beta_vmp:
 
@@ -158,7 +166,3 @@
   .. _band_gap_temperature_coeff:
 
 * **band_gap_temperature_coeff** [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K.
-
-  .. _spectral_mismatch:
-
-* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
