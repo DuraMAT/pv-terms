@@ -49,11 +49,11 @@
 
   .. _min_inv_operating_temperature:
 
-* **min_inv_operating_temperature** [C]: Minimum inverter operating temperature.
+* **min_inv_operating_temperature** [°C]: Minimum inverter operating temperature.
 
   .. _max_inv_operating_temperature:
 
-* **max_inv_operating_temperature** [C]: Maximum inverter operating temperature.
+* **max_inv_operating_temperature** [°C]: Maximum inverter operating temperature.
 
   .. _efficiency_inverter:
 
