@@ -15,6 +15,10 @@
 
 * **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
 
+  .. _spectral_mismatch:
+
+* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
+
   .. _modules_per_string:
 
 * **modules_per_string** [dimensionless]: Number of modules in series in each string.

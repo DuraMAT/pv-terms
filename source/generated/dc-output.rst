@@ -33,4 +33,4 @@
 
   .. _energy_dc:
 
-* **energy_dc** [Joules]: DC energy.
+* **energy_dc** [kWh]: DC energy.
