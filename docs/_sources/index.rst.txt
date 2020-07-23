@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: _230tdAp-Iy8T3CUC-Zi1k2gLFQFbpuXb9170aezndU
+
 PV Modeling Glossary
 ====================
 
