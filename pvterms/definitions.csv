@@ -105,10 +105,10 @@ Location,longitude,degrees,Longitude between -180 to 180 degrees. Positive east 
 Location,elevation,m,Elevation of system above sea level.,
 Location,pressure,Pa,Atmospheric pressure at ground level.,
 Location,albedo,dimensionless,Ground reflectance between 0 and 1.,
-Module Parameters,pmp_ref,W,Power at maximum power point at reference conditions.,
-Module Parameters,vmp_ref,V,Voltage at maximum power point at reference conditions.,
-Module Parameters,isc_ref,A,Short circuit current at reference conditions.,
-Module Parameters,voc_ref,V,Open circuit voltage at reference conditions.,
+Module Parameters,pmp_ref,W,Power at maximum power point at reference conditions.,p_mp_ref
+Module Parameters,vmp_ref,V,Voltage at maximum power point at reference conditions.,v_mp_ref
+Module Parameters,isc_ref,A,Short circuit current at reference conditions.,i_sc_ref
+Module Parameters,voc_ref,V,Open circuit voltage at reference conditions.,v_oc_ref
 Module Parameters,imp_ref,A,Current at maximum power point at reference conditions.,
 Module Parameters,alpha_isc,A/°C,The temperature coefficient of short-circuit current at reference conditions.,alpha_sc
 Module Parameters,alpha_isc_norm,1/°C,alpha_isc/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.,
