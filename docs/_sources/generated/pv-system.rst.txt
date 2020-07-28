@@ -35,6 +35,10 @@
 
 * **aoi** [degrees]: Angle between direct beam component and surface normal, between 0 and 90.
 
+  .. _date_time:
+
+* **date_time** [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval
+
   .. _surface_azimuth:
 
 * **surface_azimuth** [degrees]: Surface azimuth angles. The azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270)
@@ -49,7 +53,7 @@
 
   .. _axis_height:
 
-* **axis_height** [m]: Height above ground of the axis of rotation for a single axis tracker. 
+* **axis_height** [m]: Height above ground of the axis of rotation for a single axis tracker.
 
   .. _axis_azimuth:
 

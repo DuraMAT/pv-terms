@@ -18,8 +18,6 @@ In order to standardize some common naming modifications, we have chosen a commo
 
 For simplicity, it is not necessary to use all modifications for a particular variable.
 
-For simplicity, it is not necessary to use all modifications for a particular variable.
-
 Some examples:
 
 - **temperature_module_12** Module temperature sensor 12.

@@ -216,6 +216,7 @@
 <li id="meas"><strong>*_meas</strong>: Parameter measured from field data, e.g. voc_meas</li>
 <li id="interval"><strong>*_interval</strong>: Quantity integrated over a specific length of time, usually a shorter timespan e.g. day or hour.</li>
 <li id="cumulative"><strong>*_cumulative</strong>: Quantity integrated over a specific length of time, usually the full lifetime of the system.</li>
+<li id="norm"><strong>*_norm</strong>: Normalized quantity</li>
 </ul>
 </div>
 <div class="section" id="location">
@@ -235,6 +236,20 @@
 <div class="section" id="atmosphere">
 <h2>Atmosphere<a class="headerlink" href="#atmosphere" title="Permalink to this headline">¶</a></h2>
 <p>Atmosphere variables are related to weather conditions.</p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="airmass">
+<li><strong>airmass</strong> [dimensionless]: airmass</li>
+<li id="airmass-relative"><strong>airmass_relative</strong> [dimensionless]: relative airmass</li>
+<li id="airmass-absolute"><strong>airmass_absolute</strong> [dimensionless]: absolute airmass</li>
+<li id="dew-point"><strong>dew_point</strong> [°C]: Dewpoint temperature.</li>
+<li id="relative-humidity"><strong>relative_humidity</strong> [dimensionless]: The ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature, unitless.</li>
+<li id="specific-humidity"><strong>specific_humidity</strong> [dimensionless]: The ratio of the mass of water vapor to the total mass of moist air.</li>
+<li id="absolute-humidity"><strong>absolute_humidity</strong> [kg/m^3]: Mass of water vapor per volume of air.</li>
+<li id="total-precipitable-water"><strong>total_precipitable_water</strong> [mm]: Depth of water in a column of the atmosphere, if all the water in that column were precipitated as rain.</li>
+<li id="wind-speed"><strong>wind_speed</strong> [m/s]: Wind speed measured at standard 10 meter height.</li>
+<li id="wind-direction"><strong>wind_direction</strong> [degrees]: Direction of origin of wind. The wind azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270).</li>
+</ul>
 </div>
 <div class="section" id="solar-position">
 <h2>Solar Position<a class="headerlink" href="#solar-position" title="Permalink to this headline">¶</a></h2>
@@ -349,6 +364,7 @@
 <li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’.</li>
 <li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong> [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
 <li id="id11"><strong>aoi</strong> [degrees]: Angle between direct beam component and surface normal, between 0 and 90.</li>
+<li id="date-time"><strong>date_time</strong> [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval</li>
 <li id="surface-azimuth"><strong>surface_azimuth</strong> [degrees]: Surface azimuth angles. The azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270)</li>
 <li id="surface-tilt"><strong>surface_tilt</strong> [degrees]: Surface tilt angle. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)</li>
 <li id="array-height"><strong>array_height</strong> [m]: Height above ground of the bottom edge of the module for a fixed tilt system.</li>
@@ -368,20 +384,13 @@
 <li id="isc-ref"><strong>isc_ref</strong> [A]: Short circuit current at reference conditions.</li>
 <li id="voc-ref"><strong>voc_ref</strong> [V]: Open circuit voltage at reference conditions.</li>
 <li id="imp-ref"><strong>imp_ref</strong> [A]: Current at maximum power point at reference conditions.</li>
-<li id="alpha-isc"><strong>alpha_isc</strong> [A/°C]: The temperature coefficient of short-circuit current.</li>
-<li id="alpha-isc-ref"><strong>alpha_isc_ref</strong> [A/°C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: <em>alpha_sc</em>]</li>
-<li id="alpha-isc-normalized"><strong>alpha_isc_normalized</strong> [1/°C]: alpha_isc/isc_ref. The temperature coefficient of short-circuit current divided by the short-circuit current at reference conditions.</li>
-<li id="alpha-isc-ref-normalized"><strong>alpha_isc_ref_normalized</strong> [1/°C]: alpha_isc_ref/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.</li>
-<li id="beta-voc"><strong>beta_voc</strong> [V/°C]: Temperature coefficient of open-circuit voltage.</li>
-<li id="beta-voc-ref"><strong>beta_voc_ref</strong> [V/°C]: Temperature coefficient of open-circuit voltage at reference conditions.</li>
-<li id="beta-voc-normalized"><strong>beta_voc_normalized</strong> [1/°C]: beta_voc/voc_ref. Temperature coefficient of open-circuit voltage divided by the open-circuit voltage at reference conditions.</li>
-<li id="beta-voc-ref-normalized"><strong>beta_voc_ref_normalized</strong> [1/°C]: beta_voc_ref/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.</li>
-<li id="gamma-pmp"><strong>gamma_pmp</strong> [W/°C]: Temperature coefficient of power at maximum power point.</li>
-<li id="gamma-pmp-ref"><strong>gamma_pmp_ref</strong> [W/°C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: <em>gamma_pdc</em>]</li>
-<li id="beta-vmp"><strong>beta_vmp</strong> [V/°C]: Temperature coefficient of voltage at maximum power point.</li>
-<li id="beta-vmp-ref"><strong>beta_vmp_ref</strong> [V/°C]: Temperature coefficient of voltage at maximum power point and reference conditions.</li>
-<li id="alpha-imp"><strong>alpha_imp</strong> [A/°C]: Temperature coefficient of current at maximum power point.</li>
-<li id="alpha-imp-ref"><strong>alpha_imp_ref</strong> [A/°C]: Temperature coefficient of current at maximum power point and reference conditions.</li>
+<li id="alpha-isc"><strong>alpha_isc</strong> [A/°C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: <em>alpha_sc</em>]</li>
+<li id="alpha-isc-norm"><strong>alpha_isc_norm</strong> [1/°C]: alpha_isc/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.</li>
+<li id="beta-voc"><strong>beta_voc</strong> [V/°C]: Temperature coefficient of open-circuit voltage at reference conditions.</li>
+<li id="beta-voc-norm"><strong>beta_voc_norm</strong> [1/°C]: beta_voc/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.</li>
+<li id="gamma-pmp"><strong>gamma_pmp</strong> [W/°C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: <em>gamma_pdc</em>]</li>
+<li id="beta-vmp"><strong>beta_vmp</strong> [V/°C]: Temperature coefficient of voltage at maximum power point and reference conditions.</li>
+<li id="alpha-imp"><strong>alpha_imp</strong> [A/°C]: Temperature coefficient of current at maximum power point and reference conditions.</li>
 <li id="photocurrent"><strong>photocurrent</strong> [A]: Photo-generated current.</li>
 <li id="photocurrent-ref"><strong>photocurrent_ref</strong> [A]: Photocurrent at reference conditions.</li>
 <li id="saturation-current"><strong>saturation_current</strong> [A]: The dark or diode reverse saturation current. [Deprecated/alternates: <em>I_L_ref</em>]</li>

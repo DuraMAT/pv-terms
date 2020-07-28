@@ -9,7 +9,7 @@
 
   .. _longitude:
 
-* **longitude** [degrees]: Longitude between -180 to 180 degrees. Positive east of the meridian. 
+* **longitude** [degrees]: Longitude between -180 to 180 degrees. Positive east of the meridian.
 
   .. _elevation:
 

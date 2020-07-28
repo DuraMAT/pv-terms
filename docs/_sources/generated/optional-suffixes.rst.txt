@@ -38,3 +38,7 @@
   .. _*_cumulative:
 
 * ***_cumulative**: Quantity integrated over a specific length of time, usually the full lifetime of the system.
+
+  .. _*_norm:
+
+* ***_norm**: Normalized quantity
