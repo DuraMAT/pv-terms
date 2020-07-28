@@ -117,14 +117,14 @@ Module Parameters,beta_voc_norm,1/°C,beta_voc/voc_ref. Temperature coefficient 
 Module Parameters,gamma_pmp,W/°C,Temperature coefficient of power at maximum power point and reference conditions.,gamma_pdc
 Module Parameters,beta_vmp,V/°C,Temperature coefficient of voltage at maximum power point and reference conditions.,
 Module Parameters,alpha_imp,A/°C,Temperature coefficient of current at maximum power point and reference conditions.,
-Module Parameters,photocurrent,A,Photo-generated current.,
+Module Parameters,photocurrent,A,Photo-generated current.,I_L
 Module Parameters,photocurrent_ref,A,Photocurrent at reference conditions.,I_L_ref
-Module Parameters,saturation_current,A,The dark or diode reverse saturation current.,I_o_ref
-Module Parameters,saturation_current_ref,A,The dark or diode reverse saturation current at reference conditions.,
+Module Parameters,saturation_current,A,The dark or diode reverse saturation current.,I_o
+Module Parameters,saturation_current_ref,A,The dark or diode reverse saturation current at reference conditions.,I_o_ref
 Module Parameters,resistance_series,Ohm,Series resistance.,"R_s,Rs"
 Module Parameters,resistance_series_ref,Ohm,Series resistance at reference conditions.,R_s_ref
 Module Parameters,resistance_shunt,Ohm,Shunt resistance.,"R_sh,Rsh"
-Module Parameters,resistance_shunt_ref,Ohm,Shunt resistance at reference conditions.,
+Module Parameters,resistance_shunt_ref,Ohm,Shunt resistance at reference conditions.,R_sh_ref
 Module Parameters,voltage_thermal,V,"Thermal voltage per cell, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs). ",
 Module Parameters,nNsVth_ref,V,"The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions.",a_ref
 Module Parameters,nNsVth,V,"The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage.",
