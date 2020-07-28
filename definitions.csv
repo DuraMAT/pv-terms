@@ -138,7 +138,7 @@ Module Parameters,band_gap_ref,eV,"Energy bandgap at reference temperature. 1.12
 Module Parameters,irradiance_ref,W/m^2,Reference irradiance. Typical value is 1000 W/m^2.,
 Module Parameters,temperature_ref,°C,Reference temperature. Typical value is 25 °C.,
 Module Parameters,band_gap_temperature_coeff,1/K,The temperature dependence of the energy bandgap at reference conditions in units of 1/K.,
-Optional Suffixes,*_cell,,Quantity relating to a single PV cell,dEgdT
+Optional Suffixes,*_cell,,Quantity relating to a single PV cell,
 Optional Suffixes,*_module,,Quantity relating to a single PV module,
 Optional Suffixes,*_string,,Quantity relating to a string of PV modules.,
 Optional Suffixes,*_array,,Quantity relating to a number of PV strings.,
