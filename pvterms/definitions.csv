@@ -117,6 +117,7 @@ Module Parameters,beta_voc_norm,1/°C,beta_voc/voc_ref. Temperature coefficient 
 Module Parameters,gamma_pmp,W/°C,Temperature coefficient of power at maximum power point and reference conditions.,gamma_pdc
 Module Parameters,beta_vmp,V/°C,Temperature coefficient of voltage at maximum power point and reference conditions.,
 Module Parameters,alpha_imp,A/°C,Temperature coefficient of current at maximum power point and reference conditions.,
+Module Parameters,fill_factor,dimensionless,Fill factor of the PV pmp/(voc*isc),
 Module Parameters,photocurrent,A,Photo-generated current.,I_L
 Module Parameters,photocurrent_ref,A,Photocurrent at reference conditions.,I_L_ref
 Module Parameters,saturation_current,A,The dark or diode reverse saturation current.,I_o
