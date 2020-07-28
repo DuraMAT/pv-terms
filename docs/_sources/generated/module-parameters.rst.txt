@@ -47,6 +47,10 @@
 
 * **alpha_imp** [A/°C]: Temperature coefficient of current at maximum power point and reference conditions.
 
+  .. _fill_factor:
+
+* **fill_factor** [dimensionless]: Fill factor of the PV pmp/(voc*isc)
+
   .. _photocurrent:
 
 * **photocurrent** [A]: Photo-generated current. [Deprecated/alternates: *I_L*]
