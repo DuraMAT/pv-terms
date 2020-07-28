@@ -17,6 +17,29 @@ for k in terms.index:
         for p in deprecated_terms:
             _replacement[p] = standard_term
 
+def rename(x):
+    """
+    Rename a variable into the pv-terms scheme. Auto-detect which type of
+    renaming scheme to apply.
+
+    Parameters
+    ----------
+    x : str, dict or dataframe
+
+    Returns
+    -------
+    renmaed_x
+        x with renamed parameters.
+    """
+    if isinstance(x,type('string')):
+        return rename_param(x)
+    elif isinstance(x, type(dict())):
+        return rename_dict(x)
+    elif isinstance(x, type(pd.DataFrame())):
+        return rename_dataframe(x)
+    else:
+        raise Exception("Type {} not allowed".format(type(x)))
+
 
 def rename_param(parameter):
     """
