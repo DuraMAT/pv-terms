@@ -111,9 +111,9 @@ Module Parameters,isc_ref,A,Short circuit current at reference conditions.
 Module Parameters,voc_ref,V,Open circuit voltage at reference conditions.
 Module Parameters,imp_ref,A,Current at maximum power point at reference conditions.
 Module Parameters,alpha_isc,A/°C,The temperature coefficient of short-circuit current at reference conditions.,alpha_sc
-Module Parameters,alpha_isc_normalized,1/°C,alpha_isc/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.
+Module Parameters,alpha_isc_norm,1/°C,alpha_isc/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.
 Module Parameters,beta_voc,V/°C,Temperature coefficient of open-circuit voltage at reference conditions.
-Module Parameters,beta_voc_normalized,1/°C,beta_voc/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.
+Module Parameters,beta_voc_norm,1/°C,beta_voc/voc_ref. Temperature coefficient of open-circuit voltage at reference conditions divided by the open-circuit voltage at reference conditions.
 Module Parameters,gamma_pmp,W/°C,Temperature coefficient of power at maximum power point and reference conditions.,gamma_pdc
 Module Parameters,beta_vmp,V/°C,Temperature coefficient of voltage at maximum power point and reference conditions.
 Module Parameters,alpha_imp,A/°C,Temperature coefficient of current at maximum power point and reference conditions.
