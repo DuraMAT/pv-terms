@@ -148,6 +148,7 @@ Optional Suffixes,*_sim,,"Parameter predicted from a model, e.g. voc_sim"
 Optional Suffixes,*_meas,,"Parameter measured from field data, e.g. voc_meas"
 Optional Suffixes,*_interval,,"Quantity integrated over a specific length of time, usually a shorter timespan e.g. day or hour."
 Optional Suffixes,*_cumulative,,"Quantity integrated over a specific length of time, usually the full lifetime of the system."
+Optional Suffixes,*_norm,,"Normalized quantity"
 PV System,temperature_cell,°C,Temperature of the cell.
 PV System,temperature_module,°C,temperature of the module.
 PV System,temperature_air,°C,ambient dry bulb temperature.
@@ -160,6 +161,7 @@ PV System,parallel_strings,dimensionless,Number of parallel strings in an array 
 PV System,tracker_type,,"Tracker type, can be 'fixed', 'single-axis' or 'two-axis'."
 PV System,ground_coverage_ratio,dimensionless,"A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be <=1."
 PV System,aoi,degrees,"Angle between direct beam component and surface normal, between 0 and 90."
+PV System,date_time,"YYYY-MM-DD HH:MM:SS","Date and time of measurement interval"
 Solar Position,apparent_solar_elevation,degrees,Refraction-corrected solar elevation angle.
 Solar Position,apparent_solar_zenith,degrees,Refraction-corrected solar zenith angle.
 Solar Position,solar_azimuth,degrees,Azimuth angle of the sun in degrees East of North
