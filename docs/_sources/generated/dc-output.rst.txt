@@ -1,27 +1,27 @@
 
   .. _vmp:
 
-* **vmp** [V]: Voltage at the maximum power point.
+* **vmp** [V]: Voltage at the maximum power point. [Deprecated/alternates: *v_mp*]
 
   .. _imp:
 
-* **imp** [A]: Current at the maximum power point. [Deprecated/alternates: *v_mp*]
+* **imp** [A]: Current at the maximum power point. [Deprecated/alternates: *i_mp*]
 
   .. _pmp:
 
-* **pmp** [W]: Power at the maximum power point. [Deprecated/alternates: *i_mp*]
+* **pmp** [W]: Power at the maximum power point. [Deprecated/alternates: *p_mp*]
 
   .. _voc:
 
-* **voc** [V]: Open circuit voltage. [Deprecated/alternates: *p_mp*]
+* **voc** [V]: Open circuit voltage. [Deprecated/alternates: *v_oc*]
 
   .. _isc:
 
-* **isc** [A]: Short circuit current. [Deprecated/alternates: *v_oc, voltage_oc*]
+* **isc** [A]: Short circuit current. [Deprecated/alternates: *i_sc*]
 
   .. _power_dc:
 
-* **power_dc** [W]: DC power. [Deprecated/alternates: *i_sc*]
+* **power_dc** [W]: DC power.
 
   .. _current_dc:
 

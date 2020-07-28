@@ -49,35 +49,35 @@
 
   .. _photocurrent:
 
-* **photocurrent** [A]: Photo-generated current.
+* **photocurrent** [A]: Photo-generated current. [Deprecated/alternates: *I_L*]
 
   .. _photocurrent_ref:
 
-* **photocurrent_ref** [A]: Photocurrent at reference conditions.
+* **photocurrent_ref** [A]: Photocurrent at reference conditions. [Deprecated/alternates: *I_L_ref*]
 
   .. _saturation_current:
 
-* **saturation_current** [A]: The dark or diode reverse saturation current. [Deprecated/alternates: *I_L_ref*]
+* **saturation_current** [A]: The dark or diode reverse saturation current. [Deprecated/alternates: *I_o*]
 
   .. _saturation_current_ref:
 
-* **saturation_current_ref** [A]: The dark or diode reverse saturation current at reference conditions.
+* **saturation_current_ref** [A]: The dark or diode reverse saturation current at reference conditions. [Deprecated/alternates: *I_o_ref*]
 
   .. _resistance_series:
 
-* **resistance_series** [Ohm]: Series resistance. [Deprecated/alternates: *I_o_ref*]
+* **resistance_series** [Ohm]: Series resistance. [Deprecated/alternates: *R_s,Rs*]
 
   .. _resistance_series_ref:
 
-* **resistance_series_ref** [Ohm]: Series resistance at reference conditions.
+* **resistance_series_ref** [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: *R_s_ref*]
 
   .. _resistance_shunt:
 
-* **resistance_shunt** [Ohm]: Shunt resistance. [Deprecated/alternates: *R_s*]
+* **resistance_shunt** [Ohm]: Shunt resistance. [Deprecated/alternates: *R_sh,Rsh*]
 
   .. _resistance_shunt_ref:
 
-* **resistance_shunt_ref** [Ohm]: Shunt resistance at reference conditions.
+* **resistance_shunt_ref** [Ohm]: Shunt resistance at reference conditions. [Deprecated/alternates: *R_sh_ref*]
 
   .. _voltage_thermal:
 
@@ -85,7 +85,7 @@
 
   .. _nNsVth_ref:
 
-* **nNsVth_ref** [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions.
+* **nNsVth_ref** [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions. [Deprecated/alternates: *a_ref*]
 
   .. _nNsVth:
 
@@ -117,7 +117,7 @@
 
   .. _band_gap_ref:
 
-* **band_gap_ref** [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL.
+* **band_gap_ref** [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL. [Deprecated/alternates: *Egref,Eg_ref*]
 
   .. _irradiance_ref:
 

@@ -1,7 +1,7 @@
 
   .. _*_cell:
 
-* ***_cell**: Quantity relating to a single PV cell [Deprecated/alternates: *dEgdT*]
+* ***_cell**: Quantity relating to a single PV cell
 
   .. _*_module:
 
