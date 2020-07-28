@@ -109,7 +109,7 @@ def generate_bullet_list(terms, definitions, dimensions, alternates):
 
 
 if __name__ == "__main__":
-    info = pd.read_csv("../definitions.csv",
+    info = pd.read_csv("../pvterms/definitions.csv",
         nrows=1)
     version = info.loc[0,'Version']
 
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     with open(filename,"w") as f:
         f.write('Version: {}'.format(version))
 
-    df = pd.read_csv("../definitions.csv",
+    df = pd.read_csv("../pvterms/definitions.csv",
         skiprows=[0,1])
     df = df.fillna('')
 
