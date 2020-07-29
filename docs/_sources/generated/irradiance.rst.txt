@@ -47,18 +47,26 @@
 
 * **poa_sky_diffuse** [W/m^2]: Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)
 
-  .. _kTh:
+  .. _clearness_ghi:
 
-* **kTh** [dimensionless]: Horizontal clearness index, kTh = ghi/ghi_toa 
+* **clearness_ghi** [dimensionless]: Horizontal clearness index, clearness_ghi = ghi/ghi_toa 
 
-  .. _kTn:
+  .. _clearness_dni:
 
-* **kTn** [dimensionless]: Normal clearness index, kTn = dni/dni_toa 
+* **clearness_dni** [dimensionless]: Normal clearness index, clearness_dni = dni/dni_toa 
 
-  .. _beam_fraction:
+  .. _clearness_poa_global:
 
-* **beam_fraction** [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa
+* **clearness_poa_global** [dimensionless]: Clearness index in plane-of-array, clearness_poa_global = poa_global/poa_toa 
 
-  .. _diffuse_fraction:
+  .. _clearness_poa_direct:
 
-* **diffuse_fraction** [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa 
+* **clearness_poa_direct** [dimensionless]: Clearness index in plane-of-array, clearness_poa_direct = poa_direct/poa_toa 
+
+  .. _fraction_beam:
+
+* **fraction_beam** [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa
+
+  .. _fraction_diffuse:
+
+* **fraction_diffuse** [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa 

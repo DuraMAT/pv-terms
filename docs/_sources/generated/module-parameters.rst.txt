@@ -13,7 +13,7 @@
 
   .. _band_gap_ref:
 
-* **band_gap_ref** [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL. [Deprecated/alternates: *Egref,Eg_ref*]
+* **band_gap_ref** [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be >0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL. [Deprecated/alternates: *Egref,EgRef,Eg_ref*]
 
   .. _band_gap_temperature_coeff:
 
@@ -53,7 +53,7 @@
 
   .. _irradiance_ref:
 
-* **irradiance_ref** [W/m^2]: Reference irradiance. Typical value is 1000 W/m^2.
+* **irradiance_ref** [W/m^2]: Reference irradiance. Typical value is 1000 W/m^2. [Deprecated/alternates: *irrad_ref*]
 
   .. _isc_ref:
 
@@ -101,7 +101,7 @@
 
   .. _resistance_series_ref:
 
-* **resistance_series_ref** [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: *R_s_ref*]
+* **resistance_series_ref** [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: *R_s_ref,resistance_series*]
 
   .. _resistance_shunt:
 
@@ -121,7 +121,7 @@
 
   .. _temperature_ref:
 
-* **temperature_ref** [°C]: Reference temperature. Typical value is 25 °C.
+* **temperature_ref** [°C]: Reference temperature. Typical value is 25 °C. [Deprecated/alternates: *temp_ref*]
 
   .. _vmp_ref:
 

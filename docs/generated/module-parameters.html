@@ -168,7 +168,7 @@
 <li><strong>alpha_imp</strong> [A/°C]: Temperature coefficient of current at maximum power point and reference conditions.</li>
 <li id="alpha-isc"><strong>alpha_isc</strong> [A/°C]: The temperature coefficient of short-circuit current at reference conditions. [Deprecated/alternates: <em>alpha_sc</em>]</li>
 <li id="alpha-isc-norm"><strong>alpha_isc_norm</strong> [1/°C]: alpha_isc/isc_ref. The temperature coefficient of short-circuit current at reference conditions divided by the short-circuit current at reference conditions.</li>
-<li id="band-gap-ref"><strong>band_gap_ref</strong> [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL. [Deprecated/alternates: <em>Egref,Eg_ref</em>]</li>
+<li id="band-gap-ref"><strong>band_gap_ref</strong> [eV]: Energy bandgap at reference temperature. 1.121 eV for crystalline silicon. EgRef must be &gt;0. For parameters from the SAM CEC module database, EgRef=1.121 is implicit for all cell types in the parameter estimation algorithm used by NREL. [Deprecated/alternates: <em>Egref,EgRef,Eg_ref</em>]</li>
 <li id="band-gap-temperature-coeff"><strong>band_gap_temperature_coeff</strong> [1/K]: The temperature dependence of the energy bandgap at reference conditions in units of 1/K.</li>
 <li id="beta-vmp"><strong>beta_vmp</strong> [V/°C]: Temperature coefficient of voltage at maximum power point and reference conditions.</li>
 <li id="beta-voc"><strong>beta_voc</strong> [V/°C]: Temperature coefficient of open-circuit voltage at reference conditions.</li>
@@ -178,7 +178,7 @@
 <li id="fill-factor"><strong>fill_factor</strong> [dimensionless]: Fill factor of the PV pmp/(voc*isc)</li>
 <li id="gamma-pmp"><strong>gamma_pmp</strong> [W/°C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: <em>gamma_pdc</em>]</li>
 <li id="imp-ref"><strong>imp_ref</strong> [A]: Current at maximum power point at reference conditions.</li>
-<li id="irradiance-ref"><strong>irradiance_ref</strong> [W/m^2]: Reference irradiance. Typical value is 1000 W/m^2.</li>
+<li id="irradiance-ref"><strong>irradiance_ref</strong> [W/m^2]: Reference irradiance. Typical value is 1000 W/m^2. [Deprecated/alternates: <em>irrad_ref</em>]</li>
 <li id="isc-ref"><strong>isc_ref</strong> [A]: Short circuit current at reference conditions. [Deprecated/alternates: <em>i_sc_ref</em>]</li>
 <li id="module-area"><strong>module_area</strong> [m^2]: Module aperture area. The area inside the frame for a rectangular module.</li>
 <li id="module-area-active"><strong>module_area_active</strong> [m^2]: Total area of cells in a module.</li>
@@ -190,12 +190,12 @@
 <li id="photocurrent-ref"><strong>photocurrent_ref</strong> [A]: Photocurrent at reference conditions. [Deprecated/alternates: <em>I_L_ref</em>]</li>
 <li id="pmp-ref"><strong>pmp_ref</strong> [W]: Power at maximum power point at reference conditions. [Deprecated/alternates: <em>p_mp_ref</em>]</li>
 <li id="resistance-series"><strong>resistance_series</strong> [Ohm]: Series resistance. [Deprecated/alternates: <em>R_s,Rs</em>]</li>
-<li id="resistance-series-ref"><strong>resistance_series_ref</strong> [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: <em>R_s_ref</em>]</li>
+<li id="resistance-series-ref"><strong>resistance_series_ref</strong> [Ohm]: Series resistance at reference conditions. [Deprecated/alternates: <em>R_s_ref,resistance_series</em>]</li>
 <li id="resistance-shunt"><strong>resistance_shunt</strong> [Ohm]: Shunt resistance. [Deprecated/alternates: <em>R_sh,Rsh</em>]</li>
 <li id="resistance-shunt-ref"><strong>resistance_shunt_ref</strong> [Ohm]: Shunt resistance at reference conditions. [Deprecated/alternates: <em>R_sh_ref</em>]</li>
 <li id="saturation-current"><strong>saturation_current</strong> [A]: The dark or diode reverse saturation current. [Deprecated/alternates: <em>I_o</em>]</li>
 <li id="saturation-current-ref"><strong>saturation_current_ref</strong> [A]: The dark or diode reverse saturation current at reference conditions. [Deprecated/alternates: <em>I_o_ref</em>]</li>
-<li id="temperature-ref"><strong>temperature_ref</strong> [°C]: Reference temperature. Typical value is 25 °C.</li>
+<li id="temperature-ref"><strong>temperature_ref</strong> [°C]: Reference temperature. Typical value is 25 °C. [Deprecated/alternates: <em>temp_ref</em>]</li>
 <li id="vmp-ref"><strong>vmp_ref</strong> [V]: Voltage at maximum power point at reference conditions. [Deprecated/alternates: <em>v_mp_ref</em>]</li>
 <li id="voc-ref"><strong>voc_ref</strong> [V]: Open circuit voltage at reference conditions. [Deprecated/alternates: <em>v_oc_ref</em>]</li>
 <li id="voltage-thermal"><strong>voltage_thermal</strong> [V]: Thermal voltage per cell, equal to k_B*T/q where k_B is the boltzman constant (in J/K), T is the temperature (in Kelvin) and q is the electron charge (in Coulombs).</li>

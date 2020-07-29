@@ -177,10 +177,12 @@
 <li id="poa-global"><strong>poa_global</strong> [W/m^2]: Global irradiation in plane. sum of diffuse and beam projection.</li>
 <li id="poa-ground-diffuse"><strong>poa_ground_diffuse</strong> [W/m^2]: In plane ground reflected irradiation [Deprecated/alternates: <em>gti</em>]</li>
 <li id="poa-sky-diffuse"><strong>poa_sky_diffuse</strong> [W/m^2]: Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</li>
-<li id="kth"><strong>kTh</strong> [dimensionless]: Horizontal clearness index, kTh = ghi/ghi_toa</li>
-<li id="ktn"><strong>kTn</strong> [dimensionless]: Normal clearness index, kTn = dni/dni_toa</li>
-<li id="beam-fraction"><strong>beam_fraction</strong> [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa</li>
-<li id="diffuse-fraction"><strong>diffuse_fraction</strong> [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa</li>
+<li id="clearness-ghi"><strong>clearness_ghi</strong> [dimensionless]: Horizontal clearness index, clearness_ghi = ghi/ghi_toa</li>
+<li id="clearness-dni"><strong>clearness_dni</strong> [dimensionless]: Normal clearness index, clearness_dni = dni/dni_toa</li>
+<li id="clearness-poa-global"><strong>clearness_poa_global</strong> [dimensionless]: Clearness index in plane-of-array, clearness_poa_global = poa_global/poa_toa</li>
+<li id="clearness-poa-direct"><strong>clearness_poa_direct</strong> [dimensionless]: Clearness index in plane-of-array, clearness_poa_direct = poa_direct/poa_toa</li>
+<li id="fraction-beam"><strong>fraction_beam</strong> [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa</li>
+<li id="fraction-diffuse"><strong>fraction_diffuse</strong> [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa</li>
 </ul>
 
 
