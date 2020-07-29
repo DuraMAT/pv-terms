@@ -164,23 +164,23 @@
             
   <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="temperature-cell">
-<li><strong>temperature_cell</strong> [°C]: Temperature of the cell.</li>
-<li id="temperature-module"><strong>temperature_module</strong> [°C]: temperature of the module.</li>
-<li id="temperature-air"><strong>temperature_air</strong> [°C]: ambient dry bulb temperature.</li>
-<li id="spectral-mismatch"><strong>spectral_mismatch</strong> [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.</li>
+<ul class="simple" id="aoi">
+<li><strong>aoi</strong> [degrees]: Angle between direct beam component and surface normal, between 0 and 90.</li>
+<li id="array-height"><strong>array_height</strong> [m]: Height above ground of the bottom edge of the module for a fixed tilt system.</li>
+<li id="axis-azimuth"><strong>axis_azimuth</strong> [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).</li>
+<li id="axis-height"><strong>axis_height</strong> [m]: Height above ground of the axis of rotation for a single axis tracker.</li>
+<li id="axis-tilt"><strong>axis_tilt</strong> [degrees]: Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.</li>
+<li id="date-time"><strong>date_time</strong> [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval</li>
+<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong> [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
 <li id="modules-per-string"><strong>modules_per_string</strong> [dimensionless]: Number of modules in series in each string.</li>
 <li id="parallel-strings"><strong>parallel_strings</strong> [dimensionless]: Number of parallel strings in an array of modules.</li>
-<li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’.</li>
-<li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong> [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
-<li id="aoi"><strong>aoi</strong> [degrees]: Angle between direct beam component and surface normal, between 0 and 90.</li>
-<li id="date-time"><strong>date_time</strong> [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval</li>
+<li id="spectral-mismatch"><strong>spectral_mismatch</strong> [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.</li>
 <li id="surface-azimuth"><strong>surface_azimuth</strong> [degrees]: Surface azimuth angles. The azimuth convention is defined as degrees east of north (e.g. North=0, South=180, East=90, West=270)</li>
 <li id="surface-tilt"><strong>surface_tilt</strong> [degrees]: Surface tilt angle. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)</li>
-<li id="array-height"><strong>array_height</strong> [m]: Height above ground of the bottom edge of the module for a fixed tilt system.</li>
-<li id="axis-height"><strong>axis_height</strong> [m]: Height above ground of the axis of rotation for a single axis tracker.</li>
-<li id="axis-azimuth"><strong>axis_azimuth</strong> [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).</li>
-<li id="axis-tilt"><strong>axis_tilt</strong> [degrees]: Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.</li>
+<li id="temperature-air"><strong>temperature_air</strong> [°C]: ambient dry bulb temperature.</li>
+<li id="temperature-cell"><strong>temperature_cell</strong> [°C]: Temperature of the cell.</li>
+<li id="temperature-module"><strong>temperature_module</strong> [°C]: temperature of the module.</li>
+<li id="tracker-type"><strong>tracker_type</strong>: Tracker type, can be ‘fixed’, ‘single-axis’ or ‘two-axis’.</li>
 </ul>
 
 

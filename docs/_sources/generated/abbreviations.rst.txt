@@ -102,3 +102,7 @@
   .. _voc:
 
 * **voc**: voltage at open circuit
+
+  .. _toa:
+
+* **toa**: top of atmosphere

@@ -166,15 +166,21 @@
 <div></div></blockquote>
 <ul class="simple" id="dhi">
 <li><strong>dhi</strong> [W/m^2]: Diffuse horizontal irradiance.</li>
-<li id="dni"><strong>dni</strong> [W/m^2]: Direct normal irradiance.</li>
-<li id="dni-extra"><strong>dni_extra</strong> [W/m^2]: Direct normal irradiance at top of atmosphere (extraterrestrial).</li>
+<li id="dni"><strong>dni</strong> [W/m^2]: Direct normal irradiance; irradiance taken on a plane normal to direction of the sun.</li>
+<li id="dni-toa"><strong>dni_toa</strong> [W/m^2]: Direct normal irradiance at the top of the atmosphere; dni if the atmosphere did not exist. Also sometimes called extraterrestrial irradiance.</li>
 <li id="effective-irradiance"><strong>effective_irradiance</strong> [W/m^2]: Irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum.</li>
 <li id="ghi"><strong>ghi</strong> [W/m^2]: Global horizontal irradiance.</li>
+<li id="ghi-toa"><strong>ghi_toa</strong> [W/m^2]: Global horizontal irradiance at the top of the atmosphere; ghi as if the atmosphere did not exist.</li>
+<li id="poa-toa"><strong>poa_toa</strong> [W/m^2]:  Plane-of-array irradiance if the atmosphere did not exist.</li>
 <li id="poa-diffuse"><strong>poa_diffuse</strong> [W/m^2]: Total diffuse irradiation in plane. sum of ground and sky diffuse.</li>
 <li id="poa-direct"><strong>poa_direct</strong> [W/m^2]: Direct/beam irradiation in plane.</li>
 <li id="poa-global"><strong>poa_global</strong> [W/m^2]: Global irradiation in plane. sum of diffuse and beam projection.</li>
 <li id="poa-ground-diffuse"><strong>poa_ground_diffuse</strong> [W/m^2]: In plane ground reflected irradiation [Deprecated/alternates: <em>gti</em>]</li>
 <li id="poa-sky-diffuse"><strong>poa_sky_diffuse</strong> [W/m^2]: Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</li>
+<li id="kth"><strong>kTh</strong> [dimensionless]: Horizontal clearness index, kTh = ghi/ghi_toa</li>
+<li id="ktn"><strong>kTn</strong> [dimensionless]: Normal clearness index, kTn = dni/dni_toa</li>
+<li id="beam-fraction"><strong>beam_fraction</strong> [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa</li>
+<li id="diffuse-fraction"><strong>diffuse_fraction</strong> [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa</li>
 </ul>
 
 

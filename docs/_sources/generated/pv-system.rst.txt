@@ -1,19 +1,31 @@
 
-  .. _temperature_cell:
+  .. _aoi:
 
-* **temperature_cell** [°C]: Temperature of the cell.
+* **aoi** [degrees]: Angle between direct beam component and surface normal, between 0 and 90.
 
-  .. _temperature_module:
+  .. _array_height:
 
-* **temperature_module** [°C]: temperature of the module.
+* **array_height** [m]: Height above ground of the bottom edge of the module for a fixed tilt system.
 
-  .. _temperature_air:
+  .. _axis_azimuth:
 
-* **temperature_air** [°C]: ambient dry bulb temperature.
+* **axis_azimuth** [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).
 
-  .. _spectral_mismatch:
+  .. _axis_height:
 
-* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
+* **axis_height** [m]: Height above ground of the axis of rotation for a single axis tracker.
+
+  .. _axis_tilt:
+
+* **axis_tilt** [degrees]: Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.
+
+  .. _date_time:
+
+* **date_time** [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval
+
+  .. _ground_coverage_ratio:
+
+* **ground_coverage_ratio** [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be <=1.
 
   .. _modules_per_string:
 
@@ -23,21 +35,9 @@
 
 * **parallel_strings** [dimensionless]: Number of parallel strings in an array of modules.
 
-  .. _tracker_type:
+  .. _spectral_mismatch:
 
-* **tracker_type**: Tracker type, can be 'fixed', 'single-axis' or 'two-axis'.
-
-  .. _ground_coverage_ratio:
-
-* **ground_coverage_ratio** [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be <=1.
-
-  .. _aoi:
-
-* **aoi** [degrees]: Angle between direct beam component and surface normal, between 0 and 90.
-
-  .. _date_time:
-
-* **date_time** [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval
+* **spectral_mismatch** [dimensionless]: The ratio of power produced by a PV cell with a particular spectral distribution of light divided by the power produced by a reference spectrum.
 
   .. _surface_azimuth:
 
@@ -47,18 +47,18 @@
 
 * **surface_tilt** [degrees]: Surface tilt angle. The tilt angle is defined as degrees from horizontal (e.g. surface facing up = 0, surface facing horizon = 90)
 
-  .. _array_height:
+  .. _temperature_air:
 
-* **array_height** [m]: Height above ground of the bottom edge of the module for a fixed tilt system.
+* **temperature_air** [°C]: ambient dry bulb temperature.
 
-  .. _axis_height:
+  .. _temperature_cell:
 
-* **axis_height** [m]: Height above ground of the axis of rotation for a single axis tracker.
+* **temperature_cell** [°C]: Temperature of the cell.
 
-  .. _axis_azimuth:
+  .. _temperature_module:
 
-* **axis_azimuth** [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).
+* **temperature_module** [°C]: temperature of the module.
 
-  .. _axis_tilt:
+  .. _tracker_type:
 
-* **axis_tilt** [degrees]: Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.
+* **tracker_type**: Tracker type, can be 'fixed', 'single-axis' or 'two-axis'.

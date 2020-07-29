@@ -5,11 +5,11 @@
 
   .. _dni:
 
-* **dni** [W/m^2]: Direct normal irradiance.
+* **dni** [W/m^2]: Direct normal irradiance; irradiance taken on a plane normal to direction of the sun.
 
-  .. _dni_extra:
+  .. _dni_toa:
 
-* **dni_extra** [W/m^2]: Direct normal irradiance at top of atmosphere (extraterrestrial).
+* **dni_toa** [W/m^2]: Direct normal irradiance at the top of the atmosphere; dni if the atmosphere did not exist. Also sometimes called extraterrestrial irradiance.
 
   .. _effective_irradiance:
 
@@ -18,6 +18,14 @@
   .. _ghi:
 
 * **ghi** [W/m^2]: Global horizontal irradiance.
+
+  .. _ghi_toa:
+
+* **ghi_toa** [W/m^2]: Global horizontal irradiance at the top of the atmosphere; ghi as if the atmosphere did not exist.
+
+  .. _poa_toa:
+
+* **poa_toa** [W/m^2]:  Plane-of-array irradiance if the atmosphere did not exist.
 
   .. _poa_diffuse:
 
@@ -38,3 +46,19 @@
   .. _poa_sky_diffuse:
 
 * **poa_sky_diffuse** [W/m^2]: Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)
+
+  .. _kTh:
+
+* **kTh** [dimensionless]: Horizontal clearness index, kTh = ghi/ghi_toa 
+
+  .. _kTn:
+
+* **kTn** [dimensionless]: Normal clearness index, kTn = dni/dni_toa 
+
+  .. _beam_fraction:
+
+* **beam_fraction** [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa
+
+  .. _diffuse_fraction:
+
+* **diffuse_fraction** [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa 

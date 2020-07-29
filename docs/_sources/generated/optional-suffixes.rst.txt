@@ -1,23 +1,35 @@
 
+  .. _*_array:
+
+* ***_array**: Quantity relating to a number of PV strings.
+
   .. _*_cell:
 
 * ***_cell**: Quantity relating to a single PV cell
+
+  .. _*_cumulative:
+
+* ***_cumulative**: Quantity integrated over a specific length of time, usually the full lifetime of the system.
+
+  .. _*_interval:
+
+* ***_interval**: Quantity integrated over a specific length of time, usually a shorter timespan e.g. day or hour.
+
+  .. _*_inv:
+
+* ***_inv**: Quautity relating to an inverter.
+
+  .. _*_meas:
+
+* ***_meas**: Parameter measured from field data, e.g. voc_meas
 
   .. _*_module:
 
 * ***_module**: Quantity relating to a single PV module
 
-  .. _*_string:
+  .. _*_norm:
 
-* ***_string**: Quantity relating to a string of PV modules.
-
-  .. _*_array:
-
-* ***_array**: Quantity relating to a number of PV strings.
-
-  .. _*_inv:
-
-* ***_inv**: Quautity relating to an inverter.
+* ***_norm**: Normalized quantity
 
   .. _*_rated:
 
@@ -27,18 +39,6 @@
 
 * ***_sim**: Parameter predicted from a model, e.g. voc_sim
 
-  .. _*_meas:
+  .. _*_string:
 
-* ***_meas**: Parameter measured from field data, e.g. voc_meas
-
-  .. _*_interval:
-
-* ***_interval**: Quantity integrated over a specific length of time, usually a shorter timespan e.g. day or hour.
-
-  .. _*_cumulative:
-
-* ***_cumulative**: Quantity integrated over a specific length of time, usually the full lifetime of the system.
-
-  .. _*_norm:
-
-* ***_norm**: Normalized quantity
+* ***_string**: Quantity relating to a string of PV modules.

@@ -1,7 +1,11 @@
 
-  .. _tz:
+  .. _albedo:
 
-* **tz**: timezone
+* **albedo** [dimensionless]: Ground reflectance between 0 and 1.
+
+  .. _elevation:
+
+* **elevation** [m]: Elevation of system above sea level.
 
   .. _latitude:
 
@@ -11,14 +15,10 @@
 
 * **longitude** [degrees]: Longitude between -180 to 180 degrees. Positive east of the meridian.
 
-  .. _elevation:
-
-* **elevation** [m]: Elevation of system above sea level.
-
   .. _pressure:
 
 * **pressure** [Pa]: Atmospheric pressure at ground level.
 
-  .. _albedo:
+  .. _tz:
 
-* **albedo** [dimensionless]: Ground reflectance between 0 and 1.
+* **tz**: timezone
