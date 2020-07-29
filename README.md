@@ -14,7 +14,7 @@ environment, but not strictly necessary.
 
     pip install -r requirements.txt
 
-There are a few ways to build the docs. To do this, cd into the `source` folder. The first method generates html files in `source/_build/html`:
+There are a few ways to build the docs. To do this, cd into the `docs_source` folder. The first method generates html files in `source/_build/html`:
 
     make html
 
