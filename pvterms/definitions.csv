@@ -104,7 +104,9 @@ Irradiance,poa_diffuse,W/m^2,Total diffuse irradiation in plane. sum of ground a
 Irradiance,poa_direct,W/m^2,Direct/beam irradiation in plane.,
 Irradiance,poa_global,W/m^2,Global irradiation in plane. sum of diffuse and beam projection.,
 Irradiance,poa_ground_diffuse,W/m^2,In plane ground reflected irradiation,gti
-Irradiance,poa_sky_diffuse,W/m^2,Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation),
+Irradiance,poa_sky_diffuse,W/m^2,"Diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)",
+Irradiance,kTh,dimensionless,"Horizontal clearness index, kTh = ghi/ghi_toa ",
+Irradiance,kTn,dimensionless,"Normal clearness index, kTn = dni/dni_toa ",
 Location,albedo,dimensionless,Ground reflectance between 0 and 1.,
 Location,elevation,m,Elevation of system above sea level.,
 Location,latitude,degrees,Latitude between -90 and 90 degrees. Positive north of the equator.,
