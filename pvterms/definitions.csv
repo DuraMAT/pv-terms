@@ -129,6 +129,7 @@ Module Parameters,cells_in_series,dimensionless,Number of cells in series in a P
 Module Parameters,diode_factor,dimensionless,Diode ideality factor.,
 Module Parameters,fill_factor,dimensionless,Fill factor of the PV pmp/(voc*isc),
 Module Parameters,gamma_pmp,W/°C,Temperature coefficient of power at maximum power point and reference conditions.,gamma_pdc
+Module Parameters,gamma_pmp_norm,W/°C,"Normalized temperature coefficient of power at maximum power point and reference conditions, equal to gamma_pmp/pmp_ref.",gamma_pdc
 Module Parameters,imp_ref,A,Current at maximum power point at reference conditions.,
 Module Parameters,irradiance_ref,W/m^2,Reference irradiance. Typical value is 1000 W/m^2.,"irrad_ref"
 Module Parameters,isc_ref,A,Short circuit current at reference conditions.,i_sc_ref
