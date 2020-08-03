@@ -76,7 +76,7 @@ DC Output,power_dc,W,DC power.,
 DC Output,vmp,V,Voltage at the maximum power point.,v_mp
 DC Output,voc,V,Open circuit voltage.,v_oc
 DC Output,voltage_dc,V,DC voltage.,
-Inverter,current_ac_inv_max,A,Maximum inverter AC output current.,
+Inverter,current_inv_ac_max,A,Maximum inverter AC output current.,
 Inverter,current_inv_dc_max,A,Maximum inverter DC input current.,
 Inverter,efficiency_inverter,dimensionless,Inverter efficiency. Real AC power out divided by DC power in.,
 Inverter,efficiency_inverter_cec,dimensionless,Nominal inverter efficiency using CEC standard.,
