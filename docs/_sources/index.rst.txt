@@ -10,6 +10,10 @@ The team would greatly appreciate feedback and suggestions. To comment, see the 
 
 .. include:: generated/version.rst
 
+**Categories**
+
+.. contents:: :local:
+
 Abbreviations
 -------------
 
