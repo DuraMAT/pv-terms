@@ -3,17 +3,17 @@
 
 * **aoi** [degrees]: Angle between direct beam component and surface normal, between 0 and 90.
 
-  .. _array_height:
+  .. _height_array:
 
-* **array_height** [m]: Height above ground of the bottom edge of the module for a fixed tilt system.
+* **height_array** [m]: Height above ground of the bottom edge of the module for a fixed tilt system.
 
   .. _axis_azimuth:
 
 * **axis_azimuth** [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).
 
-  .. _axis_height:
+  .. _height_axis:
 
-* **axis_height** [m]: Height above ground of the axis of rotation for a single axis tracker.
+* **height_axis** [m]: Height above ground of the axis of rotation for a single axis tracker.
 
   .. _axis_tilt:
 

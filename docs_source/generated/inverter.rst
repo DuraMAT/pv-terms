@@ -1,7 +1,7 @@
 
-  .. _current_ac_inv_max:
+  .. _current_inv_ac_max:
 
-* **current_ac_inv_max** [A]: Maximum inverter AC output current.
+* **current_inv_ac_max** [A]: Maximum inverter AC output current.
 
   .. _current_inv_dc_max:
 

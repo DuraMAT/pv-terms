@@ -65,8 +65,8 @@
 
   .. _fraction_beam:
 
-* **fraction_beam** [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa
+* **fraction_beam** [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - dhi/ghi
 
   .. _fraction_diffuse:
 
-* **fraction_diffuse** [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa 
+* **fraction_diffuse** [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = dhi/ghi

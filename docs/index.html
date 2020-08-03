@@ -165,7 +165,7 @@
 <h1>PV Modeling Glossary<a class="headerlink" href="#pv-modeling-glossary" title="Permalink to this headline">¶</a></h1>
 <p>This page contains nomenclature for PV-relevant terms that are used in modeling and data analysis for PV systems. Terms are grouped by category. These definitions should be helpful for anyone writing software to analyze PV systems.</p>
 <p>The team would greatly appreciate feedback and suggestions. To comment, see the issues on the <a class="reference external" href="https://github.com/DuraMAT/pv-terms">pv-terms github repo</a>.</p>
-<p>Version: 0.1.1</p>
+<p>Version: 0.1.2</p>
 <div class="section" id="abbreviations">
 <h2>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">¶</a></h2>
 <p>These abbreviations are used without expansion in the rest of the variables.</p>
@@ -326,8 +326,8 @@
 <p>These parameters are related to the operation of inverters.</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="current-ac-inv-max">
-<li><strong>current_ac_inv_max</strong> [A]: Maximum inverter AC output current.</li>
+<ul class="simple" id="current-inv-ac-max">
+<li><strong>current_inv_ac_max</strong> [A]: Maximum inverter AC output current.</li>
 <li id="current-inv-dc-max"><strong>current_inv_dc_max</strong> [A]: Maximum inverter DC input current.</li>
 <li id="efficiency-inverter"><strong>efficiency_inverter</strong> [dimensionless]: Inverter efficiency. Real AC power out divided by DC power in.</li>
 <li id="efficiency-inverter-cec"><strong>efficiency_inverter_cec</strong> [dimensionless]: Nominal inverter efficiency using CEC standard.</li>
@@ -368,8 +368,8 @@
 <li id="clearness-dni"><strong>clearness_dni</strong> [dimensionless]: Normal clearness index, clearness_dni = dni/dni_toa</li>
 <li id="clearness-poa-global"><strong>clearness_poa_global</strong> [dimensionless]: Clearness index in plane-of-array, clearness_poa_global = poa_global/poa_toa</li>
 <li id="clearness-poa-direct"><strong>clearness_poa_direct</strong> [dimensionless]: Clearness index in plane-of-array, clearness_poa_direct = poa_direct/poa_toa</li>
-<li id="fraction-beam"><strong>fraction_beam</strong> [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - poa_diffuse/poa</li>
-<li id="fraction-diffuse"><strong>fraction_diffuse</strong> [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = poa_diffuse/poa</li>
+<li id="fraction-beam"><strong>fraction_beam</strong> [dimensionless]: Fraction of irradiance in beam component, beam_fraction = 1 - dhi/ghi</li>
+<li id="fraction-diffuse"><strong>fraction_diffuse</strong> [dimensionless]: Fraction of irradiance in diffuse component, beam_fraction = dhi/ghi</li>
 </ul>
 </div>
 <div class="section" id="pv-system">
@@ -379,9 +379,9 @@
 <div></div></blockquote>
 <ul class="simple" id="id10">
 <li><strong>aoi</strong> [degrees]: Angle between direct beam component and surface normal, between 0 and 90.</li>
-<li id="array-height"><strong>array_height</strong> [m]: Height above ground of the bottom edge of the module for a fixed tilt system.</li>
+<li id="height-array"><strong>height_array</strong> [m]: Height above ground of the bottom edge of the module for a fixed tilt system.</li>
 <li id="axis-azimuth"><strong>axis_azimuth</strong> [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).</li>
-<li id="axis-height"><strong>axis_height</strong> [m]: Height above ground of the axis of rotation for a single axis tracker.</li>
+<li id="height-axis"><strong>height_axis</strong> [m]: Height above ground of the axis of rotation for a single axis tracker.</li>
 <li id="axis-tilt"><strong>axis_tilt</strong> [degrees]: Orientation of axis of rotation for a single-axis tracking system relative to horizontal. 0 = horizontal.</li>
 <li id="date-time"><strong>date_time</strong> [YYYY-MM-DD HH:MM:SS]: Date and time of measurement interval</li>
 <li id="ground-coverage-ratio"><strong>ground_coverage_ratio</strong> [dimensionless]: A value denoting the ground coverage ratio of a tracker system which utilizes backtracking; i.e. the ratio between the PV array surface area to total ground area. A tracker system with modules 2 meters wide, centered on the tracking axis, with 6 meters between the tracking axes has a gcr of 2/6=0.333. If gcr is not provided, a gcr of 2/7 is default. gcr must be &lt;=1.</li>
