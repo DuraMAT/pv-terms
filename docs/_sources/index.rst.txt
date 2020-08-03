@@ -18,14 +18,22 @@ These abbreviations are used without expansion in the rest of the variables.
 .. include:: generated/abbreviations.rst
 
 
-.. _optional_suffixes:
-
 Optional Suffixes
 -----------------
 
-These optional suffixes can be appended to a variable in order to further clarify which quantity the variable refers to. In the following * refers to another variable. 
+These optional suffixes can be appended to a variable in order to further clarify which quantity the variable refers to. In the following * refers to another variable.
 
-.. include:: generated/optional-suffixes.rst
+**Suffixes specifying the object**
+
+.. include:: generated/optional-suffixes-specifying-the-object.rst
+
+**Suffixes specifying the aggregation type**
+
+.. include:: generated/optional-suffixes-for-aggregation.rst
+
+**Suffixes specifying the measurement type**
+
+.. include:: generated/optional-suffixes-for-measurement-type.rst
 
 
 Location

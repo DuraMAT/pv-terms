@@ -202,22 +202,36 @@
 </ul>
 </div>
 <div class="section" id="optional-suffixes">
-<span id="id1"></span><h2>Optional Suffixes<a class="headerlink" href="#optional-suffixes" title="Permalink to this headline">¶</a></h2>
+<h2>Optional Suffixes<a class="headerlink" href="#optional-suffixes" title="Permalink to this headline">¶</a></h2>
 <p>These optional suffixes can be appended to a variable in order to further clarify which quantity the variable refers to. In the following * refers to another variable.</p>
+<p><strong>Suffixes specifying the object</strong></p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="array">
-<li><strong>*_array</strong>: Quantity relating to a number of PV strings.</li>
-<li id="cell"><strong>*_cell</strong>: Quantity relating to a single PV cell</li>
-<li id="cumulative"><strong>*_cumulative</strong>: Quantity integrated over a specific length of time, usually the full lifetime of the system.</li>
-<li id="interval"><strong>*_interval</strong>: Quantity integrated over a specific length of time, usually a shorter timespan e.g. day or hour.</li>
-<li id="id2"><strong>*_inv</strong>: Quautity relating to an inverter.</li>
-<li id="meas"><strong>*_meas</strong>: Parameter measured from field data, e.g. voc_meas</li>
+<ul class="simple" id="cell">
+<li><strong>*_cell</strong>: Quantity relating to a single PV cell</li>
 <li id="module"><strong>*_module</strong>: Quantity relating to a single PV module</li>
-<li id="norm"><strong>*_norm</strong>: Normalized quantity</li>
-<li id="rated"><strong>*_rated</strong>: Parameter on the datasheet or as-built.</li>
-<li id="sim"><strong>*_sim</strong>: Parameter predicted from a model, e.g. voc_sim</li>
 <li id="string"><strong>*_string</strong>: Quantity relating to a string of PV modules.</li>
+<li id="array"><strong>*_array</strong>: Quantity relating to a number of PV strings.</li>
+<li id="id1"><strong>*_inv</strong>: Quautity relating to an inverter.</li>
+<li id="site"><strong>*_site</strong>: Quantity relating to the entire site.</li>
+</ul>
+<p><strong>Suffixes specifying the aggregation type</strong></p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="cumulative">
+<li><strong>*_cumulative</strong>: Quantity integrated over a specific length of time, usually the full lifetime of the system.</li>
+<li id="interval"><strong>*_interval</strong>: Quantity integrated over a specific length of time, usually a shorter timespan e.g. day or hour.</li>
+<li id="mean"><strong>*_mean</strong>: Averaged quantity</li>
+<li id="std"><strong>*_std</strong>: Standard deviation of quantity</li>
+</ul>
+<p><strong>Suffixes specifying the measurement type</strong></p>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple" id="meas">
+<li><strong>*_meas</strong>: Parameter measured from field data, e.g. voc_meas</li>
+<li id="sim"><strong>*_sim</strong>: Parameter predicted from a model, e.g. voc_sim</li>
+<li id="rated"><strong>*_rated</strong>: Parameter on the datasheet or as-built.</li>
+<li id="norm"><strong>*_norm</strong>: Normalized quantity</li>
 </ul>
 </div>
 <div class="section" id="location">
@@ -273,12 +287,12 @@
 <ul class="simple" id="current-dc">
 <li><strong>current_dc</strong> [A]: DC current.</li>
 <li id="energy-dc"><strong>energy_dc</strong> [kWh]: DC energy.</li>
-<li id="id3"><strong>imp</strong> [A]: Current at the maximum power point. [Deprecated/alternates: <em>i_mp</em>]</li>
-<li id="id4"><strong>isc</strong> [A]: Short circuit current. [Deprecated/alternates: <em>i_sc</em>]</li>
-<li id="id5"><strong>pmp</strong> [W]: Power at the maximum power point. [Deprecated/alternates: <em>p_mp</em>]</li>
+<li id="id2"><strong>imp</strong> [A]: Current at the maximum power point. [Deprecated/alternates: <em>i_mp</em>]</li>
+<li id="id3"><strong>isc</strong> [A]: Short circuit current. [Deprecated/alternates: <em>i_sc</em>]</li>
+<li id="id4"><strong>pmp</strong> [W]: Power at the maximum power point. [Deprecated/alternates: <em>p_mp</em>]</li>
 <li id="power-dc"><strong>power_dc</strong> [W]: DC power.</li>
-<li id="id6"><strong>vmp</strong> [V]: Voltage at the maximum power point. [Deprecated/alternates: <em>v_mp</em>]</li>
-<li id="id7"><strong>voc</strong> [V]: Open circuit voltage. [Deprecated/alternates: <em>v_oc</em>]</li>
+<li id="id5"><strong>vmp</strong> [V]: Voltage at the maximum power point. [Deprecated/alternates: <em>v_mp</em>]</li>
+<li id="id6"><strong>voc</strong> [V]: Open circuit voltage. [Deprecated/alternates: <em>v_oc</em>]</li>
 <li id="voltage-dc"><strong>voltage_dc</strong> [V]: DC voltage.</li>
 </ul>
 </div>
@@ -337,12 +351,12 @@
 <p>These variables denote irradiance in units of W/m^2.</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="id8">
+<ul class="simple" id="id7">
 <li><strong>dhi</strong> [W/m^2]: Diffuse horizontal irradiance.</li>
-<li id="id9"><strong>dni</strong> [W/m^2]: Direct normal irradiance; irradiance taken on a plane normal to direction of the sun.</li>
+<li id="id8"><strong>dni</strong> [W/m^2]: Direct normal irradiance; irradiance taken on a plane normal to direction of the sun.</li>
 <li id="dni-toa"><strong>dni_toa</strong> [W/m^2]: Direct normal irradiance at the top of the atmosphere; dni if the atmosphere did not exist. Also sometimes called extraterrestrial irradiance.</li>
 <li id="effective-irradiance"><strong>effective_irradiance</strong> [W/m^2]: Irradiance reaching the module’s cells, i.e., in the plane of array, reduced by soiling and reflections, adjusted for spectrum.</li>
-<li id="id10"><strong>ghi</strong> [W/m^2]: Global horizontal irradiance.</li>
+<li id="id9"><strong>ghi</strong> [W/m^2]: Global horizontal irradiance.</li>
 <li id="ghi-toa"><strong>ghi_toa</strong> [W/m^2]: Global horizontal irradiance at the top of the atmosphere; ghi as if the atmosphere did not exist.</li>
 <li id="poa-toa"><strong>poa_toa</strong> [W/m^2]:  Plane-of-array irradiance if the atmosphere did not exist.</li>
 <li id="poa-diffuse"><strong>poa_diffuse</strong> [W/m^2]: Total diffuse irradiation in plane. sum of ground and sky diffuse.</li>
@@ -363,7 +377,7 @@
 <p>These variables are related to the operating current, voltage and power of PV cells, modules or arrays.</p>
 <blockquote>
 <div></div></blockquote>
-<ul class="simple" id="id11">
+<ul class="simple" id="id10">
 <li><strong>aoi</strong> [degrees]: Angle between direct beam component and surface normal, between 0 and 90.</li>
 <li id="array-height"><strong>array_height</strong> [m]: Height above ground of the bottom edge of the module for a fixed tilt system.</li>
 <li id="axis-azimuth"><strong>axis_azimuth</strong> [degrees]: Azimuth of axis of rotation for a single-axis tracking system (e.g. North=0, South=180, East=90, West=270).</li>
@@ -409,7 +423,7 @@
 <li id="module-area-external"><strong>module_area_external</strong> [m^2]: External dimensions of a module.</li>
 <li id="nnsvth"><strong>nNsVth</strong> [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage.</li>
 <li id="nnsvth-ref"><strong>nNsVth_ref</strong> [V]: The product of the usual diode ideality factor (n, unitless), number of cells in series (Ns), and cell thermal voltage at reference conditions. [Deprecated/alternates: <em>a_ref</em>]</li>
-<li id="id12"><strong>noct</strong> [°C]: Nominal operating cell temperature.</li>
+<li id="id11"><strong>noct</strong> [°C]: Nominal operating cell temperature.</li>
 <li id="photocurrent"><strong>photocurrent</strong> [A]: Photo-generated current. [Deprecated/alternates: <em>I_L</em>]</li>
 <li id="photocurrent-ref"><strong>photocurrent_ref</strong> [A]: Photocurrent at reference conditions. [Deprecated/alternates: <em>I_L_ref</em>]</li>
 <li id="pmp-ref"><strong>pmp_ref</strong> [W]: Power at maximum power point at reference conditions. [Deprecated/alternates: <em>p_mp_ref</em>]</li>
