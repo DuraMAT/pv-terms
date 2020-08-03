@@ -47,6 +47,10 @@
 
 * **gamma_pmp** [W/°C]: Temperature coefficient of power at maximum power point and reference conditions. [Deprecated/alternates: *gamma_pdc*]
 
+  .. _gamma_pmp_norm:
+
+* **gamma_pmp_norm** [W/°C]: Normalized temperature coefficient of power at maximum power point and reference conditions, equal to gamma_pmp/pmp_ref. [Deprecated/alternates: *gamma_pdc*]
+
   .. _imp_ref:
 
 * **imp_ref** [A]: Current at maximum power point at reference conditions.
